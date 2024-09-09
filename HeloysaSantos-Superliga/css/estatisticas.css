@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --purple: #642b96;
+    --purple2: #8d239e;
+    --orange: #b67625;
+    --yellow: #af6e29;
+    --bg-color: #212226;
+}
+
+.container {
+    padding-top: 100px;
+}
+
+.logo {
+    position: relative;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.imglogo {
+    width: 150px;
+    height: 56px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: var(--purple);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--yellow);
+    transition: .4s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.tabela {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.tabela-estilizada {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(246, 246, 246, 0.15);
+}
+
+.tabela-estilizada thead tr {
+    background-color: var(--orange);
+    color: var(--purple);
+    text-align: left;
+}
+
+.tabela-estilizada th,
+.tabela-estilizada td {
+    padding: 12px 15px;
+    color: #fff;
+}
+
+
+.tabela-estilizada tbody tr:nth-of-type(even) {
+    background-color: var(--purple);
+}
+
+.tabela-estilizada tbody tr:last-of-type {
+    border-bottom: 2px solid var(--orange);
+}
+
+.tabela-estilizada tbody tr.active-row {
+    font-weight: bold;
+    color: var(--orange);
+}
