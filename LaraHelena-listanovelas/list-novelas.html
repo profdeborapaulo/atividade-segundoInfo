@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listar Novelas</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+           
+        }
+
+        body {
+            background-color: #555555;
+            color: #333;
+            font-family: monospace;
+        }
+
+        header {
+            background-color: #ff5789;
+            padding: 20px;
+            text-align: center;
+            color: #94153b;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-size: 1.1rem;
+            padding: 8px 16px;
+            transition: background-color 0.3s ease;
+        }
+
+     
+
+       
+        main {
+            padding: 40px;
+            text-align: center;
+        }
+
+        #novela-list {
+            list-style: none;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        #novela-list li {
+            background-color: #ff98b7;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            color: aliceblue;
+            font-size: 27px;
+        }
+
+        #novela-list li:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Listar Novelas</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="add-novela.html">Adicionar Novela</a></li>
+                <li><a href="list-novelas.html">Listar Novelas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <ul id="novela-list">
+           
+        </ul>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>

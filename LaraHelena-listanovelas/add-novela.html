@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Novela</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+       
+.form-section {
+    background-color: #ffa8c5;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 40px auto;
+}
+
+.form-section h2 {
+    color: #ff0062;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #666;
+    font-size: 16px;
+}
+
+input[type="text"], input[type="number"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ff188c;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #c5004c;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    align-self: center; }
+
+button:hover {
+    background-color: #e74496;
+}
+
+#message {
+    margin-top: 20px;
+    color: #ff00dd;
+    text-align: center;
+    font-size: 16px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Adicionar Novela</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="add-novela.html">Adicionar Novela</a></li>
+                <li><a href="list-novelas.html">Listar Novelas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="form-section">
+            <h2>Preencha os detalhes da novela</h2>
+            <form id="add-novela-form">
+                <label for="title">Título da Novela:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="year">Ano de Lançamento:</label>
+                <input type="number" id="year" name="year" required>
+
+                <button type="submit">Adicionar Novela</button>
+                <p id="message"></p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gerenciamento de Novelas. Todos os direitos reservados.</p>
+        <p>Desenvolvido por Lara Helena.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

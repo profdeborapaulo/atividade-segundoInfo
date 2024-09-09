@@ -1,0 +1,113 @@
+body {
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #555555;
+}
+
+header {
+    background-color: #ff5789;
+    color: #94153b;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #f35483;
+    font-size: 200%;
+}
+p{
+    color: aliceblue;
+    font-size: 19px;
+}
+.carousel {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+    height: auto;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(197, 0, 92, 0.377);
+    color: rgb(255, 0, 106);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+.intro {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.favorites {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.favorites h2 {
+    color: #bb0d41;
+}
+
+.favorites p {
+    color: #555;
+}
+
+footer {
+    background-color: #ff5789;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
