@@ -1,0 +1,83 @@
+body {
+    background-image: url('img/cadastro_background.jpg'); /* Caminho relativo correto */
+    background-size: 100%; /* Ajusta o tamanho da imagem para cobrir o fundo */
+    background-repeat: no-repeat; /* Opcional: impede a repetição da imagem */
+}
+.bloco{
+    background-color: rgb(22, 0, 56);
+    margin-left: 2%;
+    margin-top: 17%;
+    width: 35%;
+    height: 350px;
+    border: 5px solid rgb(255, 255, 255);
+    padding: 20px;
+    font-size: larger;
+}
+#texto {
+    font-size: 24px;
+    color: rgb(217, 160, 224);
+ }
+ #link {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+ }
+ #saida {
+    font-size: 24px;
+    color: rgb(255, 238, 0);
+ }
+ #catalogo {
+    background-color: rgb(255, 72, 0);
+    margin-left: 41%;
+    margin-top: -25%;
+    width: 50%;
+    height: 130px;
+    border: 5px solid rgb(255, 255, 255);
+    padding: 20px;
+    font-size: larger;
+}
+h1 {
+    text-align: center;
+    color: royalblue;
+}
+
+input {
+    width: 230px;
+    height: 40px;
+    font-size: 16px;
+}
+
+table {
+    width: 106.5%;
+    border-collapse: collapse;
+    margin-left: -25px;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #ddd;
+}
+
+tr:nth-child(even) { /* Para melhorar a leitura, adiciona uma cor diferente para linhas pares */
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+button {
+    width: 120px;
+    height: 40px;
+    margin: 5%;
+    font-size: 18px;
+    border-radius: 5px;
+}
