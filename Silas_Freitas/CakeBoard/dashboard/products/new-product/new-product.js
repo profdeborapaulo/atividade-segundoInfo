@@ -55,7 +55,7 @@ form.addEventListener('submit', (ev) => {
         return;
     }
 
-    if (products.find((product) => product.name === name)) {
+    if (products.find((product) => product.name === name && product.userId === user.id)) {
         alert('Já existe um produto com este nome!');
         return;
     }

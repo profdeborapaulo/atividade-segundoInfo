@@ -17,7 +17,7 @@ form.addEventListener('submit', (ev) => {
     }
 
     const categories = JSON.parse(localStorage.getItem('categories') || '[]');
-    if (categories.find((category) => category.name === name)) {
+    if (categories.find((category) => category.name === name && category.userId === user.id)) {
         alert('Esta categoria já existe!');
         return;
     }
