@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | CakeBoard</title>
+    <script src="script.js" defer></script>
+    <script src="/verify-auth.js"></script>
+    <link rel="stylesheet" href="/css/sign.css">
+</head>
+<body>
+    <form action="" id="form">
+        <h2>Cadastro | CakeBoard</h2>
+        <label for="companyName">
+            Razão Social: 
+            <input type="text" name="companyName" id="companyName">
+        </label>
+        <label for="fantasyName">
+            Nome Fantasia: 
+            <input type="text" name="fantasyName" id="fantasyName">
+        </label>
+        <label for="cnpj">
+            CNPJ: 
+            <input type="text" name="cnpj" id="cnpj">
+        </label>
+        <label for="email">
+            Email: 
+            <input type="email" name="email" id="email">
+        </label>
+        <label for="password">
+            Senha: 
+            <input type="password" name="password" id="password">
+        </label>
+        <label for="confirmPassword">
+            Confirmar Senha: 
+            <input type="password" name="confirmPassword" id="confirmPassword">
+        </label>
+        <button type="submit">Cadastrar</button>
+        <p>Já tem uma conta? <a href="/auth/sign-in">Entrar</a></p>
+    </form>
+</body>
+</html>

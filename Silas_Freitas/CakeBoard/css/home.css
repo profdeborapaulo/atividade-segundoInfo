@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'system-ui';
+}
+
+.navbar a {
+    padding: 5px 10px;
+}
+
+#action-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-right: 10px;
+}
+
+.sign-in {
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.sign-up {
+    border: 1px solid #333;
+    color: #333;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.sign-up:hover {
+    color: white;
+}
+
+#action-container a {
+    transition: background-color 0.3s;
+}
+
+#action-container a:hover {
+    background-color: #333;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    flex-direction: column;
+    padding: 0 20%;
+    gap: 20px;
+    background-image: url('/imgs/bolos.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#action-container a {
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+#action-container a:hover {
+    background-color: #545454;
+}
+
+main h1 {
+    font-size: 48px;
+}
+
+main p {
+    font-size: 20px;
+}
+
+main a:hover {
+    background-color: #555;
+}

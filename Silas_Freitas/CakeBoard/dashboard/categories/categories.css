@@ -1,0 +1,34 @@
+.category {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.category:hover {
+    background-color: var(--item-list-bg-color);
+    cursor: pointer;
+}
+
+#categoriesList {
+    padding: 5px 10px;
+    overflow-y: scroll;
+}
+
+.product-photo {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product {
+    margin: 10px 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-weight: bold;
+}
+
+#categoryDetails {
+    font-size: 18px;
+}
