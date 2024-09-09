@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <style>
+        body { 
+        background-color:rgb(255, 255, 255); 
+        justify-content: center;
+        align-items: center;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(112, 0, 112);
+        text-align: center; 
+        }   
+        table { 
+            width: 100%; border-collapse: collapse; 
+            border: 1px solid black;
+        }
+        
+        th, td { 
+            padding: 10px; text-align: center; 
+        }
+        .button { 
+            margin: 10px; 
+        }
+        button, input[type=button]{
+        color: rgb(255, 255, 255);
+        background-color: black;
+        padding: 10px;
+        border-radius: 70px;
+        transition: 0.3s;}
+
+        button:hover, input:hover[type=button]{
+        color: rgb(255, 255, 255);;
+        background-color: rgb(168, 0, 145);
+        padding: 10px;
+        border-radius: 10px;
+        transition: 0.3s;
+        transform: translateY(-0%);}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Produtos</h1>
+        <table id="productTable">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Preço</th>
+                    <th>Adicionar ao Carrinho</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <input type="button" value="LOGIN" onclick="locatelogin()">
+        
+        <input type="button" value="CARRINHO" onclick="locatecart()">
+    </div>
+    <script>
+        function locatelogin(){
+            window.location.href="login.html"
+        }
+        function locatecart(){
+            window.location.href="cart.html"
+        }
+
+        const products = [
+            { name: "Arroz", price: 5.50 },
+            { name: "Feijão", price: 6.00 },
+            { name: "Macarrão", price: 3.50 }
+        ];
+
+        function loadProducts() {
+            const tableBody = document.querySelector("#productTable tbody");
+            tableBody.innerHTML = "";
+            products.forEach((product, index) => {
+                const row = document.createElement("tr");
+                row.innerHTML = `
+                    <td>${product.name}</td>
+                    <td>${product.price.toFixed(2)}</td>
+                    <td><button onclick="addToCart(${index})">Adicionar</button></td>
+                `;
+                tableBody.appendChild(row);
+            });
+        }
+
+        function addToCart(index) {
+            const cart = JSON.parse(localStorage.getItem("cart")) || [];
+            cart.push(products[index]);
+            localStorage.setItem("cart", JSON.stringify(cart));
+            alert("Produto adicionado ao carrinho!");
+        }
+
+        window.onload = loadProducts;
+    </script>
+</body>
+</html>

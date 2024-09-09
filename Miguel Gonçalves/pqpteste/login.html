@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATIVIDADE</title>
+
+    <script>
+        function validar(){
+    let user = document.getElementById('user').value;
+    let senha = document.getElementById('senha').value;
+
+    if (user == "Miguel" && senha == "2ti") {
+        document.getElementById('validacao').innerHTML = "Dados válidos."; 
+        window.location.href="products.html"       
+    } else {
+        document.getElementById('validacao').innerHTML = "Dados inválidos.";
+        
+    }
+
+    }
+    </script>
+
+    <style>
+        body{background-color:rgb(38, 38, 38);
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(112, 0, 112);}
+
+        .login{background-color: gray;
+        margin: auto;
+        width: 300px;
+        height: 500px;
+        border-radius: 100px;
+        display: block;
+        text-align: center;}
+
+        input{display: block; 
+        margin: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;}
+
+        input[type=button]{
+        color: rgb(255, 255, 255);
+        background-color: black;
+        padding: 10px;
+        border-radius: 70px;
+        transition: 0.3s;}
+
+        input:hover[type=button]{
+        color: rgb(255, 255, 255);;
+        background-color: rgb(168, 0, 145);
+        padding: 13px;
+        border-radius: 10px;
+        border: 2px black;
+        transition: 0.3s;
+        transform: translateY(-0%);}
+        
+        p{color: rgb(60, 60, 60);
+        margin: 0;}
+
+    </style>
+</head>
+<body>
+
+    <div class="login">
+        <br><br><br><br>
+        <h1>Login</h1>
+
+        <p>Usuário válido: Miguel</p>
+        <p>Senha válida: 2ti</p>
+
+        <div class="Campos">
+        <form action="">
+            <input type="text" placeholder="Usuário" id="user">
+            <input type="password" placeholder="Senha" id="senha">
+
+            <input type="button" value="Validar" onclick="validar()">
+
+            <label for="" id="validacao" style="color: rgb(26, 32, 34);"></label>
+        </form>
+        </div>
+    </div>
+    
+</body>
+</html>

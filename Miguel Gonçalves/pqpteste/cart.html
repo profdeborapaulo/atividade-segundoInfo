@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <style>
+        body {background-color:rgb(255, 255, 255);
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(112, 0, 112);
+        text-align: center;
+        }
+
+        .container { 
+            width: 100%; margin: 0 auto; 
+        }
+        table { 
+            width: 100%; border-collapse: collapse;
+            border: 1px solid black;
+        }
+        th, td { 
+            padding: 10px; text-align: center; 
+        }
+        .button { 
+            margin: 10px; 
+        }
+
+        button, input[type=button]{
+        color: rgb(255, 255, 255);
+        background-color: black;
+        padding: 10px;
+        border-radius: 70px;
+        transition: 0.3s;}
+
+        button:hover, input:hover[type=button]{
+        color: rgb(255, 255, 255);;
+        background-color: rgb(168, 0, 145);
+        padding: 10px;
+        border-radius: 10px;
+        transition: 0.3s;
+        transform: translateY(-0%);}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Carrinho de Compras</h1>
+        <table id="cartTable">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Preço</th>
+                    <th>Remover</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <input type="button" value="Voltar Para As Compras" onclick="locate()">
+    </div>
+    <script>
+        function locate(){
+            window.location.href="products.html"
+        }
+        function loadCart() {
+            const cart = JSON.parse(localStorage.getItem("cart")) || [];
+            const tableBody = document.querySelector("#cartTable tbody");
+            tableBody.innerHTML = "";
+            cart.forEach((item, index) => {
+                const row = document.createElement("tr");
+                row.innerHTML = `
+                    <td>${item.name}</td>
+                    <td>${item.price.toFixed(2)}</td>
+                    <td><button onclick="removeFromCart(${index})">Remover</button></td>
+                `;
+                tableBody.appendChild(row);
+            });
+        }
+
+        function removeFromCart(index) {
+            const cart = JSON.parse(localStorage.getItem("cart")) || [];
+            cart.splice(index, 1);
+            localStorage.setItem("cart", JSON.stringify(cart));
+            loadCart();
+        }
+
+        window.onload = loadCart;
+    </script>
+</body>
+</html>
