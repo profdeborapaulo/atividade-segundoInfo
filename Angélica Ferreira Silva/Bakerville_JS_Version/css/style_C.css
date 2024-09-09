@@ -1,0 +1,39 @@
+
+    body {
+      padding-top: 10px;
+    }
+
+    .navbar {
+      background-color: #1D4A3E;
+    }
+
+    .navbar-brand {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    .áreadecontato {
+     
+      padding: 120px 0;
+      background-color: rgb(255, 248, 248);
+    }
+
+    .form-control {
+      border-radius: 0;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    button[type="submit"] {
+      border-radius: 7px;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #1D4A3E;
+    }
+
+    #logo {
+      width: 60px;
+      height: 60px;
+    }

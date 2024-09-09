@@ -1,0 +1,70 @@
+.botao {
+    background-color: #1D4A3E;
+    width: 90px; 
+    height: 50px; 
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 19px;
+    text-align: center;
+    line-height: 50px; 
+    display: inline-block; 
+    text-decoration: none; 
+    border-color: #1D4A3E;
+   
+}
+
+.botao a:hover {
+    color: white;
+    text-decoration: none; /* Garante que o sublinhado não reapareça */
+}
+
+
+.botg {
+    background-color: #1D4A3E;
+    width: 90px; 
+    height: 50px; 
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 19px;
+    text-align: center;
+    line-height: 50px; 
+   
+    text-decoration: none; 
+   
+}
+
+.botao_e {
+    background-color: #1D4A3E;
+    width: 85px; 
+    height: 40px; 
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 35px; 
+    display: inline-block; 
+    text-decoration: none; 
+    border-color: #1D4A3E;
+   
+}
+
+
+#botadd {
+    background-color: #1D4A3E;
+    width: 105px; 
+    height: 40px; 
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 35px; 
+    display: inline-block; 
+    text-decoration: none; 
+    border-color: #1D4A3E;
+   
+}
+
+#logo {
+    width: 60px;
+    height: 60px;
+  }

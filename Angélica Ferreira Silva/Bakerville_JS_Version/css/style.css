@@ -1,0 +1,98 @@
+body {
+    padding-top: 56px;
+  }
+
+  @media (min-width: 768px) {
+    body {
+      padding-top: 50px;
+    }
+  }
+
+  .navbar {
+    background-color: #1D4A3E; 
+    max-height: 70px;
+  }
+
+  .navbar-brand {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  .navbar-dark .navbar-toggler-icon {
+    border: 2px solid rgb(255, 255, 255); 
+  }
+
+  .navbar-toggler {
+    border: 2px solid white; 
+  }
+
+  .navbar-nav .nav-link {
+    color: white;
+    font-weight: bold;
+  }
+
+  .image-section {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+  }
+
+  .produtos_em_destaque {
+    background-color: rgb(255, 242, 242) ; 
+    padding: 60px 0;
+  }
+
+  .product-card {
+    border: 1px solid #dee2e6; 
+    border-radius: 10px;
+    transition: transform 0.3s;
+    max-height: 640px;
+  }
+
+  .product-card:hover {
+    transform: scale(1.05); 
+  }
+
+  .footer {
+    background-color: #343a40; 
+    color: white;
+  }
+ 
+
+  .carousel-caption {
+    text-align: center;
+  }
+
+  .cimg{
+    height: 750px;
+  }
+
+  .image-section {
+    text-align: center;
+  }
+
+
+  body {
+    background-color: rgb(255, 248, 248);
+  }
+
+
+  img {
+    max-height: 490px;
+  }
+
+  button {
+    background-color: #1D4A3E;
+  }
+
+
+#logo {
+  width: 60px;
+  height: 60px;
+}
+
+#teste {
+  font-size: small;
+}
