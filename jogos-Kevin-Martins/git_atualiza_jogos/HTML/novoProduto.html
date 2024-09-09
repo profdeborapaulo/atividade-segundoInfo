@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/adicionar.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+
+    <script defer src="../JS/addProduto.js" ></script>
+
+    <title>Gamescore</title>
+</head>
+<body>
+
+    <div class="fundo">
+    </div>
+
+    <header class="nav">
+
+        <div class="book"><h1><a href="..//HTML/inicial.html">Gamescore</a></h1></div>
+    
+        <div class="grupo">
+          
+          <ul class="navegacao">
+
+            <li><a href="../HTML/carrinho.html"><img src="../icons/shopping-cart.png" alt="carrinho-mercado" class="car"></a></li>
+    
+          </ul>
+    
+      </header>
+
+      <div class="produto-container">
+        <h2>Cadastro do jogo</h2><br>
+
+        <form id="form-produto">
+
+          <div class="row">
+
+            <div class="col-4 col-s-12">
+              <label for="nome-jogo" class="produto">Nome:</label>
+              <input type="text" name="nome" id="nome-jogo" placeholder="Informe o nome do jogo." maxlength="50" required class="caixa-texto">
+            </div><br>
+
+            <div class="col-4 col-s-12">
+              <label for="sinopse" class="produto">Sinopse:</label>
+              <input type="text" name="sinopse" id="sinopse" placeholder="Escreva a sinopse do jogo." maxlength="300" required class="caixa-texto">
+            </div><br>
+
+            <div class="col-4 col-s-12">
+              <label for="foto" class="produto">Foto:</label><br>
+              <input type="file" name="foto" id="foto" placeholder="Selecione um arquivo." required class="caixa-texto">
+            </div><br>
+
+            <div class="col-4 col-s-12">
+              <label for="valor-produto" class="produto">Preço:</label><br>
+              <input type="number" name="valor" id="valor-produto" placeholder="R$0.00" required class="caixa-texto" step="0.01" min="0">
+            </div><br>
+
+            <div class="col-4 col-s-12">
+                    <label for="tags" class="produto">Gêneros do jogo:</label><br>
+                  <select name="generos" id="tags" multiple="multiple" size="1" style="width: 300px;">
+                    <option value="ação">Ação</option>
+                    <option value="aventura">Aventura</option>
+                    <option value="terror">Terror</option>
+                    <option value="suspense">Suspense</option>
+                    <option value="exploracao">Exploração</option>
+                    <option value="storytelling">Storytelling</option>
+                    <option value="mundoAberto">Mundo aberto</option>
+                    <option value="rogueLike">Roguelike</option>
+                    <option value="rpg">RPG</option>
+                    <option value="turnos">Turnos</option>
+                  </select>
+              </div><br>
+            </div>
+          </div>
+
+          <input type="button" value="Enviar jogo" class="bota" id="salvar">
+
+        </form>
+
+      </div>
+
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+      <script>
+          $(document).ready(function() {
+              $('#tags').select2();
+          });
+      </script>
+
+</body>
+</html>

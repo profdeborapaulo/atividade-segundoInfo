@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+
+:root{
+    --color-purple-light: #8700ff;
+    --color-blue: #077d8d;
+    --color-purpleblue-light: #6000ff;
+    --color-blue-black: #2d2a44;
+    --white: hsl(0, 0%, 100%);
+    --dark: hsl(0, 0%, 7%);
+    --text-gray: hsl(0, 3%, 20%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    font-size: small;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.fundo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgb(5, 30, 82);
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background-color: #1100ff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 15px 15 px rgba(0, 0, 0, 0.05);
+    font-family: "Bona nova" serif;
+    z-index: 1;
+    color: #fff;
+}
+
+.login{
+    top: 5px;
+}
+
+.car{
+    height: 25px;
+    width: 25px;
+}
+
+.btn{
+    position: relative;
+    left: 10px;
+    top: 1px;
+    transition: o.5s ease-in-out;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    gap: 30px;
+}
+
+header ul li{
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    text-decoration: none;
+    font-size: 1em;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+header ul li a::before{
+
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-blue-black);
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: right;
+
+}
+
+header ul li a:hover::before{
+
+    transform: scaleX(1);
+    transform-origin: left;
+
+}
+
+.searchbox input{
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 505;
+    font-size: 1.25em;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+}
+
+h3{
+    color: #fff;
+    margin-top: 100px;
+    margin-bottom: -100px;
+    display: flex;
+    justify-content: space-around;
+    font-size: xx-large;
+}
+
+.container {
+  position: relative;
+  width: 320px;
+  margin: 100px auto 0 auto;
+  perspective: 1000px;
+}
+
+.carousel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d; 
+  animation: rotate360 60s infinite forwards linear;
+}
+.carousel__face { 
+  position: absolute;
+  width: 300px;
+  height: 187px;
+  top: 20px;
+  left: 10px;
+  right: 10px;
+  background-size: cover;
+  box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);
+  display: flex;
+}
+
+.txt {
+  margin: auto;
+  font-size: 2rem;
+  color: #fff;
+}
+
+
+.carousel__face:nth-child(1) {
+  background-image: url("https://blog.br.playstation.com/tachyon/sites/4/2022/09/d908d7522435577292289240328239b507ac0beb.jpg?resize=1088%2C612&crop_strategy=smart&zoom=1");
+  transform: rotateY(  0deg) translateZ(430px); }
+.carousel__face:nth-child(2) { 
+  background-image: url("https://1.bp.blogspot.com/-6mzIx4LWa1o/XfgKyrpyblI/AAAAAAAAAAU/i3o3Fa6n3ps6lp2VM6z5g-FoFPZXk1BSACLcBGAsYHQ/s640/Imagem-capa.jpg");
+    transform: rotateY( 40deg) translateZ(430px); }
+.carousel__face:nth-child(3) {
+  background-image: url("https://i0.wp.com/www.techjunkie.com/wp-content/uploads/2022/10/The-Best-FPS-Games-For-PlayStation-4.png?resize=660%2C430&ssl=1");
+  transform: rotateY( 80deg) translateZ(430px); }
+.carousel__face:nth-child(4) {
+  background-image: url("https://es.gizmodo.com/app/uploads/2023/05/ded2aaaf9d5271778c900030f974cb10.jpg");
+  transform: rotateY(120deg) translateZ(430px); }
+.carousel__face:nth-child(5) { 
+  background-image: url("https://s2-techtudo.glbimg.com/X1TaXGXzcIydQkFX1vX_QHkkc58=/0x0:695x390/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2020/P/c/TnX2xbQpSL3Hu7n8MBZw/jogos-bombavam-10-anos-super-mario-god-war-minecraft.jpg");
+ transform: rotateY(160deg) translateZ(430px); }
+.carousel__face:nth-child(6) { 
+  background-image: url("https://th.bing.com/th/id/OIP.JDgYrPw3YArvG_I0djGiTgHaEK?rs=1&pid=ImgDetMain");
+ transform: rotateY(200deg) translateZ(430px); }
+.carousel__face:nth-child(7) { 
+  background-image: url("https://th.bing.com/th/id/OIP.mpi-nEVjhEJ2D-ptA_gR9QHaEK?rs=1&pid=ImgDetMain");
+ transform: rotateY(240deg) translateZ(430px); }
+.carousel__face:nth-child(8) {
+  background-image: url("https://s.zst.com.br/cms-assets/2021/05/melhores-jogos-gr-tis-para-pc-em-2021-1.jpg");
+  transform: rotateY(280deg) translateZ(430px); }
+.carousel__face:nth-child(9) {
+  background-image: url("https://th.bing.com/th/id/OIP.6ejVk_2_wJZCiKNGo2Xg3AHaEK?rs=1&pid=ImgDetMain");
+  transform: rotateY(320deg) translateZ(430px); }
+
+
+
+@keyframes rotate360 {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+
+
+/* Card */
+.card-container{
+  font-family: 'New Amsterdan', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  min-height: 100vh;
+  margin-top: 40%;
+}
+
+.card{
+  background-image: linear-gradient(#fff, #fff);
+  overflow: hidden;
+  border-radius: 16px;
+  max-width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+card:hover{
+  background-image: linear-gradient(whitesmoke, whitesmoke);
+}
+
+.card .img{
+  background-position: center;
+  background-size: cover;
+  width: 90%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 5px 15px;
+  border-radius: 16px;
+  margin-top: 5px;
+  opacity: .9;
+  transition: all .5s;
+  z-index: 0;
+}
+
+.card:hover .img{
+  opacity: 1;
+  width: 250px;
+  margin-top: 0;
+  z-index: 0;
+}
+
+.card .conteudo-card{
+  padding: 0 20px;
+  height: 0;
+  opacity: 0;
+  transition: all .5s;
+  position: relative;
+  box-sizing: border-box;
+  transform: translateY(30px);
+}
+
+.card:hover .conteudo-card{
+  height: 260px;
+  padding: 20px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card .conteudo-card p{
+  margin-bottom: 0;
+}
+
+.card .conteudo-card .titulo{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.card .conteudo-card .descricao-card{
+  font-size: 14px;
+  font-weight: 100;
+  opacity: .7;
+}
+
+.card .butao{
+  padding: 0px;
+  font-size: 15px;
+  margin-bottom: 15px;
+
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: auto;
+    padding: 10px;
+    color: #000;
+    background: transparent;
+    box-shadow: 0px 0px 0px 1px black inset;
+    transition:  0.4s ease;
+    font-size: small;
+  }
+  
+  .button:hover {
+    background: var(--color-blue);
+  }
+
+  .preco {
+    display: flex;
+    text-align: justify;
+    margin-left: 30%;
+  }
+  
+}
