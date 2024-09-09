@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Kite+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "nav" "container" "footer";
+    grid-template-rows: 100px auto 200px;
+    overflow-x: hidden;
+}
+
+/* MENU */
+.nav {
+    grid-area: nav;
+    width: 100%;
+    height: 100%;
+    border-bottom: 5px #FAF8F8 solid;
+    display: grid;
+    grid-template-areas: "logo edit-fav";
+    grid-template-columns: 300px 75%;
+}
+
+.logo {
+    grid-area: logo;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 200px;
+    height: 90px;
+}
+
+.edit-fav {
+    grid-area: edit-fav;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: end;
+    gap: 40px;
+    font-size: 25px;
+}
+
+.icon {
+    height: 50px;
+    width: 50px;
+    font-size: 18px;
+    background-color: #F5EDED;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* MAIN */
+.container {
+    grid-area: container;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "tittle" "container-publicar";
+    grid-template-rows: 180px auto;
+}
+
+.tittle {
+    grid-area: tittle;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #15517D;
+    font-size: 32px;
+    font-family: "Inter", sans-serif;
+    gap: 15px;
+    font-weight: 500;
+    flex-direction: column;
+}
+
+.container-publicar {
+    grid-area: container-publicar;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-areas: "form" "btn";
+    grid-template-rows: 1fr 130px;
+}
+
+.form {
+    grid-area: form;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C3C7CA;
+    border-radius: 20px;
+    border: 2px #15527d52 solid;
+    display: grid;
+    grid-template-areas: "file1" "file2" "file3" "file4" "file5";
+    grid-template-rows: 500px auto auto auto auto;
+}
+
+.file1 {
+    grid-area: file1;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "esquerdo direito";
+    grid-template-rows: 1fr 1fr;
+}
+
+.esquerdo {
+    grid-area: esquerdo;
+    height: 100%;
+    width: 100%;
+    font-family: "Kite One", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 45px;
+    gap: 35px;
+    font-size: 20px;
+}
+
+.esquerdo img {
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.img-area {
+    width: 300px;
+    height: 220px;
+    border-radius: 10px;
+    background-color: #a3acb59a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#uploadImagem {
+    margin-top: 10px;
+    padding: 10px;
+    border: 2px dashed #15517D;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #F5EDED;
+    font-family: "Kite One", sans-serif;
+    color: #15517D;
+    display: flex;
+}
+
+#uploadImagem:hover {
+    background-color: #e0e4e7;
+}
+
+.direito {
+    grid-area: direito;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Kite One", sans-serif;
+    flex-direction: column;
+    padding: 45px;
+    font-size: 20px;
+    gap: 25%;
+}
+
+.direito div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.direito input,
+textarea {
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding: 15px;
+    font-family: "Inter", sans-serif;
+    background-color: #a3acb59a;
+    width: 400px;
+}
+
+.direito input {
+    height: 40px;
+}
+
+.direito textarea {
+    height: 145px;
+}
+
+.file2 {
+    grid-area: file2;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Kite One", sans-serif;
+    gap: 35px;
+    font-size: 20px;
+}
+
+#ingredienteInput {
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+#adicionarIngredienteBtn {
+    padding: 8px 15px;
+    background-color: #15517D;
+    color: #F5EDED;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#adicionarIngredienteBtn:hover {
+    background-color: #4777a7;
+}
+
+#listaIngredientes {
+    height: auto;
+    width: auto;
+}
+
+#listaIngredientes li {
+    padding: 8px;
+    margin-bottom: 5px;
+    background-color: #F5EDED;
+    border-radius: 5px;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+}
+
+.file3 {
+    grid-area: file3;
+    height: 100%;
+    width: 100%;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    font-family: "Kite One", sans-serif;
+    gap: 35px;
+    font-size: 20px;
+}
+
+.file3 textarea {
+    width: 100%;
+    height: 250px;
+}
+
+.file4 {
+    grid-area: file4;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "tempo porcao";
+    grid-template-columns: 1fr 1fr;
+    display: flex;
+    align-items: center;
+    font-family: "Kite One", sans-serif;
+    padding: 45px;
+    gap: 35px;
+    font-size: 20px;
+}
+
+.file4 input {
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding: 15px;
+    font-family: "Inter", sans-serif;
+    background-color: #a3acb59a;
+    width: 400px;
+    height: 40px;
+}
+
+.tempo {
+    grid-area: tempo;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+}
+
+.porcao {
+    grid-area: porcao;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+}
+
+.file5 {
+    grid-area: file5;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    font-family: "Kite One", sans-serif;
+    padding: 45px;
+    gap: 35px;
+    font-size: 20px;
+    flex-direction: column;
+}
+
+.container-categoria {
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    grid-area: btn;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.btn button {
+    width: 300px;
+    height: 68px;
+    background-color: #15517D;
+    border: none;
+    font-family: "Inter", sans-serif;
+    color: #F5EDED;
+    font-size: 27px;
+    border-radius: 20px;
+    letter-spacing: 3px;
+    box-shadow: 9px 7px 18px 1px rgba(109, 109, 109, 0.59);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn button:hover {
+    background-color: #4777a7;
+    color: #ffffff;
+}
+
+/* FOOTER */
+.footer {
+    grid-area: footer;
+    height: 100%;
+    width: 100%;
+    height: auto;
+    background-color: #ACC4D5;
+    display: flex;
+    display: grid;
+    grid-template-areas: "navegar" "midias";
+    grid-template-rows: auto auto;
+}
+
+.navegar {
+    grid-area: navegar;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    border-bottom: 3px #97AFC6 solid;
+    display: grid;
+    grid-template-areas: "logo-footer nav-footer";
+    grid-template-columns: 260px 1fr;
+}
+
+.navegar a {
+    font-family: "Inter", sans-serif;
+    color: #15517D;
+    letter-spacing: 2px;
+}
+
+.logo-footer {
+    grid-area: logo-footer;
+    width: 100%;
+    height: 100%;
+}
+
+.logo-footer img {
+    width: 160px;
+}
+
+.nav-footer {
+    grid-area: nav-footer;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.midias {
+    grid-area: midias;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    padding: 10px;
+}
+
+.midias img {
+    width: 18px;
+}

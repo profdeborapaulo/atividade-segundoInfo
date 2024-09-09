@@ -1,0 +1,21 @@
+SIGA ESSES PASSOS PARA CONSEGUIR RODAR A APLICAÇÃO
+
+----------------------------------------------------------------------------------
+PASSO 1 :
+- Antes de testar o site abra seu terminal no VScode e escreva o seguinte comando:
+    "npm i"
+para instalar o pacote node modules necessário, por ele ser grande demais não é possível subir ele junto.
+
+----------------------------------------------------------------------------------
+
+PASSO 2:
+Para conseguir publicar uma nova receita, rode o node com os seguintes comandos:
+
+- Entre na pasta JS pelo terminal
+   "cd JS"
+
+- Digite o seguinte comando:
+   "node ./test.js"
+Verifique se esta mensagem aparece após rodar o node: Servidor rodando em http://localhost:3000
+
+- Backend prontinho para ser usado, teste adicionando uma nova receita e pesquise por seu nome na página de pesquisa ou pesquisando pela categoria da receita, na pgina principal.

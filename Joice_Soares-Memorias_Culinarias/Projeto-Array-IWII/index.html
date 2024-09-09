@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="img/icone.png">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Início</title>
+</head>
+
+<body>
+
+    <!-- MENU -->
+    <nav class="nav">
+        <div class="logo">
+            <img src="./img/logo.png" alt="logo">
+        </div>
+
+        <div class="edit-fav">
+            <a href="./HTML/pesquisa.html"><label for="check" class="icon"><i class='bx bx-search'
+                        style='color:#272626de' title="Pesquisar"></i></label></a>
+            <a href="./HTML/publicar.html"><i class='bx bxs-pencil' style='color:#545454' title="Publicar"></i></a>
+            <a href="./HTML/favorito.html"><i class='bx bxs-heart' style='color:#ec08088f' title="Favoritos"></i></a>
+        </div>
+    </nav>
+
+    <!-- INICIO -->
+    <section class="inicio">
+        <div class="livro">
+            <img src="./img/livro.png" alt="livro">
+        </div>
+
+        <div class="info">
+            <span>Unindo gerações com cada receita e memória...</span>
+            <p>Compartilhe suas receitas familiares e ajude a preservar memórias enquanto proporciona
+                felicidade. Cada prato conta uma história e cada receita é um tesouro que mantém vivas as tradições que
+                amamos. Junte-se a nós e celebre a herança culinária que une gerações.</p>
+        </div>
+    </section>
+
+    <!-- FILTRO -->
+    <section class="filtro">
+        <div class="box" title="Doce" onclick="search('Doce')"><img src="./img/doce.png" alt="Filtrar por doce"></div>
+
+        <div class="box" title="Prato Frio" onclick="search('Prato_Frio')"><img src="./img/prato-frio.png"
+                alt="Filtrar por prato frio"></div>
+
+        <div class="box" title="Bebida" onclick="search('Bebida')"><img src="./img/bebida.png"
+                alt="Filtrar por bebidas"></div>
+
+        <div class="box" title="Salgado" onclick="search('Salgado')"><img src="./img/salgado.png"
+                alt="Filtrar por salgado"></div>
+
+        <div class="box" title="Prato Quente" onclick="search('Prato_Quente')"><img src="./img/prato-quente.png"
+                alt="Filtrar por prato quente"></div>
+    </section>
+
+
+    <!-- RECEITAS FEED -->
+    <section class="receitas">
+        <div class="tittle">
+            <span>RECEITAS RECOMENDADAS</span>
+        </div>
+
+        <div class="file1">
+            <div class="card" data-id="1">
+                <div class="foto" onclick="mostrarDetalhe(this)"><img src="./img/brownie.jpg" alt="brownie"></div>
+                <div class="receita">Brownie simples</div>
+                <div class="outro">
+                    <div class="time">
+                        <i class='bx bxs-time'></i>
+                        <span>40 min</span>
+                    </div>
+
+                    <div class="porcoes">
+                        <i class='bx bxs-dish'></i>
+                        <span>8 porções</span>
+                    </div>
+
+                    <div class="like">
+                        <i class='bx bxs-heart heart' onclick="toggleFavorite(this)"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-id="2">
+                <div class="foto" onclick="mostrarDetalhe(this)"><img src="./img/suco1.jpeg" alt="Suco de Couve"></div>
+                <div class="receita">Suco de Couve</div>
+                <div class="outro">
+                    <div class="time">
+                        <i class='bx bxs-time'></i>
+                        <span>15 min</span>
+                    </div>
+
+                    <div class="porcoes">
+                        <i class='bx bxs-dish'></i>
+                        <span>8 porções</span>
+                    </div>
+
+                    <div class="like">
+                        <i class='bx bxs-heart heart' onclick="toggleFavorite(this)"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-id="3">
+                <div class="foto" onclick="mostrarDetalhe(this)"><img src="./img/coxinha1.jpg" alt="Coxinha"></div>
+                <div class="receita">Coxinha</div>
+                <div class="outro">
+                    <div class="time">
+                        <i class='bx bxs-time'></i>
+                        <span>1 hr</span>
+                    </div>
+
+                    <div class="porcoes">
+                        <i class='bx bxs-dish'></i>
+                        <span>45 porções</span>
+                    </div>
+
+                    <div class="like">
+                        <i class='bx bxs-heart heart' onclick="toggleFavorite(this)"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="file2">
+            <div class="card" data-id="4">
+                <div class="foto" onclick="mostrarDetalhe(this)"><img src="./img/suco2.jpg" alt="Suco de Amora"></div>
+                <div class="receita">Suco de Amora</div>
+                <div class="outro">
+                    <div class="time">
+                        <i class='bx bxs-time'></i>
+                        <span>10 min</span>
+                    </div>
+
+                    <div class="porcoes">
+                        <i class='bx bxs-dish'></i>
+                        <span>4 porções</span>
+                    </div>
+
+                    <div class="like">
+                        <i class='bx bxs-heart heart' onclick="toggleFavorite(this)"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-id="5">
+                <div class="foto" onclick="mostrarDetalhe(this)"><img src="./img/vitamina.jpeg" alt="Vitamina de Mamão">
+                </div>
+                <div class="receita">Vitamina de Mamão</div>
+                <div class="outro">
+                    <div class="time">
+                        <i class='bx bxs-time'></i>
+                        <span>10 min</span>
+                    </div>
+
+                    <div class="porcoes">
+                        <i class='bx bxs-dish'></i>
+                        <span>2 porções</span>
+                    </div>
+
+                    <div class="like">
+                        <i class='bx bxs-heart heart' onclick="toggleFavorite(this)"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-id="6">
+                <div class="foto" onclick="mostrarDetalhe(this)"><img src="./img/coxinha2.jpg"
+                        alt="Coxinha de Mandioca"></div>
+                <div class="receita">Coxinha de Mandioca</div>
+                <div class="outro">
+                    <div class="time">
+                        <i class='bx bxs-time'></i>
+                        <span>45 min</span>
+                    </div>
+
+                    <div class="porcoes">
+                        <i class='bx bxs-dish'></i>
+                        <span>15 porções</span>
+                    </div>
+
+                    <div class="like">
+                        <i class='bx bxs-heart heart' onclick="toggleFavorite(this)"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="navegar">
+            <div class="logo-footer">
+                <img src="./img/logo.png" alt="">
+            </div>
+
+            <div class="nav-footer">
+                <a href="index.html">Início</a>
+                <a href="./HTML/publicar.html">Publicar</a>
+                <a href="./HTML/favorito.html">Favoritos</a>
+            </div>
+        </div>
+
+        <div class="midias">
+            <i class='bx bxl-facebook-circle' style='color:#1153d6'></i>
+            <img src="img/insta.png" alt="">
+            <i class='bx bxl-github' undefined></i>
+        </div>
+    </footer>
+
+    <script src="./JS/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Kite+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #15517D;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "nav" "container" "footer";
+    grid-template-rows: 100px auto 200px;
+    overflow-x: hidden;
+}
+
+/* MENU */
+.nav {
+    grid-area: nav;
+    width: 100%;
+    height: 100%;
+    border-bottom: 5px #FAF8F8 solid;
+    display: grid;
+    grid-template-areas: "logo edit-fav";
+    grid-template-columns: 300px 75%;
+}
+
+.logo {
+    grid-area: logo;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 200px;
+    height: 90px;
+}
+
+.edit-fav {
+    grid-area: edit-fav;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: end;
+    gap: 40px;
+    font-size: 25px;
+}
+
+.icon {
+    height: 50px;
+    width: 50px;
+    font-size: 18px;
+    background-color: #F5EDED;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* MAIN */
+.container {
+    grid-area: container;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: "info" "descricao" "ingredientes" "preparo" "link";
+    grid-template-rows: 400px auto auto auto 100px;
+}
+
+.info {
+    grid-area: info;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: "foto outro";
+    grid-template-rows: 350px auto;
+}
+
+.foto {
+    grid-area: foto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto img {
+    width: 350px;
+    box-shadow: 9px 7px 18px 1px rgba(109, 109, 109, 0.59);
+    border-radius: 5px;
+}
+
+.outro {
+    grid-area: outro;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: "receita-nome" "temp-porcao";
+    grid-template-rows: 1fr 1fr;
+}
+
+.receita-nome {
+    grid-area: receita-nome;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.receita-nome h1 {
+    color: #013B66;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.temp-porcao {
+    grid-area: temp-porcao;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    gap: 20%;
+    font-size: 25px;
+}
+
+.temp-porcao div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.descricao {
+    grid-area: descricao;
+    width: 100%;
+    height: 100%;
+    border-top: 5px #F5F1F1 solid;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.descricao h1 {
+    font-size: 30px;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+}
+
+#descricao-receita {
+    color: #302F2F;
+    font-family: "Inter", sans-serif;
+    width: 80%;
+    font-size: 22px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.ingredientes {
+    grid-area: ingredientes;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.ingredientes h1 {
+    font-size: 30px;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+}
+
+.container-ingredientes {
+    width: auto;
+    height: auto;
+    background-color: #D9D9D9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.container-ingredientes li {
+    font-family: "Inter", sans-serif;
+    border-bottom: 2px #F5F1F1 solid;
+    list-style-type: none;
+}
+
+.container-ingredientes ul {
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.preparo {
+    grid-area: preparo;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 80px;
+    flex-direction: column;
+}
+
+.preparo h1 {
+    font-size: 30px;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.modoDePreparo {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    color: #302F2F;
+    font-family: "Inter", sans-serif;
+    font-size: 22px;
+    width: 80%;
+}
+
+.link {
+    grid-area: link;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    color: #15517D;
+    font-size: 20px;
+}
+
+.container p {
+    font-size: 20px;
+    color: #221e1e88;
+    font-family: "Inter", sans-serif;
+}
+
+/* FOOTER */
+.footer {
+    grid-area: footer;
+    height: 100%;
+    width: 100%;
+    height: auto;
+    background-color: #ACC4D5;
+    display: flex;
+    display: grid;
+    grid-template-areas: "navegar" "midias";
+    grid-template-rows: auto auto;
+}
+
+.navegar {
+    grid-area: navegar;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    border-bottom: 3px #97AFC6 solid;
+    display: grid;
+    grid-template-areas: "logo-footer nav-footer";
+    grid-template-columns: 260px 1fr;
+}
+
+.navegar a {
+    font-family: "Inter", sans-serif;
+    color: #15517D;
+    letter-spacing: 2px;
+}
+
+.logo-footer {
+    grid-area: logo-footer;
+    width: 100%;
+    height: 100%;
+}
+
+.logo-footer img {
+    width: 160px;
+}
+
+.nav-footer {
+    grid-area: nav-footer;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.midias {
+    grid-area: midias;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    padding: 10px;
+}
+
+.midias img {
+    width: 18px;
+}

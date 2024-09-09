@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="../img/icone.png">
+    <link rel="stylesheet" href="../CSS/detalhe.css">
+    <title>Detalhes</title>
+</head>
+
+<body>
+
+    <!-- MENU -->
+    <nav class="nav">
+        <div class="logo">
+            <img src="../img/logo.png" alt="logo">
+        </div>
+
+        <div class="edit-fav">
+            <a href="pesquisa.html"><label for="check" class="icon"><i class='bx bx-search' style='color:#272626de'
+                        title="Pesquisar"></i></label></a>
+            <a href="publicar.html"><i class='bx bxs-pencil' style='color:#545454' title="Publicar"></i></a>
+            <a href="favorito.html"><i class='bx bxs-heart' style='color:#ec08088f' title="Favoritos"></i></a>
+        </div>
+    </nav>
+
+    <!-- MAIN -->
+    <section class="container">
+        <div class="info">
+            <div class="foto">
+                <img id="imagem-receita" src="" alt="">
+            </div>
+
+            <div class="outro">
+                <div class="receita-nome">
+                    <h1 id="nome-receita"></h1>
+                </div>
+
+                <div class="temp-porcao">
+                    <div>
+                        <i class='bx bxs-dish'></i>
+                        <span id="porcao">40 min</span>
+                    </div>
+
+                    <div>
+                        <i class='bx bxs-time'></i>
+                        <span id="tempo">8 porções</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="descricao">
+            <h1>Sobre a receita</h1>
+            <p id="descricao-receita"></p>
+        </div>
+
+        <div class="ingredientes">
+            <h1>Ingredientes</h1>
+
+            <div class="container-ingredientes">
+                <ul></ul>
+            </div>
+        </div>
+
+        <div class="preparo">
+            <h1>Modo de Preparo</h1>
+            <div class="modoDePreparo"></div>
+        </div>
+
+        <div class="link">
+            <a href="../index.html"><i class='bx bx-chevrons-left' style='color:#15517d'></i> CONTINUAR
+                NAVEGANDO</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="navegar">
+            <div class="logo-footer">
+                <img src="../img/logo.png" alt="">
+            </div>
+
+            <div class="nav-footer">
+                <a href="../index.html">Início</a>
+                <a href="publicar.html">Publicar</a>
+                <a href="favorito.html">Favoritos</a>
+            </div>
+        </div>
+
+        <div class="midias">
+            <i class='bx bxl-facebook-circle' style='color:#1153d6'></i>
+            <img src="../img/insta.png" alt="">
+            <i class='bx bxl-github' undefined></i>
+        </div>
+    </footer>
+
+    <script src="../JS/detalhe.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+{
+  "receitas": [
+    {
+      "id": "1",
+      "imagem": "../img/brownie.jpg",
+      "nome": "Brownie simples",
+      "tempo": "40 min",
+      "porcoes": "8 porções",
+      "descricao": "Quando o desejo por um doce irresistível bate à porta, o brownie super rápido é a solução perfeita para satisfazer o paladar com uma sobremesa deliciosa e de preparo ágil. Esta receita é uma mistura perfeita de sabores intensos e praticidade, resultando em um brownie macio por dentro, com uma crosta levemente caramelizada por fora. O resultado são quadrados macios de brownie, perfeitos para serem apreciados quentes acompanhados de uma bola de sorvete ou congelados para um momento doce a qualquer hora. Esta receita simples e rápida oferece uma experiência de sabor inigualável para os amantes de doces. Prepare este brownie e saboreie um doce delicioso e prático, perfeito para adoçar os momentos especiais ou satisfazer aquela vontade de um docinho rápido e saboroso.",
+      "ingredientes": [
+        "6 colheres (sopa) bem cheias de margarina sem sal",
+        "3/4 xícara (chá) achocolatado",
+        "1/2 xícara (chá) chocolate em pó",
+        "1 e 1/4 xícara (chá) farinha de trigo",
+        "2 xícaras (chá) açúcar",
+        "4 ovos",
+        "2 pitadas de sal ",
+        "1 colher (chá) de essência de baunilha",
+        "1 tablete de chocolate meio amargo picado em cubinhos",
+        "1/2 xícara (chá) de nozes picadas ou castanhas de caju granuladas"
+      ],
+      "modoDePreparo": "Misture os ovos e o açúcar. Em seguida, adicione todos os outros ingredientes até formar um creme uniforme. Despeje em uma assadeira, forrada com papel-manteiga e leve ao forno médio por 40 minutos. O brownie estará pronto quando a parte de cima estiver levemente corada e, ao se espetar um palito, ele esteja levemente úmido (devido ao chocolate derretido). Corte em quadrados ainda quente e sirva com uma bola de sorvete de creme (se preferir), ou congele num saquinho para freezer. Para descongelar, coloque o brownie num prato de sobremesa e aqueça no micro-ondas, potência alta, por 1 minuto",
+      "categoria": "Doce"
+    },
+    {
+      "id": "2",
+      "imagem": "../img/suco1.jpeg",
+      "nome": "Suco de Couve",
+      "tempo": "15 min",
+      "porcoes": "8 porçoes",
+      "descricao": "Descubra a receita de Suco de couve para fazer em 15 minutos. Fica uma delícia, melhor do que caldo de cana.",
+      "ingredientes": [
+        "8 Folhas de couve manteiga",
+        "4 Limões sem casca",
+        "4 Colheres de açúcar",
+        "1 litro de água"
+      ],
+      "modoDePreparo": "Junte no liquidificador as folhas de couve lavadas, a água, o limão descascado e as 4 colheres de açúcar. Bata no liquidificador todos os ingredientes. Coe o suco em uma peneira retirando o bagaço e sirva.",
+      "categoria": "Bebida"
+    },
+    {
+      "id": "3",
+      "imagem": "../img/coxinha1.jpg",
+      "nome": "Coxinha",
+      "tempo": "1 hr",
+      "porcoes": "45 porções",
+      "descricao": "Pare de desejar a coxinha de frango da lanchonete da esquina e faça a sua própria! Com essa receita de massa de coxinha simples, você vai ficar de buchinho cheio e coração quentinho.",
+      "ingredientes": [
+        "2 copos de água",
+        "1 copo de leite",
+        "1 colher de margarina",
+        "1 cubo de caldo de galinha",
+        "sal a gosto",
+        "3 xícaras de farinha de trigo"
+      ],
+      "modoDePreparo": "Coloque a água, o leite, a margarina, o caldo e o sal em uma panela e misture até ferver. Abaixe o fogo e acrescente o trigo de uma só vez. Mexa até obter uma massa lisa e homogênea. Recheie da maneira que preferir.",
+      "categoria": "Salgado"
+    },
+    {
+      "id": "4",
+      "imagem": "../img/suco2.jpg",
+      "nome": "Suco de Amora",
+      "tempo": "10 min",
+      "porcoes": "4 porções",
+      "descricao": "Um suco de amora bem gelado pode deixar seu dia muito mais gostoso. Seja simplesmente para quando bate aquela sede ou para acompanhar suas refeições.",
+      "ingredientes": [
+        "100g de amoras congeladas",
+        "250ml de água",
+        "½ limão",
+        "2 folhas de hortelã",
+        "Açúcar ou adoçante a gosto"
+      ],
+      "modoDePreparo": "Bata todos os ingredientes no liquidificador. Coe o suco e sirva.",
+      "categoria": "Bebida"
+    },
+    {
+      "id": "5",
+      "imagem": "../img/vitamina.jpeg",
+      "nome": "Vitamina de Mamão",
+      "tempo": "10 min",
+      "porcoes": "2 porções",
+      "descricao": "Quando precisamos reforçar o cardápio com mais nutrientes ou comer um pouco mais mesmo estando sem fome, as melhores opções são as vitaminas naturais, principalmente a de mamão que é uma opção rica em vitamina C, que pode até ajudar a curar um resfriado ou algo parecido",
+      "ingredientes": [
+        "1 banana",
+        "1 mamão",
+        "1 maçã",
+        "Mel a gosto",
+        "150 a 200ml de leite"
+      ],
+      "modoDePreparo": "Coloque todos os ingredientes no liquidificador e bata até misturar e triturar bem. Agora é só servir! Bom apetite.",
+      "categoria": "Bebida"
+    },
+    {
+      "id": "6",
+      "imagem": "../img/coxinha2.jpg",
+      "nome": "Coxinha de Mandioca",
+      "tempo": "45 min",
+      "porcoes": "15 porções",
+      "descricao": "Quer fazer a melhor coxinha do mundo? Então veja como fazer massa de coxinha de mandioca que fica crocante por fora e macia por dentro e é muito rápida de ser preparada.",
+      "ingredientes": [
+        "500 gramas de mandioca cozida e amassada",
+        "400 gramas de frango cozido e desfiado",
+        "Sal, açafrão, alho e cebola em pó e pimenta-do-reino a gosto",
+        "Cebolinha verde a gosto",
+        "Farinha de aveia (para empanar)"
+      ],
+      "modoDePreparo": "Em um recipiente, coloque todos os ingredientes (menos a farinha de aveia) e misture bem. Pegue pequenas porções da massa, modele em formato de coxinha e empane na farinha de aveia. Disponha elas em uma assadeira e leve para o congelador até congelar. Coloque as coxinhas congeladas na cestinha da airfryer e regue elas com azeite. Pré-aqueça a fritadeira a 200 ºC e depois asse as coxinhas por 20 minutos. Agora é só servir. Bom apetite.",
+      "categoria": "Salgado"
+    }
+  ]
+}
