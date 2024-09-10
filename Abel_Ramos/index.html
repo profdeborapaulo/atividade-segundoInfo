@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <title>Pagina Principal</title>
+</head>
+
+<body>
+
+    <!--Área da navbar-->
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img class="logo" src="imagens/logo.png" alt="logo" title="logo">
+                <a class="logo1">Task Minder</a>
+            </div>
+            <div class="menu-btn" id="menu-btn">
+                &#9776; 
+            </div>
+            <ul class="nav-list" id="nav-links">
+                <li><a class="nav-link" href="index.html">Inicio</a></li>
+                <li><a class="nav-link" href="cadastro.html">Adicionar</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <!--Corpo da página-->
+    <main>
+
+        <div id="pesquisa_container">
+            <form id="pesquisa_form">
+                <input type="text" id="pesquisar" placeholder="Pesquisa por Título">
+            </form>
+        </div>
+
+        <center>
+            <div class="Titulo">
+                <h2>Lista Atividades</h2>
+            </div>
+        </center>
+
+        <!--Container com a tabela de exibição de tarefas-->
+        <div class="container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Título da atividade</th>
+                        <th>Data de entrega</th>
+                        <th>Editar/Ver</th>
+                        <th>Apagar</th>
+                    </tr>
+                </thead>
+                <tbody id="lista-atividade">
+
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+
+</html>

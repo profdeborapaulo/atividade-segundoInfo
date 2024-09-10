@@ -1,0 +1,318 @@
+/*Todas as páginas*/
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    background-color: #ececec;
+    background-size: 100%;
+    opacity: 0;
+    transition: opacity 0.7s ease-in-out;
+    background-image: url('fundo/fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    z-index: 0;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+/* Estilo da barra de navegação */
+nav {
+    display: flex;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: linear-gradient(to right, #FFFFFF, #FF7F50);
+    height: 9.5vh;
+    padding: 0 20px;
+    position: relative;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.logo {
+    width: 64px;
+    height: 64px;
+    max-width: 80px;
+    max-height: 80px;
+}
+
+.logo1 {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #FF5733;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 0.1;
+    margin: 0;
+    padding: 0;
+
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    opacity: 0.7;
+}
+
+.menu-btn {
+    display: none;
+    font-size: 30px;
+    color: #ffffff;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+@media (max-width: 768px) {
+    .nav-list {
+        flex-direction: column;
+        background-color: #FF7F50;
+        position: absolute;
+        top: 9.5vh;
+        left: 0;
+        width: 100%;
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+    }
+
+    .nav-list li {
+        text-align: center;
+        padding: 15px;
+        border-bottom: none;
+    }
+
+    .nav-link {
+        color: white;
+    }
+    
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-list.active {
+        opacity: 1;
+        max-height: 500px;
+    }
+}
+
+.Titulo{
+    width: 30%;
+    height: 10%;
+    max-width: 500px;
+    min-width: 200px;
+    text-align: center;
+    color: #ff8000;
+    z-index: 0;
+    background-color: #f2f2f2;  
+    border-radius: 20px;
+}
+
+.Titulo h2{
+    color: #ff6932;
+}
+
+
+
+/*Página de cadastro e edição*/
+
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+#container-form {
+    width: 40%;
+    height: 90%;
+    min-width: 450px;
+    min-height: 500px;
+    background-color: #FFCC99;
+    border-radius: 10px;
+    z-index: 0;
+}
+
+#atividade-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 3%;
+}
+
+#atividade_form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 3%;
+}
+
+input {
+    width: 50%;
+    height: 40%;
+    min-height: 40px;
+    min-width: 100px;
+    max-width: 400px;
+    max-height: 340px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: solid #ff6932 3px;
+    outline: none;
+}
+
+textarea {
+    width: 50%;
+    height: 40%;
+    max-height: 100px;
+    max-width: 400px;
+    min-height: 100px;
+    min-width: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    border: solid #fc6731 3px;
+    outline: none;
+}
+
+.botao {
+    width: 20%;
+    height: 10%;
+    min-width: 100px;
+    min-height: 50px;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: background-color 1s ease;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #FF5733;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background-color: rgb(251, 251, 251);
+    color: rgb(0, 0, 0);
+}
+
+
+/*Página principal*/
+
+#pesquisa_container {
+    width: 98.68%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 10px;
+}
+
+#pesquisa_form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+#pesquisar {
+    height: 30%; 
+    width: 40%; 
+    min-height: 50px;
+    min-width: 300px;
+    max-width: 1000px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: solid #ff6932 3px;
+    box-sizing: border-box; 
+    background-image: url('imagens/lupa.png');
+    background-position: right 10px center; 
+    background-repeat: no-repeat; 
+    background-size: 40px 40px; 
+    padding-right: 40px; 
+    outline: none;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    
+}
+
+table, th, td {
+    border: 2px solid #afabab;
+    color: #5e4444;
+    text-align: center;
+   
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    border: solid #afabab 2px;
+    
+}
+
+td {
+    border: solid #afabab 2px;
+    background-color: #f2f2f2;
+    
+}
+
+.all_link {
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.8s ease;
+}
+
+.all_link:hover {
+    transform: scale(1.1);
+}
+
+.visivel {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+.oculto{
+    opacity: 0;
+}
