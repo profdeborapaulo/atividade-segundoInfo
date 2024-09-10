@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+
+    <!-- link do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-- Link CSS-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+                <!-- barra de navegão-->
+    <header>
+        <nav>
+            <ul>
+            
+                <li><a href="index.html">Início</a></li>
+                <li><a href="carteira.html">Carteira</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+                <!-- carossel de boas-vindas -->
+        <section class="carousel1">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/boasvindas.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/carteira-inicio.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/sobre-nos.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+
+
+             <!-- Jogos Mais Vendidos do Mês -->
+        <section class="mais-vendidos">
+            <h2>Novidades do mês de agosto:</h2>
+            <div class="container">
+                <div class="row">
+                    <!-- Jogo 1 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="img/jogo1.jpg" class="card-img-top" alt="Jogo 1">
+                            <div class="card-body">
+                                <h5 class="card-title">STAR WARS: BOUNTY HUNTER</h5>
+                                <p class="card-text">Assuma o papel de Jango Fett, modelo genético do Grande Exército da República, contratado para capturar um Jedi Negro maléfico.</p>
+                                <p class="card-price">R$  59,99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Jogo 2 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="img/jogo2.jpg" class="card-img-top" alt="Jogo 2">
+                            <div class="card-body">
+                                <h5 class="card-title">WORLD OF GOO 2</h5>
+                                <p class="card-text">World of Goo 2 é um videogame de quebra-cabeça baseado em física de 2024 desenvolvido pelos desenvolvedores de jogos independentes 2D Boy.</p>
+                                <p class="card-price">R$ 80,99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Jogo 3 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="img/jogo3.jpg" class="card-img-top" alt="Jogo 3">
+                            <div class="card-body">
+                                <h5 class="card-title">KENA: BRIDGE OF SPIRITS</h5>
+                                <p class="card-text">Kena: Bridge of Spirits é um jogo eletrônico de ação-aventura desenvolvido e publicado pela Ember Lab. A história segue Kena, uma jovem...</p>
+                                <p class="card-price">R$ 119,99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Jogo 4 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="img/jogo4.jpg" class="card-img-top" alt="Jogo 4">
+                            <div class="card-body">
+                                <h5 class="card-title">MADDEN NFL 25</h5>
+                                <p class="card-text">-Madden NFL 25 é um videogame de futebol americano desenvolvido pela EA Orlando e publicado pela EA Sports.</p>
+                                <p class="card-price">R$ 67,99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Jogo 5 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="img/jogo5.jpg" class="card-img-top" alt="Jogo 5">
+                            <div class="card-body">
+                                <h5 class="card-title">TIEBREAK</h5>
+                                <p class="card-text"> O jogo de tênis oficial da ATP e da WTA finalmente chegou! Seja o número um no mundo, competindo temporadas inteiras.</p>
+                                <p class="card-price">R$ 149,99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Jogo 6 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="img/jogo6.jpg" class="card-img-top" alt="Jogo 6">
+                            <div class="card-body">
+                                <h5 class="card-title">STAR WARS OUTLAWS</h5>
+                                <p class="card-text">UDesbrave o primeiro jogo de mundo aberto de Star Wars™, situado entre os eventos de O Império Contra-Ataca e O Retorno de Jedi.</p>
+                                <p class="card-price">R$ 79,99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Jogo 7 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="img/jogo7.jpg" class="card-img-top" alt="Jogo 7">
+                            <div class="card-body">
+                                <h5 class="card-title">DEATHBOUND</h5>
+                                <p class="card-text">Deathbound é um jogo único de estilo soulslike, cooperativo e ambientado em um mundo cruel onde a Fé e a Ciência entram em conflito.</p>
+                                <p class="card-price">R$ 74,99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Jogo 8 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="img/jogo8.jpg" class="card-img-top" alt="Jogo 8">
+                            <div class="card-body">
+                                <h5 class="card-title">AERO THE ACRO-BAT</h5>
+                                <p class="card-text">Aero the Acro-Bat é um jogo eletrônico para Super Nintendo e Mega Drive/Genesis produzido pela Sunsoft em Outubro de 1993. </p>
+                                <p class="card-price">R$ 39,99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Jogo 9 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="img/jogo9.jpg" class="card-img-top" alt="Jogo 9">
+                            <div class="card-body">
+                                <h5 class="card-title">CAT QUEST 3</h5>
+                                <p class="card-text">Entre no pelo de um corsário tão desbravador quanto felpudo neste RPG de ação de mundo aberto 2.5D.</p>
+                                <p class="card-price">R$ 260,99</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+        </section>
+
+
+        <!--Carrossel de jogos destaques -->
+        <section class="carousel1">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/destaque.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/logonaslojas.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/conjunto1.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Consoles Mais Vendidos do Ano -->
+        <section class="consoles-vendidos py-5">
+            <div class="container">
+                <h2>Consoles Mais Vendidos do Ano de 2024:</h2>
+                <div class="row">
+                    <!--console 1 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="img/console1.jpg" class="card-img-top" alt="Console 1">
+                            <div class="card-body">
+                                <h5 class="card-title">playstation 5</h5>
+                                <p class="card-text"> O PlayStation 5 é a mais recente adição à família de consoles da Sony, trazendo gráficos de última geração e uma velocidade de carregamento incrível com seu SSD ultrarrápido. Com suporte para 4K e uma biblioteca de jogos impressionante, o PS5 oferece uma experiência de jogo imersiva e inovadora. Seus novos controles com feedback tátil e gatilhos adaptativos proporcionam uma nova dimensão de interatividade. Ideal para gamers que buscam o melhor em desempenho.</p>
+                                <p class="card-price">R$ 3.750,99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--console 2 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="img/console2.jpg" class="card-img-top" alt="Console 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Xbox Series X</h5>
+                                <p class="card-text">O Xbox Series X é o console de última geração da Microsoft, oferecendo desempenho extraordinário com seu processador de alta velocidade e gráficos em 4K nativos. Equipado com um SSD de 1TB, o Series X proporciona tempos de carregamento extremamente rápidos e uma experiência de jogo fluida. Com suporte para Ray Tracing e uma compatibilidade robusta com jogos anteriores, o Xbox Series X é perfeito para jogadores que buscam potência e uma vasta gama de títulos para explorar.</p>
+                                <p class="card-price">R$ 4.199,99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--console 3 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="img/console3.jpg" class="card-img-top" alt="Console 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Nintendo Switch</h5>
+                                <p class="card-text">O Nintendo Switch é um console híbrido que pode ser usado tanto como um dispositivo portátil quanto como um console de mesa. Com uma tela de 6.2 polegadas, o Switch oferece uma experiência de jogo versátil e acessível em qualquer lugar. Seus controles destacáveis permitem jogos multijogador locais com facilidade, e a vasta biblioteca de jogos inclui títulos exclusivos e adorados. Ideal para quem procura flexibilidade e um excelente catálogo de jogos..</p>
+                                <p class="card-price">R$  2.699,99</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- direcionamento para carteira-->
+        <section class="link-carteira text-center py-5">
+            <div class="container">
+                <p>Quer gerenciar suas compras e acompanhar seus gastos com jogos? Acesse nossa seção de Carteira para começar!</p>
+                <a href="carteira.html" class="btn btn-primary">Ir para a Carteira</a>
+            </div>
+    </main>
+
+    <footer>
+        <p>© 2024 wallet gamer</p>
+    </footer>
+
+    <!-- Script do Bootstrap -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" defer></script>
+    
+</body>
+</html>

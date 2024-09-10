@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carteira</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="carteira.js" defer></script> <!-- Conectar ao arquivo JS -->
+</head>
+<body class="body3">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="carteira.html">Carteira</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                
+            
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Bem-vindo à Sua Carteira de Jogos</h1> <br>
+        <p class="intro">Aqui você pode gerenciar e acompanhar todos os seus jogos adquiridos. Adicione novos jogos à sua carteira preenchendo os campos abaixo com o nome do jogo e o valor pago.</p> <br> <br>
+        <form id="produto-form">
+            <label for="nome-produto">Nome do Jogo:</label>
+            <input type="text" id="nome-produto" required>
+            <label for="preco-produto">Preço Pago:</label>
+            <input type="number" id="preco-produto" step="0.01" required>
+            <button type="submit">Adicionar Jogo</button>
+        </form>
+        </section>
+
+        <section>
+            <table>
+                <caption> JOGOS ADICINADOS</caption>
+                <thead>
+                    <tr>
+                        <th>Nome do Jogo</th>
+                        <th>Preço Pago</th>
+                        <th> Deletar jogo</th>
+                    </tr>
+                </thead>
+                <tbody id="lista-produto" >
+                </tbody> 
+            </table>
+    
+            <table class="table1">
+                <tr class="tr1">
+                    <th class="th1">Total de jogos: <span id="total-jogos">0</span> </th>
+                    <th class="th1">Total gasto: R$ <span id="total-gasto">0.00</span></th>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 wallet gamer</p>
+    </footer>
+
+   
+</body>
+</html>
