@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {//executa o codigo ap
 
     const menuBtn = document.getElementById('menu-btn');
     if (menuBtn) { // Verifica se o botão existe no DOM
-        menuBtn.addEventListener('click', function() { 
+        menuBtn.addEventListener('click', function () {
             const navLinks = document.getElementById('nav-links'); // pega o elemento nav links e guarda na variavel
             if (navLinks) { // Verifica se o navLinks existe
                 navLinks.classList.toggle('active'); // muda a classe para active
@@ -26,6 +26,15 @@ document.addEventListener('DOMContentLoaded', function () {//executa o codigo ap
         return Date.now(); // gera um ID baseado no timestamp atual
     }
 
+    // Evento para submeter os dados do formulário
+    if (formAtividade) {//verifica se formulario de cadastro existe na pagina
+        formAtividade.addEventListener('submit', function (e) {//aciona um evento quando o formulário for enviado
+            e.preventDefault();//previne o comportamento padrao para melhor controle
+            geradorID(); //aciona a função de gerar id
+            addAtividade(); //aciona a função de adicionar atividade
+        });
+    }
+
     // Função para adicionar atividade
     function addAtividade() {
         let nomeAtividade = document.getElementById('nome-atividade').value;//capturando os dados via getElement
@@ -35,34 +44,37 @@ document.addEventListener('DOMContentLoaded', function () {//executa o codigo ap
         // Recupera atividades existentes ou cria um array vazio 
         let atividades = JSON.parse(localStorage.getItem('atividades')) || [];//pega o json ou cria um array vazio
 
-        // armazena tudo em um array
+        let nomeNormalizado = nomeAtividade.trim().toLowerCase();
 
-        let atividade = {
-            id: geradorID(),
-            nome: nomeAtividade,
-            data: dataAtividade,
-            descricao: descricaoAtividade
-        };
+        // Verifica se já existe uma atividade com o mesmo nome
+        let tituloIgual = atividades.find(atividade => atividade.nome.trim().toLowerCase() === nomeNormalizado);
 
-        atividades.push(atividade); // Adiciona a atividade ao array que ficará no local storage
-        localStorage.setItem('atividades', JSON.stringify(atividades)); // Salva no localStorage
+        if (!tituloIgual) {
 
-        // Limpar os campos de entrada
-        document.getElementById('nome-atividade').value = '';
-        document.getElementById('data-atividade').value = '';
+            //se sim ocorre tudo normalmente
+            // armazena tudo no array
+            let atividade = {
+                id: geradorID(),
+                nome: nomeAtividade,
+                data: dataAtividade,
+                descricao: descricaoAtividade
+            };
 
-        // Redirecionamento suave para a página de exibição
+            atividades.push(atividade); // Adiciona a atividade ao array que ficará no local storage
+            localStorage.setItem('atividades', JSON.stringify(atividades)); // Salva no localStorage
 
-        window.location.href = "index.html";
-    }
+            // Limpar os campos de entrada
+            document.getElementById('nome-atividade').value = '';
+            document.getElementById('data-atividade').value = '';
 
-    // Evento para submeter os dados do formulário
-    if (formAtividade) {//verifica se formulario de cadastro existe na pagina
-        formAtividade.addEventListener('submit', function (e) {//aciona um evento quando o formulário for enviado
-            e.preventDefault();//previne o comportamento padrao para melhor controle
-            geradorID(); //aciona a função de gerar id
-            addAtividade(); //aciona a fução de adicionar atividade
-        });
+            // Redirecionamento suave para a página de exibição
+
+            window.location.href = "index.html";
+
+        } else {
+            alert('Mude o título!!!');//se não a atividade nao é salva
+        }
+
     }
 
     //Fim da página de cadastro
