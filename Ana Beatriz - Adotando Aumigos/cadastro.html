@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar um Filhote</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./imgs/cabeçapipoca.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="./imgs/patinhashome.png" alt="Home" class="icon-navbar1"></a></li>
+                <li>
+                    <img src="./imgs/logoadotandoaumigos.png" alt="Adotando Aumigos" class="icon-navbar">
+                </li>
+                <li><a href="filhotes.html">Filhotes Cadastrados</a></li>
+                <li><a href="cadastro.html">Cadastrar um Filhote</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content">
+        <img src="./imgs/cadastrarumfilhote.png" alt="Cachorro" class="img-central">
+    </section>
+
+    <section class="content">
+        <form id="cadastroForm">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="idade">Idade (meses):</label>
+            <input type="number" id="idade" name="idade" required>
+
+            <label for="descricao">Breve descrição do bichinho:</label>
+            <input type="text" id="descricao" name="descricao" required>
+
+            <label for="imagem">Foto do Filhote:</label>
+            <input type="file" id="imagem" name="imagem" accept="image/*" required>
+
+            <label for="contato">Número para contato:</label>
+            <input type="text" id="contato" name="contato" required>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
