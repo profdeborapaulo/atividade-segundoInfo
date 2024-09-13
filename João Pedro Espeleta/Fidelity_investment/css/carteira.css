@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Roboto:wght@100;300;400;500;700&display=swap");
+@import url(footer.css);
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(211, 211, 211, 0.459);
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #333;
+}
+.carteira {
+  min-height: 70vh;
+}
+
+/* _____ conteúdo da carteira_____ */
+.content_carteira {
+  width: 80%;
+  margin: 20px auto;
+  background-color: #f4f4f4;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/*_____ formulário de investimento _____*/
+.form-invest {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  flex-wrap: nowrap; 
+  margin-bottom: 20px;
+  gap: 10px; 
+}
+
+/* Inputs com tamanhos proporcionais */
+.form-invest input[type="text"],
+.form-invest input[type="number"] {
+  flex: 1; 
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  margin-right: 10px; 
+}
+.form-invest input[type="text"]:last-child,
+.form-invest input[type="number"]:last-child {
+  margin-right: 0;
+}
+.form-invest input[type="text"]:focus,
+.form-invest input[type="number"]:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.2);
+  outline: none;
+}
+
+/*_____ Botão para adicionar investimento _____*/
+
+.form-invest button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: auto;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  flex-shrink: 0; 
+  max-width: auto; 
+  white-space: nowrap; 
+}
+.form-invest button:hover {
+  background-color: #45a049;
+}
+.form-invest button:active {
+  background-color: #3e8e41;
+  transform: scale(0.98);
+}
+
+/*______ tabela ______*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+table thead {
+  background-color: #4caf50;
+  color: white;
+}
+table th,
+table td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+table tbody tr:hover {
+  background-color: #f1f1f1;
+}

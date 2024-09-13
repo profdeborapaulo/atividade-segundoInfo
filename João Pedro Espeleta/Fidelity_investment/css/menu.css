@@ -1,0 +1,54 @@
+@import url("fontes.css");
+ /*-----------------MENU-SUPERIOR-----------------*/
+  header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #138641;
+    padding: 25px 0;
+    z-index: 10000;
+    max-height: 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .logo img {
+    display: block;
+  }
+  
+  nav {
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu li {
+    margin: 0 20px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 8px 16px;
+  }
+  
+  .menu a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+  }

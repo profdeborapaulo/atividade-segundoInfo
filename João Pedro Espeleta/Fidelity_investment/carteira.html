@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fidelity - Carteira</title>
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/carteira.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<header>
+  <!-- Cabeçalho com logo e menu de navegação -->
+  <div class="container poppins-regular">
+    <div class="logo">
+      <!-- Logo da página -->
+      <img src="img/logo.jpeg" alt="Logo" width="50" />
+    </div>
+    <nav>
+      <!-- Menu de navegação com links para outras páginas -->
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="carteira.html">Carteira</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<body>
+  <!-- Título da página centralizado -->
+  <center><h1 class="green poppins-bold">Carteira de Investimentos</h1></center>
+  
+  <center>
+    <!-- Container principal da carteira de investimentos -->
+    <div class="carteira">
+      <div class="content_carteira">
+        <!-- Formulário para adicionar novos investimentos -->
+        <div class="form-invest">
+          <form id="form-invest" method="post">
+            <!-- Campos de entrada para nome, quantidade, preço de compra e preço atual -->
+            <input type="text" id="name-invest" placeholder="Nome do Ativo" required>
+            <input type="number" id="number-invest" placeholder="Quantidade" required>
+            <input type="number" id="price-buy" placeholder="Preço de Compra" step="0.01" required>
+            <input type="number" id="price-current" placeholder="Preço Atual" step="0.01" required>
+            <button type="submit">Adicionar Investimento</button>
+          </form>
+        </div>
+        
+        <!-- Tabela para listar os investimentos adicionados -->
+        <table>
+          <thead>
+            <tr>
+              <!-- Cabeçalhos da tabela -->
+              <th>Nome do Ativo</th>
+              <th>Quantidade</th>
+              <th>Preço de Compra</th>
+              <th>Preço Atual</th>
+              <th>Valor Total</th>
+              <th>Rentabilidade</th>
+            </tr>
+          </thead>
+          <tbody id="lista-produto">
+            <!-- Nesta área os itens adicionados pelo JavaScript serão inseridos automaticamente -->
+          </tbody>
+        </table>
+      </center>
+    </div>
+  </div>
+  
+  <!-- Rodapé da página -->
+  <footer>
+    <div class="footerContainer">
+      <div class="imgFooter">
+        <img src="img/logo.jpeg" alt="logo">
+      </div>
+      <div class="footerNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="carteira.html">Carteira</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footerBottom">
+      <!-- Direitos autorais -->
+      <p>Copyright &copy;2024; Designed by <span class="designer">João Espeleta</span></p>
+    </div>
+  </footer>
+
+</body>
+</html>

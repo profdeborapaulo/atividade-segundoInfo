@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"); 
+@import url("footer.css");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow-x: hidden;
+}
+
+/* SEÇÃO 01 */
+section.sec01 {
+  height: 100vh;  
+  background-image: url("../img/background.jpg");
+  background-size: cover; 
+  background-position: center; 
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.text-container {
+  color: white;
+  margin-left: 50px;
+  max-width: 600px;
+}
+.text-container h1 {
+  font-size: 60px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.text-container p {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.btn-sec01 {
+  display: inline-block;
+  padding: 10px 20px;
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  background-color: white; 
+}
+.btn-sec01:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* SEÇÃO 02 - CARDS */
+section.sec02 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; 
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+}
+.box01 {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 30%; 
+  margin: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 350px; 
+}
+.box01:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.content-box01 {
+  padding: 20px;
+  text-align: center;
+}
+.content-box01 p {
+  color: #333;
+}
+.button-fund {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin-top: 20px; 
+}
+.button-fund:hover {
+  background-color: #45a049;
+}
+@media (max-width: 768px) {
+  .box01 {
+    width: 100%; 
+  }
+}
