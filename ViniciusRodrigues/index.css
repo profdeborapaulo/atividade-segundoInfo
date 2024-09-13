@@ -1,0 +1,135 @@
+.listaDeFontes {
+    font-family: "Protest Guerrilla", sans-serif;
+    font-family: "Jacques Francois Shadow", serif;
+    font-family: "Prompt", sans-serif;
+  }
+
+
+*{
+    margin: 0;
+    
+}body{
+   /*background: rgb(187,0,217);
+    background: linear-gradient(90deg, rgba(187,0,217,1) 0%,
+     rgba(74,9,121,1) 59%, rgba(63,0,194,1) 100%);*/
+
+     background: rgb(218,0,255);
+ background: linear-gradient(90deg, rgba(218,0,255,1) 0%, 
+ rgba(169,0,214,1) 54%, rgba(65,0,168,1) 100%);
+}
+#titulo{
+    
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;     
+    color: white;
+    font-family: "Jacques Francois Shadow", serif;
+}h1{
+    display: flex;
+}h2{
+    font-family: "Protest Guerrilla", sans-serif;
+}.upper{
+    text-transform: uppercase;
+}h3{
+    text-align: left;
+    font-size: 3.5rem;
+}p{
+    font-size: 1.2rem;
+}.SyPay{
+    color: rgb(230, 230, 230);
+    font-weight: 100;
+}
+   
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Bemvindo{
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    text-align: left;
+    flex-direction: column;
+    margin-right: 10vw;
+    font-family: "Prompt", sans-serif;
+    color: white;
+    
+}
+
+
+
+
+
+
+
+
+#posicao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 86vh;
+    margin-left: 10vw;
+    
+    
+    
+}.administrador, .cliente{
+    width: 300px;
+    height: 300px;
+    margin: 50px;
+    border-style: outset;
+    box-shadow: 10px 10px rgba(255, 255, 255, 0.678);
+    border: 2px 1px 3px 2px;
+    border-radius: 15%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    border-color: rgba(255, 255, 255, 0.808);
+}
+
+
+
+a:hover{
+    transform: translateY(5px);
+    box-shadow: 0px 5px  rgba(255, 255, 255, 0.486);
+    border-radius: 15%;
+    text-decoration: none;
+}a:link{
+    text-decoration: none;
+}a:active{
+    text-decoration: none;  
+}a{
+    color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    transition: .3s;
+    
+}img{
+    color: rgba(255, 255, 255, 0.808);
+}
+
+
+
+
+
+.links{
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-decoration: none;
+}.links:hover{
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 1.4rem;
+    transition: 2s;
+}
