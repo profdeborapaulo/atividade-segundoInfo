@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js" ></script>
+    <title>Login - ADM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" 
+    rel="stylesheet">
+    <style>
+@import 
+url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap');
+    </style>
+</head>
+<body>
+    
+ 
+   
+
+    <div id="posicao-form">
+
+     
+        <form class="form-login">   
+            
+        <div class="titulo">
+            <h3>Login - ADM</h3>
+        </div>
+
+            <input id="email" type="email" placeholder="Seu e-mail de ADM" required>
+                <br><br>
+            <input id="senha" type="password" placeholder="Sua senha de ADM" required>
+                <br>
+                <!-- return false = cancelar validação do submit (formulario)-->
+            <button type="submit" onclick="logarADM(); return false">ENTRAR</button>
+        </form>
+        
+            <br>
+        <a href="index.html">Escolher outra forma de login</a>
+    </div>
+ 
+   
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <script src="script.js" ></script>
+    <title>Login - CLIENTE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" 
+    rel="stylesheet">
+    <style>
+@import 
+url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap');
+    </style>
+</head>
+<body>
+    
+ 
+    <div id="posicao-form">
+
+        <div class="titulo">
+            <h3>Login - CLIENTE</h3>
+        </div>
+
+        <form class="form-login">
+            <input id="nomeC" type="text" placeholder="Seu usuario" required>
+                <br><br>
+            <input id="senhaC" type="password" placeholder="Sua senha" required>
+                <br>
+                <!-- return false = cancelar validação do submit (formulario)-->
+            <button type="submit" onclick="logarCLIENTE(); return false">ENTRAR</button>
+            <button type="button" class="esqueci" onclick="esqueci()">Esqueci meu usuario/Senha</button>
+        </form>
+        
+            <br>
+            
+        <a href="index.html">Escolher outra forma de login</a>
+    </div>
+</body>
+</html>
