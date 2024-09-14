@@ -9,10 +9,12 @@ function generateRandomId() {
 
 const form = document.getElementById('form');
 
+// obtem os dados do localStorage e transforma em array
 const products = JSON.parse(localStorage.getItem('products') || '[]');
 const ingredients = JSON.parse(localStorage.getItem('ingredients') || '[]').filter((ingredient) => ingredient.userId === user.id);
 const categories = JSON.parse(localStorage.getItem('categories') || '[]').filter((category) => category.userId === user.id);
 
+// renderiza os ingredientes
 ingredients.map(ingredient => {
     const element = 
     `<option value='${ingredient.id}'>${ingredient.name}</option>`;
@@ -21,6 +23,7 @@ ingredients.map(ingredient => {
     container.innerHTML += element;
 });
 
+// renderiza as categorias
 categories.map(category => {
     const element = 
     `<option value='${category.id}'>${category.name}</option>`;
@@ -78,6 +81,7 @@ form.addEventListener('submit', (ev) => {
     window.location.href = "../"
 });
 
+// função para adicionar ingrediente ao produto
 function addIngredient() {
     const ingredientId = document.getElementById('ingredient').value;
     const ingredientsContainer = document.getElementById('selectedIngredients');
@@ -98,5 +102,7 @@ function addIngredient() {
     ingredientsContainer.innerHTML += element;
 
     document.getElementById('ingredient').value = '';
+
+    // remove o ingrediente do select
     Array.from(document.getElementById('ingredient').children).find(option => option.value === ingredientId).remove();
 }

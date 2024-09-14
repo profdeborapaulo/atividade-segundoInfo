@@ -18,6 +18,8 @@ form.addEventListener('submit', (ev) => {
     const fantasyName = form.fantasyName.value;
     const cnpj = form.cnpj.value;
     const id = generateRandomId();
+
+    // obtem os dados do localStorage e transforma em array
     const users = JSON.parse(localStorage.getItem('users')) || [];
 
     if (users.find(user => user.email === email)) {
@@ -34,6 +36,8 @@ form.addEventListener('submit', (ev) => {
     }
 
     users.push({ id, email, password, companyName, fantasyName, cnpj, theme: 'dark', primaryColor: '#007bff' });
+
+    // transforma em json e guarda no localStorage
     localStorage.setItem('users', JSON.stringify(users));
 
     alert('Cadastro realizado com sucesso');

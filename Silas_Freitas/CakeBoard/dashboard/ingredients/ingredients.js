@@ -1,9 +1,11 @@
 const ingredientsContainer = document.getElementById('ingredientsList');
 const ingredientDetails = document.getElementById('ingredientDetails');
 
+// obtem os dados do localStorage e transforma em array
 const ingredients = JSON.parse(localStorage.getItem('ingredients') || '[]').filter((ingredient) => ingredient.userId === user.id);
 const products = JSON.parse(localStorage.getItem('products') || '[]').filter((product) => product.userId === user.id);
 
+// renderiza os ingredientes
 ingredients.map(ingredient => {
     const element = 
     `<div data-ingredientId='${ingredient.id}' onclick='update(this)' class="ingredient">
@@ -15,6 +17,7 @@ ingredients.map(ingredient => {
     ingredientsContainer.innerHTML += element;
 });
 
+// muda o ingrediente nas infos
 function update(element) {
     const ingredientId = element.dataset.ingredientid;
     const ingredient = ingredients.find((ingredient) => ingredient.id === ingredientId);

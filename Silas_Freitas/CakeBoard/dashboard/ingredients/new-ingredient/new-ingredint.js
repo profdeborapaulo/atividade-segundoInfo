@@ -9,6 +9,7 @@ function generateRandomId() {
 
 const form = document.getElementById('form');
 
+// obtem os dados do localStorage e transforma em array
 const ingredients = JSON.parse(localStorage.getItem('ingredients') || '[]');
 
 form.addEventListener('submit', (ev) => {
@@ -40,6 +41,7 @@ form.addEventListener('submit', (ev) => {
 
     ingredients.push(ingredient);
 
+    // transforma em json e guarda nno localStorage
     localStorage.setItem('ingredients', JSON.stringify(ingredients));
 
     alert('Ingrediente cadastrado com sucesso!');

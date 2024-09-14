@@ -1,3 +1,4 @@
+// obtem os dados do localStorage e transforma em array
 const sales = JSON.parse(localStorage.getItem('sales') || '[]').filter((sale) => sale.userId === user.id);
 const products = JSON.parse(localStorage.getItem('products') || '[]').filter((product) => product.userId === user.id);
 const salesContainer = document.getElementById('salesList');
@@ -16,8 +17,10 @@ sales.map(sale => {
         const product = products.find((product) => product.id === productId.id);
         return parseFloat(product.price * productId.quantity);
     }).reduce((acc, curr) => acc + curr, 0);
-
-    const numberOfProducts = sale.products.map((productId) => parseInt(productId.quantity)).reduce((acc, curr) => acc + curr, 0);
+    
+    // calcula a quantidade de produtos vendidos
+    const numberOfProducts = sale.products.map((productId) => parseInt(productId.quantity))
+        .reduce((acc, curr) => acc + curr, 0);
 
     const element = 
     `<div data-saleId='${sale.id}' onclick='update(this)' class="sale">
@@ -30,9 +33,11 @@ sales.map(sale => {
     salesContainer.innerHTML += element;
 });
 
+// mudar a venda nas infos
 function update(element) {
     const saleDetails = document.getElementById('saleDetails');
 
+    // obtem o valor do parametro data-saleId
     const saleId = element.getAttribute('data-saleId');
     const sale = sales.find((sale) => sale.id === saleId);
 
@@ -41,6 +46,7 @@ function update(element) {
         return `<li><img src="${product.photo}">${productId.quantity} x ${product.name} - R$ ${parseFloat(product.price).toFixed(2).replace('.', ',')}</li>`;
     }).join('');
 
+    // calcula o lucro
     const ingredientsPrice = sale.products.map((productId) => {
         const product = products.find((product) => product.id === productId.id);
         const ingredientsPrice = product.ingredients.map((productIngredient) => {
@@ -50,6 +56,7 @@ function update(element) {
         return (parseFloat(product.price) - ingredientsPrice) * productId.quantity;
     }).reduce((acc, curr) => acc + curr, 0);
 
+    // calcula a receita
     const price = sale.products.map((productId) => {
         const product = products.find((product) => product.id === productId.id);
         return parseFloat(product.price * productId.quantity);

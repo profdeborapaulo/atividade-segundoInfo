@@ -35,6 +35,7 @@ form.addEventListener('submit', (ev) => {
     user.cnpj = cnpj;
     user.primaryColor = primaryColor;
 
+    // transforma em json e salva no localStorage
     localStorage.setItem('users', JSON.stringify(users));
 
     alert('Perfil atualizado com sucesso!');
