@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.fundo img {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    z-index: -2;
+}
+main {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    perspective: 40vw;
+}
+.textos {
+    position: absolute;
+    width: 25vw;
+    height: 44vh;
+    overflow: auto;
+    overflow-x: hidden;
+    padding-right: 0.7vw;
+    z-index: 1;
+    transform: translate(1.5vw, -9.6vh) rotateY(-13deg) rotateZ(1.8deg);
+}
+.textos::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+.textos::-webkit-scrollbar-thumb {
+    background-color: rgb(8, 112, 77);
+}
+.textos::-webkit-scrollbar {
+    width: 0.7vw;
+}
+.estrutura {
+    box-sizing: border-box;
+    width: 25vw;
+    height: 2vw;
+    margin-bottom: 2vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.agrupar {
+    display: flex;
+    flex-direction: row;
+}
+.funcoes {
+    display: flex;
+    flex-direction: row;
+}
+.funcoes input {
+    font-family: 'Courier New';
+    font-size: 1.5vw;
+    padding-inline: 0.3vw;
+    padding-block: 0.1vh;
+    font-weight: bold;
+    color: rgb(0, 132, 255);
+    background-color: transparent;
+    border: 0.2vw solid rgb(0, 110, 255);
+    transition: all 0.1s;
+}
+.funcoes input:hover {
+    color: white;
+    border-color: white;
+}
+p {
+    font-family: 'Courier New';
+    font-size: 1.5vw;
+    font-weight: bold;
+    margin: 0;
+    color: rgb(0, 119, 255);
+    margin-inline: 0.3vh
+}
+.voltar {
+    cursor: pointer;
+    position: absolute;
+    top: 35vh;
+    left: 1vw;
+}
+.voltar p{
+    position: relative;
+    font-size: 8vw;
+    color: black;
+    transition: all 0.3s;
+}
+.voltar p::before{
+    content: "🢀";
+    position: absolute;
+    top: -1.2vw;
+    left: -0.9vw;
+    color: white;
+    font-size: 10vw;
+    filter: blur(0.4vw);
+    z-index: -1;
+}
+.voltar p:hover {
+    color: white;
+    text-shadow: black;
+}
+.voltar:hover p::before {
+    color: black;
+}
+.alinhar {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.editavel {
+    position: relative;
+    width: 70vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    background-image: url(../Imagens/textura-tela.png);
+    background-position: center; 
+    background-size: cover;
+    border-radius: 3vw;
+}
+.editavel input {
+    font-family: 'Courier New';
+    font-size: 2vw;
+    font-weight: bold;
+    border-radius: 0.3vw;
+    border: 0.5vh solid rgb(0, 119, 255);
+    background-color: transparent;
+    color: rgb(0, 119, 255);
+    transition: all 0.2s ease;
+}
+.editavel input:hover {
+    background-color: blue;
+    color: white;
+    border-color: white;
+}
+.fechar {
+    position: absolute;
+    top: 3vh;
+    right: 2.5vw;
+}
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes desaparecer {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

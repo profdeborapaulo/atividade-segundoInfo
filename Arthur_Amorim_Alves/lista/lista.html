@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista</title>
+    <link rel="stylesheet" href="lista.css">
+    <script src="lista.js" defer></script>
+</head>
+<body onload="listar()">
+    <div class="fundo">
+        <img src="../Imagens/tela-do-computador.png" alt="">
+    </div>
+
+    <main>
+        <div class="textos">
+            <div class="reference" id="reference"></div>
+        </div>
+    </main>
+
+    <div class="voltar" id="voltar" onclick="window.location.href = '../loja/loja.html'">
+        <p>🢀</p>
+    </div>
+
+    <div class="alinhar" id="alinhar">
+        <div class="editavel" id="editavel">
+            <input type="button" value="X" class="fechar" id="fechar" onclick="fechar()">
+            <input type="button" class="editar-texto" id="editar-texto" value="EDITAR TEXTO">
+            <input type="button" class="editar-quantidade" id="editar-quantidade" value="EDITAR QUANTIDADE">
+        </div>
+    </div>
+</body>
+</html>

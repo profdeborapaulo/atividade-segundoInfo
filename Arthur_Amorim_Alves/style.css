@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(250, 250, 250);
+}
+.fundo-index {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -2;
+}
+.blur {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(1vh);
+    z-index: -1;
+}
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+form {
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+    border: 15px solid transparent;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 1px 1px 15px 1px gray;
+}
+label {
+    font-family: arial;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+input {
+    font-family: arial;
+    font-size: 25px;
+    border-radius: 30px;
+    margin-block: 15px;
+    margin-top: 5px;
+    padding: 5px;
+    padding-block: 18px;
+    border: transparent;
+    background-color: rgba(240, 240, 240, 0.3);
+    color: white;
+    box-shadow: 0px 0px 6px 1px gray inset;
+}
+input::placeholder {
+    font-size: 20px;
+    color: white;
+}
+input:focus {
+    color: white;
+    background-color: rgba(240, 240, 240, 0.3);
+    box-shadow: 0px 0px 6px 1px gray inset;
+}
+.botao-login {
+    cursor: pointer;
+    margin-inline: auto;
+    width: 30%;
+    box-shadow: 0px 0px 10px 1px rgb(255, 255, 255);
+    background-color: white;
+    color: black;
+}
+.botao-registro {
+    margin-inline: auto;
+    width: 30%;
+    box-shadow: 0px 0px 10px 1px white;
+    background-color: white;
+    color: black;
+}
+.registrar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.registrar p {
+    font-family: arial;
+    margin-right: 5px;
+    color: white;
+}
+.registrar a {
+    font-family: arial;
+    margin-right: 5px;
+    color: red;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar e Logar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body onload="carregar()">
+    <img src="Imagens/fundo.jpg" alt="" class="fundo-index">
+    <div class="blur"></div>
+    <main>
+        <form action="">
+            <label for="nome">Nome:</label>
+            <input type="text" placeholder="Digite seu nome de usuário" class="nome" id="nome">
+
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" class="input-senha" placeholder="Crie uma senha">
+
+            <label for="confirmar-senha">Confirme a Senha:</label>
+            <input type="password" name="confirmar-senha" id="confirmar-senha" class="confirmar-senha" placeholder="Escreva a senha novamente">
+
+            <div class="registrar">
+                <p href="">Já possui uma conta?</p> <a href="index.html">Logar</a>
+            </div>
+
+            <input type="submit" class="botao-registro" id="botao-registro" value="ENVIAR" onclick="registrar()">
+        </form>
+    </main>
+</body>
+
+</html>

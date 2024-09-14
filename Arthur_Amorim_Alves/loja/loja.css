@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    zoom: 100%
+}
+.fundo img {
+    width: 100vw;
+    height: 100vh;
+    user-select: none;
+}
+.colocar-texto {
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 6vh;
+    left: 4.7vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.caixa-de-texto {
+    width: 15vw;
+    height: 6vh;
+    padding: 0.2vw;
+    border: transparent;
+    font-family: arial;
+    font-size: 4vh;
+    border-radius: 1vw;
+    transition: all 0.3s ease;
+    user-select: none;
+    background-color: rgba(240, 240, 240, 0.3);
+}
+.caixa-de-texto:focus {
+    border: 0.3vw solid white;
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+}
+.caixa-de-texto:hover {
+    transform: scale(1.1);
+}
+.enviar-texto {
+    width: 9vw;
+    height: 5.9vh;
+    font-family: arial;
+    font-size: 4vh;
+    padding: 0.2vw;
+    border: transparent;
+    background-color: white;
+    box-shadow: 0px 0px 15px 1px white;
+    border-radius: 1vw;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+.enviar-texto:hover {
+    border: 0.3vw solid white;
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+}
+.clarear {
+    cursor: pointer;
+    position: absolute;
+    width: 27vw;
+    height: 35vh;
+    bottom: 5%;
+    right: 0.7%;
+    opacity: 0.6;
+    user-select: none;
+    background-image: linear-gradient(to top, yellow, rgba(255, 0, 0, 0));
+}
+.clarear:hover {
+    background-image: linear-gradient(to top, white, rgba(255, 0, 0, 0));
+}
+.texto-criado {
+    position: absolute;
+    top: 6vh;
+    left: 6vw;
+    font-family: arial;
+    font-size: 5vh;
+    user-select: none;
+    background-color: rgba(255, 255, 255);
+    border-radius: 35px;
+    box-shadow: 0px 0px 15px 1px white;
+}
+form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 17vw;
+    height: 18vw;
+    text-align: center;
+    padding: 1vw;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 2vw;
+    box-shadow: 0px 0px 10px 1px gray;
+}
+label {
+    font-family: arial;
+    font-weight: bold;
+    font-size: 1.5vw;
+    color: white;
+}
