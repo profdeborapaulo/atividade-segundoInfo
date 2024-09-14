@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Pets</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="d-flex">
+        <nav class="sidebar p-3">
+            <img src="img/logo.png">
+            <h4>Menu</h4>
+            <ul class="nav flex-column">
+                <li>
+                    <a href="cadastrarservico.html">Cadastro de Serviços</a>
+                    <a href="listaservico.html">Lista de Serviços</a>
+                    <a class="selecionado" href="cadastrarpet.html">Cadastro de Pets</a>
+                    <a href="listapet.html">Lista de Pets</a>
+                    <a href="agendar.html">Agendamentos</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="container-md bs5-grid-row">
+            <div class="col-md-8 offset-md-2 mt-5">
+                <h1 class="text-center">Cadastro de Pets</h1>
+                <br><br>
+                <!-- Formulário de Cadastro -->
+                <form id="cadastrarpet">
+
+                    <div>
+                        <label for="nomepet">Nome do Pet</label>
+                        <input type="text" class="form-control" name="nomepet" id="nomepet"
+                            placeholder="Digite o nome do Pet">
+                    </div>
+
+                    <div>
+                        <label for="especie">Espécie</label>
+                        <select class="form-control" name="especie" id="especie"
+                            placeholder="Qual a espécie do seu animal" required>
+                            <option value="">Selecione a espécie</option>
+                            <option value="Cachorro">Cachorro</option>
+                            <option value="Gato">Gato</option>
+                            <option value="Pássaro">Pássaro</option>
+                            <option value="Coelho">Coelho</option>
+                            <option value="Outro">Outro</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="raca">Raça</label>
+                        <input type="text" class="form-control" name="raca" id="raca"
+                            placeholder="Digite a raça do seu Pet" required>
+                    </div>
+
+                    <div>
+                        <label for="idade">idade</label>
+                        <input type="number" class="form-control" name="idade" id="idade"
+                            placeholder="Digite a idade em anos" required>
+                    </div>
+
+                    <br>
+                    <button onclick="CadastrarPet()" class="btn btn-primary btn-block">Salvar Serviço</button>
+                </form>
+            </div>
+        </div>
+        <div id="conteudo">
+
+        </div>
+        <script src="js/pets.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

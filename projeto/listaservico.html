@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lista de Serviços</title>
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+  <div class="d-flex">
+    <nav class="sidebar p-3">
+      <img src="img/logo.png" />
+      <h4>Menu</h4>
+      <ul class="nav flex-column">
+        <li>
+          <a href="cadastrarservico.html">Cadastro de Serviços</a>
+          <a class="selecionado" href="listaservico.html">Lista de Serviços</a>
+          <a href="cadastrarpet.html">Cadastro de Pets</a>
+          <a href="listapet.html">Lista de Pets</a>
+          <a href="agendar.html">Agendamentos</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container-md bs5-grid-row">
+      <div class="col-md-8 offset-md-2 mt-5">
+        <h1 class="text-center">Lista de Serviços</h1>
+        <br><br>
+        <h3 class="text-center" id="meuParagrafo"></h3>
+        <ul id="listaServicos" class="list-group">
+        </ul>
+      </div>
+    </div>
+
+    <script src="js/servicos.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </div>
+</body>
+
+</html>
