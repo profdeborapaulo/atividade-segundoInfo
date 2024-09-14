@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.75">
+    <script src="addTitle.js" defer></script>
+    <title>Adicionar novo Título</title>
+</head>
+<style>
+    table {
+        border-spacing: 10px; /* Espaço de 10px entre as células */
+        border-collapse: separate; /* Assegura que o border-spacing seja aplicado */
+        width: 100%;
+    }
+    td, th {
+        border: 1px solid black;
+        padding: 8px;
+        width: 200px;
+    }
+</style>
+<body>
+    <main>
+        <a href="../home/home.html">Home</a>
+        <label for="classSelected">Escolha a classe do seu item:</label>
+        <input type="number" id="classSelected">
+        <button id="continue">Continuar</button>
+        <div id="data">
+
+        </div>
+        <p id="errorMessage"></p>
+        <div id="tables">
+            <label for="Livros">Livros</label>
+            <table id="books">
+
+            </table>
+
+            <label for="Filmes">Filmes</label>
+            <table id="movies">
+
+            </table>
+
+            <label for="Séries">Séries</label>
+            <table id="series">
+
+            </table>
+
+            <label for="Jogos">Jogos</label>
+            <table id="games">
+
+            </table>
+        </div>
+    </main>
+</body>
+</html>
