@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+section {
+    padding: 20px;
+}
+
+.introducao, .servicos, .agendamento, .minha-conta {
+    background-color: white;
+    border-radius: 5px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    padding: 10px 0;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+*{
+    box-sizing: border-box;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 290px;
+    height: 100%;
+    padding: 40px 10px 30px 10px;
+    border-right: 2px solid #d4d4d4;
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.1);
+}
+.sidebar-header{
+    margin-bottom: 40px;
+
+}
+.logo-img{
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.4s;
+}
+.logo-img:hover{
+    transform: scale(1.05);
+}
+.sidebar button{
+    height: 60px;
+    background: transparent;
+    border: transparent;
+    font-family: inherit;
+    cursor: pointer;
+    text-align: left;
+    padding: 0;
+}
+.sidebar button > span{
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    height: 48px;
+    padding: 0 30px 0 26px;
+    border-radius: 24px;
+    line-height: 1px;
+    transition: all 0.3s;
+}
+.sidebar button:hover > span{
+    background: rgba(0, 0, 0, 0.08);
+}
+.sidebar button i{
+    position: relative;
+    font-size: 25px;
+}
+.sidebar button span{
+    font-size: 14px;
+}
+.sidebar > nav{
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+button{
+    height: 30px;
+    background: transparent;
+    border-color: #f5f5f5;
+    font-family: inherit;
+    cursor: pointer;
+    text-align: center;
+    padding: 5px;
+    border-radius: 20px;
+}
+.minha-conta input{
+    width: 500px;
+    padding: 3px;
+    margin-bottom: 20px;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-color: #d4d4d4;
+}
+.agendamento select{
+    width: 520px;
+    padding: 3px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-color: #d4d4d4;
+}
+.agendamento input{
+    margin-bottom: 10px;
+}
