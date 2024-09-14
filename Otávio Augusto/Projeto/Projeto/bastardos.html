@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="avaliacao.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bastardos</title>
+</head>
+
+<body>
+    <div class="hero">
+        <nav class="navbar">
+            <img src="img/logo.png" class="logo">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li class="dropdown">
+
+                    <a href="#" class="dropbtn">Filmes</a>
+
+                    <ul class="dropdown-content">
+
+                        <li><a href="django.html">Django Livre</a></li>
+
+                        <li><a href="bastardos.html">Bastardos Inglórios</a></li>
+
+                        <li><a href="pulp.html">Pulp Fiction</a></li>
+
+                    </ul>
+
+            </ul>
+            <img src="img/moon.png" alt="" id="icon">
+        </nav>
+
+
+        <div class="texto">
+
+            <h1>Bastardos Inglórios</h1>
+
+            <p>Título original: Inglourious Basterds</p>
+
+            <p>2009 • 18 anos • 2 h 33 min </p>
+
+            <p>Avaliação</p>
+
+            <div class="nota">
+                <img src="img/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB-removebg-preview.png" width="50px"
+                    height="50px" alt="">
+                <p>8,4/10</p>
+
+            </div>
+        </div>
+
+
+
+
+
+        <div class="fotodjango">
+
+            <img src="img/Inglourious_basterds_ver9.jpg" alt="">
+
+
+
+
+            <video controls class="">
+                <source src="img/BASTARDOS INGLÓRIOS  Trailer Legendado.mp4" type="video/mp4">
+            </video>
+
+        </div>
+
+        <br>
+        <div class="temas">
+
+            <p>Dark Comedy</p>
+
+            <p>Adventure</p>
+
+            <p>Drama</p>
+
+            <p>War</p>
+
+        </div>
+
+        <div class="resumo">
+
+            <br>
+
+            <p>Na França ocupada pelos nazistas durante a Segunda Guerra Mundial, um plano para assassinar líderes
+                nazistas por parte de um grupo de soldados judeus dos EUA coincide com os planos de vingança da dona de
+                uma sala de cinema.</p>
+
+        </div>
+
+        <div class="info">
+
+            <h2>Direção</h2>
+
+            <p>Quentim Tarantino</p>
+
+            <h2>Roteiro</h2>
+
+            <p> Quentim Tarantino</p>
+
+            <h2>Artista</h2>
+
+            <p>
+                Brad Pitt • Diane Kruger • Eli Roth</p>
+        </div>
+
+
+
+
+
+
+        <div class="estrela">
+            <p>Qual a sua nota?</p>
+            <ul class="avaliacao">
+                <li class="star-icon ativo" data-avaliacao="1"></li>
+                <li class="star-icon" data-avaliacao="2"></li>
+                <li class="star-icon" data-avaliacao="3"></li>
+                <li class="star-icon" data-avaliacao="4"></li>
+                <li class="star-icon" data-avaliacao="5"></li>
+            </ul>
+        </div>
+        <form id="avaliacaoForm">
+            <div class="mensa">
+                <label for="avaliacao">Deixe sua avaliação:</label>
+                <textarea id="avaliacao" name="avaliacao" rows="5" cols="40"></textarea><br>
+
+
+
+        </form>
+    </div>
+    <button type="button" id="salvarBtn">Salvar Avaliação</button>
+    <p id="mensagem"></p>
+
+    <a href="exibir-avaliacoes.html" id="link-site">Ver Avaliações</a>
+
+
+    </div>
+
+
+
+
+
+    <script>
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function () {
+            document.body.classList.toggle("dark-theme");
+            if (document.body.classList.contains("dark-theme")) {
+                icon.src = "img/sun.png";
+            } else {
+                icon.src = "img/moon.png";
+            }
+        }
+        //Código Javascript para alterar o tema da página!!!
+    </script>
+
+    </div>
+
+</body>
+
+</html>

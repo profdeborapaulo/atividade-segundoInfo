@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exibir Avaliações</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="exibir.js" defer></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <img src="img/logo.png" class="logo">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Filmes</a>
+                <ul class="dropdown-content">
+                    <li><a href="django.html">Django Livre</a></li>
+                    <li><a href="bastardos.html">Bastardos Inglórios</a></li>
+                    <li><a href="pulp.html">Pulp Fiction</a></li>
+                </ul>
+
+        </ul>
+        <img src="img/moon.png" alt="" id="icon">
+    </nav>
+    <div class="container">
+        <h1 class="text-center my-4">Avaliações</h1>
+
+        <ul id="listaAvaliacoes" class="list-group mb-4">
+            <!-- Lista onde as avaliações serão exibidas -->
+        </ul>
+
+        <div class="text-center">
+            <a href="home.html">Voltar para a Home</a>
+        </div>
+    </div>
+
+    <script>
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function () {
+            document.body.classList.toggle("dark-theme");
+            if (document.body.classList.contains("dark-theme")) {
+                icon.src = "img/sun.png";
+            } else {
+                icon.src = "img/moon.png";
+            }
+        }
+        //Código Javascript para alterar o tema da página!!!
+    </script>
+</body>
+
+</html>

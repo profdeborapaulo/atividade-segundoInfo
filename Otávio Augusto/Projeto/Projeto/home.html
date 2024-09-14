@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <div class="hero">
+<nav class="navbar">
+<img src="img/logo.png" class="logo">
+<ul>
+    <li><a href="home.html">Home</a></li>
+    <li class="dropdown">
+        <a href="#" class="dropbtn">Filmes</a>
+        <ul class="dropdown-content">
+            <li><a href="django.html">Django Livre</a></li>
+            <li><a href="bastardos.html">Bastardos Inglórios</a></li>
+            <li><a href="pulp.html">Pulp Fiction</a></li>
+        </ul>
+  
+ 
+</ul>
+<img src="img/moon.png" alt="" id="icon">
+</nav>
+
+<div class="django">
+
+    <h1>Django Livre</h1>
+
+    <h2><span>Quentim Tarantino</span></h2>
+    <p>No sul dos Estados Unidos, o ex-escravo Django faz uma aliança inesperada com o <br> caçador 
+
+        de recompensas Schultz para perseguir os criminosos mais procurados <br>do país e resgatar sua esposa de um fazendeiro que força seus escravos<br> a entrarem em competições mortais.</p>
+
+        <a href="django.html">Ver Mais Sobre</a>
+</div>
+
+
+
+<div class="img-box">
+    <img src="img/pattern.png" class="back-img">
+
+<img src="img/django-unchained-jamie-foxx-removebg-preview.png" class="main-img">
+
+</div>
+
+</div>
+
+
+<br>
+<div class="hero2">
+
+<div class="bastardos">
+
+<h1>Bastardos Inglórios</h1>
+
+<h2><span>Quentim Tarantino</span></h2>
+
+    <p>Durante a Segunda Guerra Mundial, na França, judeus americanos espalham o <br> terror entre o terceiro Reich. Ao mesmo tempo, Shosanna, uma judia que fugiu dos <br> nazistas, planeja vingança quando um  evento em seu cinema reunirá <br> os líderes do partido.</p>
+
+    <a href="bastardos.html">Ver Mais Sobre</a>
+</div>
+
+<div class="img-box-bastardos">
+    <img src="img/pattern.png" class="back-img-bastardos">
+    <img src="img/png-clipart-brad-pitt-inglourious-basterds-war-film-youtube-brad-pitt-celebrities-poster-removebg-preview.png" class="main-img-bastardos">
+
+</div>
+
+</div>
+
+
+<br>
+<div class="hero3">
+
+<div class="pulp">
+
+<h1>Pulp Fiction</h1>
+
+<h2><span>Quentim Tarantino</span></h2>
+
+<p>Assassino que trabalha para a máfia se apaixona pela esposa de seu chefe <br> quando é convidado a acompanhá-la, um boxeador descumpre sua promessa <br> de perder uma luta e um casal tenta um assalto que rapidamente sai do controle.</p>
+
+<a href="pulp.html" class="botao">Ver Mais Sobre</a>
+
+</div>
+
+<div class="img-box-pulp">
+    <img src="img/pattern.png" class="back-img-pulp">
+    <img src="img/a682158dea74fdf2754a1b5fcff6705bd6-23-travolta-pulp-ficion.rsquare.w330-removebg-preview.png" class="main-img-pulp">
+
+
+</div>
+
+</div>
+
+<script>
+    var icon = document.getElementById("icon");
+
+    icon.onclick = function(){
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme")){
+            icon.src = "img/sun.png";
+        } else{
+            icon.src = "img/moon.png";
+        }
+    }
+    //Código Javascript para alterar o tema da página!!!
+</script>
+
+</div>
+
+</body>
+</html>

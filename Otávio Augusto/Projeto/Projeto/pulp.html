@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="avaliacao.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulp</title>
+</head>
+<body>
+ <div class="hero">
+<nav class="navbar">
+<img src="img/logo.png" class="logo">
+<ul>
+    <li><a href="home.html">Home</a></li>
+
+    <li class="dropdown">
+
+        <a href="#" class="dropbtn">Filmes</a>
+
+        <ul class="dropdown-content">
+
+            <li><a href="django.html">Django Livre</a></li>
+
+            <li><a href="bastardos.html">Bastardos Inglórios</a></li>
+
+            <li><a href="pulp.html">Pulp Fiction</a></li>
+
+        </ul>
+ 
+</ul>
+<img src="img/moon.png" alt="" id="icon">
+</nav>
+
+
+<div class="texto">
+
+    <h1>Pulp Fiction: Tempo de Violência</h1>
+
+<p>Título original: Pulp Fiction</p>
+
+<p>1994•  18 anos • 2 h 34 min</p>
+
+    <p>Avaliação</p>
+
+    <div class="nota">
+<img src="img/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB-removebg-preview.png" width="50px" height="50px" alt="">
+<p>8,9/10</p>
+
+</div>
+
+</div>
+
+
+
+<div class="fotodjango">
+
+<img src="img/pulpficition.jpg" alt="">
+
+
+<video controls>
+    <source src="img/Pulp Fiction (1994) Blu-Ray Trailer.mp4" type="video/mp4">
+</video>
+</div>
+
+<br>
+
+<div class="temas">
+
+    <p>Dark Comedy</p>
+
+    <p>Drug Crime</p>
+
+    <p>Gangster</p>
+
+    <p>Crime</p>
+
+    <p>Drama</p>
+
+</div>
+
+<div class="resumo">
+<br>
+
+<p>As vidas de dois assassinos da máfia, um boxeador, um gângster e sua esposa, e um par de bandidos se entrelaçam em quatro histórias de violência e redenção.</p>
+
+</div>
+
+<div class="info">
+<h2>Direção</h2> 
+
+<p>Quentim Tarantino</p>
+
+<h2>Roteiro</h2> 
+
+<p> Quentim Tarantino</p>
+
+<h2>Artista</h2> 
+
+<p>John Travolta • Uma ThurmanSamuel •  L. Jackson</p>
+
+</div>
+
+
+
+
+
+
+
+<div class="estrela">
+    <p>Qual a sua nota?</p>
+<ul class="avaliacao">
+<li class="star-icon ativo" data-avaliacao="1"></li>
+<li class="star-icon" data-avaliacao="2"></li>
+<li class="star-icon" data-avaliacao="3"></li>
+<li class="star-icon" data-avaliacao="4"></li>
+<li class="star-icon" data-avaliacao="5"></li>
+</ul>
+</div>
+
+
+<form id="avaliacaoForm">
+    <div class="mensa">
+        <label for="avaliacao">Deixe sua avaliação:</label>
+        <textarea id="avaliacao" name="avaliacao" rows="5" cols="40"></textarea><br>
+       
+
+
+</form>
+</div>
+<button type="button" id="salvarBtn">Salvar Avaliação</button>
+<p id="mensagem"></p>
+
+<a href="exibir-avaliacoes.html" id="link-site">Ver Avaliações</a> 
+
+<script>
+    var stars = document.querySelectorAll('.star-icon');
+    document.addEventListener('click',function(e){
+        var classStar = e.target.classList;
+        if(!classStar.contains('ativo')){
+            stars.forEach(function(star){
+                star.classList.remove('ativo');
+
+            });
+            classStar.add('ativo')
+        }
+    });     
+//Código para validar o clique na avaliação das estrelas
+</script>
+
+
+
+</div>
+
+
+
+
+
+<script>
+    var icon = document.getElementById("icon");
+
+    icon.onclick = function(){
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme")){
+            icon.src = "img/sun.png";
+        } else{
+            icon.src = "img/moon.png";
+        }
+    }
+    //Código Javascript para alterar o tema da página!!!
+</script>
+
+</div>
+
+</body>
+</html>
