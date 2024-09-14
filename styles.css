@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdf5e6;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.container-cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+}
+
+h1 {
+    color: #1e4b8e; 
+    margin: 0;
+}
+
+.mensagem-boas-vindas {
+    font-size: 18px;
+    color: #555;
+    margin-top: 5px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+#formulario-adicionar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+input, button {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #1e4b8e; 
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px; 
+    padding: 6px 10px; 
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #163b6e; 
+}
+
+.botao-nav {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+}
+
+.botao-remover {
+    background-color: #d9534f; 
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.botao-remover:hover {
+    background-color: #c9302c; 
+}
+
+#container-desenhos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.mensagem-vazia {
+    color: red; 
+    font-size: 18px;
+    font-weight: bold;
+    display: none;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+#exemplos-reliquias {
+    margin-top: 40px;
+}
+
+.container-exemplos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}

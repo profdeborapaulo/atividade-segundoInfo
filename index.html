@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostalgic Chest - Biblioteca</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    
+    <header>
+        <div class="container-cabecalho">
+            <img src="https://i.pinimg.com/originals/c6/b3/e5/c6b3e506d24c544acdbb2f1e948b3384.png" alt="TV Globinho Logo" class="logo">
+            <h1>Nostalgic Chest</h1>
+        </div>
+        <p class="mensagem-boas-vindas">Bem-vindo à Nostalgic Chest! Reviva os melhores momentos dos desenhos da TV Globinho.</p>
+    </header>
+
+    
+    <section id="biblioteca">
+        <h2>Biblioteca de Desenhos</h2>
+        <p id="mensagem-vazia" class="mensagem-vazia">Vish! Você ainda não adicionou nenhuma relíquia aqui</p>
+        <div id="container-desenhos"></div>
+    </section>
+
+    <!-- botão -->
+    <section id="link-adicionar">
+        <button class="botao-nav" onclick="window.location.href='adicionar.html'">Adicionar Novo Desenho</button>
+    </section>
+
+    <!-- exemplos de relíquias -->
+    <section id="exemplos-reliquias">
+        <h2>Exemplos de Relíquias</h2>
+        <div class="container-exemplos">
+            <div class="card">
+                <img src="https://static.welban.com.br/public/welban/imagens/produtos/caderno-brochura-1-4-capa-dura-80-fls-colorido-personagens-dragon-ball-z-tilibra-65720c309f88c.jpg" alt="Dragon Ball Z">
+                <h3>Dragon Ball Z</h3>
+                <button onclick="assistirDesenho('https://youtu.be/fNRWqlt-pJA?si=cX908dpmWLxJ6lf5')">Assistir</button>
+            </div>
+            <div class="card">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_796418-MLB73440498230_122023-O.webp" alt="Pokémon">
+                <h3>Pokémon</h3>
+                <button onclick="assistirDesenho('https://www.youtube.com/watch?v=SSViT336Vq4')">Assistir</button>
+            </div>
+            <div class="card">
+                <img src="https://media.fstatic.com/_u9CdqkEqdoB5niqliy_9_vcr0M=/322x478/smart/filters:format(webp)/media/movies/covers/2014/07/cardcaptor-sakura-1a-temporada_t27002_3.jpg" alt="Sakura Card Captors">
+                <h3>Sakura Card Captors</h3>
+                <button onclick="assistirDesenho('https://www.youtube.com/live/kTdW3tu3Z5o?si=JYUECbZXUh315HiC')">Assistir</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
