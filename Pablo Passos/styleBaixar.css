@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url(img/marcelo-cidrack-S-2D55mMwEw-unsplash.jpg);
+}
+
+header {
+    background: rgb(1,24,55);
+    background: linear-gradient(27deg, rgba(1,24,55,1) 0%, rgba(1,38,73,1) 37%, rgba(1,59,98,1) 61%, rgba(2,47,80,1) 98%);
+    color: #fff;
+    padding: 1rem 0;
+
+}
+
+header a {
+
+text-decoration: none;
+color: #fff;
+
+}
+
+header img {
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    padding-left: 8px;
+    color: #fff;
+}
+
+
+.pai {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.countainer-image {
+    margin-bottom: 1.5rem;
+}
+
+.countainer-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.download {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: rgb(1,24,55);
+    background: linear-gradient(27deg, rgba(1,24,55,1) 0%, rgba(1,38,73,1) 37%, rgba(1,59,98,1) 61%, rgba(2,47,80,1) 98%);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.download:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}

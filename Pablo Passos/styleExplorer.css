@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.divPai {
+    height: 100vh;
+    background-image: url('img/john-fowler-s7W0bV2dUqQ-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.divFilho {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.botao {
+    text-decoration: none;
+    background: rgb(1,24,55);
+    background: linear-gradient(27deg, rgba(1,24,55,1) 0%, rgba(1,38,73,1) 37%, rgba(1,59,98,1) 61%, rgba(2,47,80,1) 98%);
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}

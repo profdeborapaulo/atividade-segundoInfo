@@ -1,0 +1,148 @@
+
+body {
+
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box ;
+    background-image: url(img/marcelo-cidrack-S-2D55mMwEw-unsplash.jpg);
+
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+.name {
+
+    text-align: center;
+
+}
+
+.pai {
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 900px;
+    height: 450px;
+    background-color: bisque;
+    border-radius: 20px;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.27);
+    border: 0.0133rem solid rgba(0, 0, 0, 0.143);
+
+
+}
+
+
+.right {
+
+    width: 50%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    border-radius: 20px;
+
+
+}
+
+.right input {
+
+    width: 300px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(209, 209, 209);
+    padding-left: 15px;
+
+}
+
+.right button {
+
+    width: 150px;
+    height: 35px;
+    border: none;
+    border-radius: 25px;
+    background: rgb(1,24,55);
+    background: linear-gradient(27deg, rgba(1,24,55,1) 0%, rgba(1,38,73,1) 37%, rgba(1,59,98,1) 61%, rgba(2,47,80,1) 98%);
+
+    color: #dadada;
+
+
+}
+
+.right h2 {
+
+    font-size: 2.5rem;
+
+}
+
+.left {
+
+    width: 50%;
+    height: 100%;
+    background: rgb(1,24,55);
+    background: linear-gradient(27deg, rgba(1,24,55,1) 0%, rgba(1,38,73,1) 37%, rgba(1,59,98,1) 61%, rgba(2,47,80,1) 98%);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    
+
+
+}
+
+.left h1 {
+
+    color: white;
+    font-family: "DejaVu Sans Mono";
+    font-size: 2.5rem;
+
+}
+
+.left h6 {
+
+    width: 150px;
+    height: 35px;
+    border: none;
+    border-radius: 25px;
+    background-color: transparent;
+    border: 1px solid #dadada;
+    color: #dadada;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+   
+
+
+}
+
+a:hover{
+
+    text-decoration-line: none;
+
+}
+a{
+    text-decoration-line: none;
+}
+
+.left p {
+
+    color: #dadada;
+
+}
