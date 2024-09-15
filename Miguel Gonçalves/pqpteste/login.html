@@ -1,90 +1,31 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ATIVIDADE</title>
-
-    <script>
-        function validar(){
-    let user = document.getElementById('user').value;
-    let senha = document.getElementById('senha').value;
-
-    if (user == "Miguel" && senha == "2ti") {
-        document.getElementById('validacao').innerHTML = "Dados válidos."; 
-        window.location.href="products.html"       
-    } else {
-        document.getElementById('validacao').innerHTML = "Dados inválidos.";
-        
-    }
-
-    }
-    </script>
-
-    <style>
-        body{background-color:rgb(38, 38, 38);
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        color: rgb(112, 0, 112);}
-
-        .login{background-color: gray;
-        margin: auto;
-        width: 300px;
-        height: 500px;
-        border-radius: 100px;
-        display: block;
-        text-align: center;}
-
-        input{display: block; 
-        margin: auto;
-        margin-top: 5%;
-        margin-bottom: 5%;}
-
-        input[type=button]{
-        color: rgb(255, 255, 255);
-        background-color: black;
-        padding: 10px;
-        border-radius: 70px;
-        transition: 0.3s;}
-
-        input:hover[type=button]{
-        color: rgb(255, 255, 255);;
-        background-color: rgb(168, 0, 145);
-        padding: 13px;
-        border-radius: 10px;
-        border: 2px black;
-        transition: 0.3s;
-        transform: translateY(-0%);}
-        
-        p{color: rgb(60, 60, 60);
-        margin: 0;}
-
-    </style>
+    <title>Mercado - Adicionar Produto</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <h1>Adicionar Novo Produto</h1>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="add-product.html">Adicionar Produto</a>
+            <a href="cart.html">Carrinho</a>
+        </nav>
+    </header>
 
-    <div class="login">
-        <br><br><br><br>
-        <h1>Login</h1>
-
-        <p>Usuário válido: Miguel</p>
-        <p>Senha válida: 2ti</p>
-
-        <div class="Campos">
-        <form action="">
-            <input type="text" placeholder="Usuário" id="user">
-            <input type="password" placeholder="Senha" id="senha">
-
-            <input type="button" value="Validar" onclick="validar()">
-
-            <label for="" id="validacao" style="color: rgb(26, 32, 34);"></label>
+    <main>
+        <form id="add-product-form">
+            <label for="product-name">Nome do Produto:</label>
+            <input type="text" id="product-name" required>
+            <label for="product-price">Preço:</label>
+            <input type="number" id="product-price" step="0.01" required>
+            <button type="submit">Adicionar Produto</button>
         </form>
-        </div>
-    </div>
-    
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
