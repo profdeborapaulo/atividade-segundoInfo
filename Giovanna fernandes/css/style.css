@@ -1,0 +1,126 @@
+*{
+    max-width: 100vw;
+}
+.imgprincipal2{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.circle-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffeb96; 
+}
+
+.circle-item {
+    text-align: center;
+}
+
+.circle-item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.circle-item p {
+    font-family: 'Prata', serif;
+    font-size: 24px;
+    color: #f4562a;
+}
+.titulo{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.titulo p{
+    font-family: 'Prata',sans-serif;
+    font-size: 30px;
+    color: #f4562a;
+
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.retangulo {
+    position: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.retangulo img {
+    width: 100%;
+    max-width: 600px; 
+}
+.siga-nos{
+    position: absolute;
+}
+
+.siga-nos button {
+    background-color: #ff6633;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    max-width: 100px;
+    width: 100%;
+    max-height: 40px;
+    padding-inline: 15px;
+    padding-block: 5px;
+
+}
+
+.siga-nos button:hover {
+    background-color: #ff9933;
+}
+
+.produtos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.produto {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.produto img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.produto h3 {
+    font-size: 24px;
+    color: #ff6633;
+    margin-top: 10px;
+}
+
+.produto p {
+    font-size: 16px;
+    color: #686767;
+    margin-top: 5px;
+}

@@ -1,0 +1,58 @@
+
+@font-face {
+    font-family: "Filia-Regular";
+    src: url(font/Filia-Regular.otf);
+}
+ h2{
+    font-size: 30px;
+    font-family: 'Filia-Regular';
+    font-weight: 100;
+    color: #f4562a;
+}
+body{
+    font-family: 'livvic', sans-serif;
+    color: #f4562a;
+}
+.direitos-giovanna{
+    margin-bottom: 20px;
+}
+main{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.parte2{
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    gap: 25px;
+    width: 900px;
+    padding: 20px;
+}
+.texto{
+    width: 50%;
+}
+.parte2	img {
+    width: 30%;
+    height: auto;
+    border-radius: 20px;
+
+}
+.familias{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+}
+.parte3 img{
+    width: 25%;
+
+}
+.parte3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
