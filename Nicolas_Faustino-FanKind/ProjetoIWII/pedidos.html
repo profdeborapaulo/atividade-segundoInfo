@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/pedidos.css">
+    <title>Meus pedidos</title>
+</head>
+<body>
+    <nav>
+        <div class="logo"><img src="/img/logoo.png" alt="Logo"></div>
+        <div class="search-bar">
+            <input type="text" placeholder="Pesquisar...">
+            <i class="bi bi-search"></i>
+        </div>
+        <div class="links">
+            <ul class="nav-itens">
+                <li><a href="homecliente.html">Início</a></li>
+            </ul>
+            <button>Anunciar</button>
+        </div>
+    </nav>
+    
+    <section class="pedidos">
+        <h1>Seus Pedidos</h1>
+        <div id="card-container"></div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (localStorage.getItem('finalizedPurchase') === 'true') {
+                localStorage.removeItem('finalizedPurchase'); 
+                document.getElementById('card-container').innerHTML = `
+                    <div class="card">
+                        <img src="./img/e3.jpg" alt="Pedido">
+                        <h2>The Weeknd</h2>
+                        <p>07 de Setembro</p>
+                    </div>
+                `;
+            }
+        });
+    </script>
+
+</body>
+</html>

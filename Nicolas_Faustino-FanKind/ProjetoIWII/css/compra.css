@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 3px 20px;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    z-index: 1000; 
+}
+
+.logo img {
+    width: 70px;
+    height: auto;
+}
+
+.search-bar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 3px;
+    width: 300px;
+}
+
+.search-bar input {
+    border: none;
+    padding: 8px;
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+}
+
+.search-bar i {
+    color: #000000;
+    padding: 0 10px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-itens {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+.nav-itens li {
+    margin-right: 20px;
+}
+
+.nav-itens li a {
+    padding-left: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+button {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #c5c3c3;
+}
+
+.carrinho {
+    padding: 20px 5%;
+    margin-top: 100px;
+}
+
+.carrinho h1 {
+    font-size: 28px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.carrinho h1 i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #000000;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    max-width: 400px; 
+    margin: 0; 
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+    font-size: 20px; 
+    color: #333;
+}
+
+.card p {
+    font-size: 14px; 
+    color: #666;
+}
+
+button#finalizar-compra {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+button#finalizar-compra:hover {
+    background-color: #c5c3c3;
+}

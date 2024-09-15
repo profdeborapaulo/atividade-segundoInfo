@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/venda.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Anúncio | FanKind</title>
+</head>
+<body>
+    <nav>
+        <div class="logo"><img src="/img/logoo.png" alt="Logo"></div>
+        <div class="search-bar">
+            <input type="text" placeholder="Pesquisar...">
+            <i class="bi bi-search"></i>
+        </div>
+        <div class="links">
+            <ul class="nav-itens">
+                <li><a href="homevendedor.html">Meus anúncios</a></li>
+            </ul>
+            <a href="homecliente.html"><button>Comprar</button></a>
+        </div>
+    </nav>
+    <section>
+        <form id="anuncio-form">
+            <h1>Anúncio</h1>
+            <div class="input-anuncio">
+                <input id="artista" placeholder="Artista" required>
+            </div>
+            <div class="input-anuncio">
+                <input id="motivo" placeholder="Setor" type="text" required>
+            </div>
+            <div class="input-anuncio">
+                <input id="data" placeholder="Data" type="date">
+            </div>
+            <div class="input-anuncio">
+                <input id="preco" placeholder="Preço" type="number">
+            </div>
+
+            <button type="submit" class="submit-button">Anunciar</button>
+        </form>
+    </section>
+    
+    <script src="/js/venda.js"></script>
+
+</body>
+</html>
