@@ -28,6 +28,9 @@ function adicionarAlbum(){
 
     //Insere os novos dados da array principal no localStorage.
     localStorage.setItem('album', JSON.stringify(albuns));
+
+    //Redirect para a página da biblioteca
+    window.location.href= "biblioteca.html";
   }
 }
 
@@ -47,7 +50,7 @@ function mostrarAlbuns(){
         const cell1 = row.insertCell(0);
         const img = document.createElement('img');
         img.src = album.img;
-        img.alt = 'Álbum';
+        img.alt = album.nome;
         img.style.width = '50px';
         img.style.height = '50px';
         cell1.appendChild(img); 
