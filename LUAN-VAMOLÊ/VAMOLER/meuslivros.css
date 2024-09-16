@@ -1,0 +1,191 @@
+main {
+    padding: 2em;
+    background-color: #f9f9f9;
+}
+
+/* Minha Biblioteca */
+.my-books, .recommended-books {
+    margin-bottom: 2em;
+}
+
+.my-books h1, .recommended-books h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+/* Estilos dos livros */
+.books-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+}
+
+.book {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+    padding: 1em;
+}
+
+.book img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.book h2 {
+    font-size: 1.1em;
+    color: #333;
+    margin: 0.5em 0;
+}
+
+.book p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Seção de sugestões */
+.recommended-books .book h2 {
+    color: #f0c14b;
+}
+
+.recommended-books .book:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 16px;
+}
+
+header {
+    background-color: #f0c14b;
+    padding: 1em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .nav-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2em;
+}
+
+.navbar .nav-list li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-list li a:hover {
+    color: #fff;
+}
+
+/* Estilo para Minha Biblioteca */
+.my-books, .recommended-books {
+    padding: 2em 1em;
+    margin: 2em 0;
+}
+
+.my-books h1, .recommended-books h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 1.5em;
+    color: #333;
+    position: relative;
+}
+
+.my-books h1::after, .recommended-books h1::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #f0c14b;
+    margin: 0.5em auto;
+}
+
+.books-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2em;
+    justify-items: center;
+}
+
+.book {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 1.5em;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.book:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.book img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1em;
+    transition: transform 0.3s ease;
+}
+
+.book:hover img {
+    transform: scale(1.05);
+}
+
+.book h2 {
+    font-size: 1.4em;
+    margin-bottom: 0.5em;
+    color: #333;
+}
+
+.book p {
+    font-size: 1em;
+    color: #666;
+}
+
+.book:hover p {
+    color: #333;
+}
+
+.recommended-books .book h2 {
+    color: #f0c14b;
+    font-weight: 600;
+}
+
+.recommended-books .book:hover h2 {
+    color: #ff9900;
+}
+
+
+@media (max-width: 768px) {
+    .navbar .nav-list {
+        flex-direction: column;
+    }
+    
+    .books-container {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+}

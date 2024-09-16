@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco para contraste */
+}
+
+/* Estilo da página inicial */
+.home-page {
+    background-image: url('img/background-image.jpg'); /* Substitua com o caminho da sua imagem */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-page h1 {
+    color: #fff;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.home-page p {
+    font-size: 1.5em;
+    color: #fff;
+    text-align: center;
+    margin-top: 1em;
+}
+
+/* Outras páginas */
+.books-section, .my-books-section {
+    padding: 3em 0;
+    text-align: center;
+    background-color: #000; /* Fundo preto */
+}
+
+/* Cartões de livro */
+.book-card {
+    background-color: #333; /* Fundo escuro no cartão de livros */
+    color: #fff; /* Texto branco para contraste */
+}
+
+header {
+    background-color: #f0c14b;
+    padding: 1.5em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+}
+
+header h1 {
+    color: #333;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+/* Seção de Livros */
+.books-section {
+    padding: 3em 0;
+    text-align: center;
+}
+
+.books-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 2em;
+    color: #333;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+    justify-items: center;
+}
+
+.book-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    position: relative;
+}
+
+.book-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.book-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1.5em;
+}
+
+.book-card h2 {
+    font-size: 1.4em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+.book-card p {
+    color: #666;
+    font-size: 1.1em;
+    margin-bottom: 1.5em;
+}
+
+/* Botões */
+.book-card .btn {
+    display: inline-block;
+    background-color: #f0c14b;
+    color: #333;
+    border: none;
+    padding: 0.8em 1.5em;
+    border-radius: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 0.5em;
+    text-decoration: none;
+}
+
+.book-card .btn:hover {
+    background-color: #ff9900;
+}
+
+.book-card .btn-edit {
+    background-color: #333;
+    color: #fff;
+}
+
+.book-card .btn-edit:hover {
+    background-color: #666;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .book-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+}
+
