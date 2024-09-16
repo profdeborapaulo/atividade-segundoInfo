@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="media.js" defer></script>
+    <title>Média dos Alunos</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Média dos Alunos</h1>
+        <h3>(Média)</h3>
+        <form id="nota-form">
+            <input type="text" id="nomeAluno" placeholder="Nome do Aluno" required>
+            <div id="notas-container">
+                <input type="number" class="nota" placeholder="Nota 1" required>
+            </div>
+            <button type="button" id="add-nota">Adicionar Nota</button>
+            <button type="submit">Cadastrar</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome do Aluno</th>
+                    <th>Média</th>
+                </tr>
+            </thead>
+            <tbody id="lista-media">
+                <!-- Aqui serão listadas as médias dos alunos -->
+            </tbody>
+        </table>
+    </div>
+
+    <button>
+        <a href="index.html">Notas</a>
+    </button>
+</body>
+</html>

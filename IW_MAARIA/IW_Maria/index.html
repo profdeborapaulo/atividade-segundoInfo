@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Cadastro de Notas</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Notas</h1>
+
+        <form id="produto-form">
+            <input type="text" id="nome-produto" placeholder="Nome do Aluno" required>
+            <input type="number" id="preco-produto" placeholder="Nota" required>
+            <button type="submit">Cadastrar</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome do Aluno</th>
+                    <th>Nota</th>
+                </tr>
+            </thead>
+            <tbody id="lista-produto">
+                <!-- Aqui serão listados os itens adicionados pelo JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <button>
+        <a href="media.html">Página da Média</a>
+    </button>
+</body>
+</html>
