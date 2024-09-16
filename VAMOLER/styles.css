@@ -1,0 +1,609 @@
+/* Paleta de Cores: Amarelo e Preto */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
+.navbar {
+    background-color: #f0c14b;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover, .navbar ul li a.active {
+    color: #333;
+}
+
+.hero {
+    background: url('img/grande-biblioteca-com-escadas_360032-1281.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2em;
+    border-radius: 10px;
+}
+
+.hero-text h1 {
+    font-size: 3em;
+    color: #f0c14b;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.btn-hero {
+    background-color: #f0c14b;
+    color: #000;
+    padding: 0.8em 2em;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.btn-hero:hover {
+    background-color: #ffcc00;
+}
+
+/* Livros */
+.livros-section {
+    padding: 2em;
+    text-align: center;
+    background-color: #1c1c1c;
+}
+
+.livros-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+}
+
+.livro-card {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 1em;
+}
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container principal de login */
+.login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c1c1c;
+}
+
+/* Caixa de login */
+.login-box {
+    background-color: #333;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Título da caixa */
+.login-box h2 {
+    color: #f0c14b;
+    margin-bottom: 1.5em;
+    font-size: 2em;
+}
+
+/* Estilo dos inputs */
+.input-group {
+    margin-bottom: 1.5em;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-size: 1em;
+    color: #fff;
+    margin-bottom: 0.5em;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.8em;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #444;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.input-group input:focus {
+    background-color: #555;
+    outline: none;
+}
+
+/* Botão de login */
+.btn-login {
+    background-color: #f0c14b;
+    color: #000;
+    padding: 0.8em 1.5em;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 1em;
+}
+
+.btn-login:hover {
+    background-color: #ffcc00;
+}
+
+/* Mensagem de erro */
+.error-message {
+    color: #ff4b4b;
+    margin-top: 1em;
+    display: none;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
+/* Cabeçalho principal */
+.main-header {
+    text-align: center;
+    padding: 2em;
+    background-color: #f0c14b;
+    color: #000;
+}
+
+.main-header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* Seção dos livros */
+.books-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2em;
+    gap: 2em;
+}
+
+/* Estilo de cada livro */
+.book {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 1em;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.book img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+.book h3 {
+    font-size: 1.3em;
+    color: #f0c14b;
+}
+
+/* Efeito hover para cada livro */
+.book:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+}
+
+.featured-books {
+    padding: 2em;
+    background-color: #f9f9f9;
+}
+
+.featured-books h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+.books-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+}
+
+.book {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+    padding: 1em;
+}
+
+.book img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.book h2 {
+    font-size: 1.1em;
+    color: #333;
+    margin: 0.5em 0;
+}
+
+.book p {
+    font-size: 0.9em;
+    color: #666;
+}
+.home-page {
+    background-image: url('img/background-image.jpg'); /* Substitua com a imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+}
+
+/* Estilização do nome VAMOLE */
+.site-title {
+    font-size: 6em;
+    color: #f0c14b;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+    margin: 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Navegação */
+.main-nav ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    list-style: none;
+}
+
+.main-nav ul li {
+    margin: 0 15px;
+}
+
+.main-nav ul li a {
+    color: #f0c14b;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease-in-out;
+}
+
+.main-nav ul li a:hover {
+    color: #fff;
+}
+
+/* Texto de boas-vindas */
+.welcome-text {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.welcome-container p {
+    color: #f0c14b;
+    font-size: 1.3em;
+    margin-bottom: 1.5em;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+/* Botão de ação (CTA) */
+.cta-btn {
+    background-color: #f0c14b;
+    color: #000;
+    border: none;
+    padding: 0.8em 2em;
+    font-size: 1.2em;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.cta-btn:hover {
+    background-color: #ff9900;
+    transform: scale(1.1);
+}
+
+/* Carrossel de Livros */
+.carousel {
+    margin-top: 3em;
+    width: 90%;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-track img {
+    width: 200px;
+    height: 300px;
+    margin: 0 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .site-title {
+        font-size: 4em;
+    }
+
+    .welcome-text {
+        font-size: 2em;
+    }
+
+    .carousel-track img {
+        width: 150px;
+        height: 225px;
+    }
+}
+
+.book-marketplace {
+    padding: 2em;
+    text-align: center;
+    background-color: #000;
+    color: #f0c14b;
+    min-height: 100vh;
+}
+
+.book-marketplace h2 {
+    font-size: 2.5em;
+    margin-bottom: 1.5em;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2em;
+    justify-items: center;
+}
+
+.book-card {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 1em;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.book-card img {
+    width: 150px;
+    height: 225px;
+    border-radius: 8px;
+    margin-bottom: 1em;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.book-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.buy-btn, .edit-btn {
+    display: inline-block;
+    background-color: #f0c14b;
+    color: #000;
+    border: none;
+    padding: 0.8em 1.5em;
+    font-size: 1em;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 0.5em;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.buy-btn:hover, .edit-btn:hover {
+    background-color: #ff9900;
+    transform: scale(1.05);
+}
+
+.book-card:hover {
+    transform: scale(1.05);
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .book-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .book-card img {
+        width: 120px;
+        height: 180px;
+    }
+
+    .buy-btn, .edit-btn {
+        padding: 0.6em 1.2em;
+    }
+}
+
+/* Estilo para a página Meus Livros */
+.my-library, .suggestions {
+    padding: 3em;
+    text-align: center;
+    background-color: #000;
+    color: #f0c14b;
+}
+
+.my-library h2, .suggestions h2 {
+    font-size: 2.5em;
+    margin-bottom: 1.5em;
+}
+
+.book-grid, .suggestions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2em;
+    justify-items: center;
+}
+
+.book-card, .suggestion-card {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 1em;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease-in-out;
+}
+
+.book-card:hover, .suggestion-card:hover {
+    transform: scale(1.05);
+}
+
+.book-card img, .suggestion-card img {
+    width: 150px;
+    height: 225px;
+    border-radius: 8px;
+    margin-bottom: 1em;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.book-card h3, .suggestion-card h3 {
+    font-size: 1.5em;
+    margin-top: 1em;
+}
+
+.suggestions-grid img {
+    width: 120px;
+    height: 180px;
+}
+
+/* Ajuste de fontes */
+body, h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 3em;
+    color: #f0c14b;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #f0c14b;
+}
+
+p {
+    font-size: 1.2em;
+    color: #ddd;
+}
+
+a {
+    color: #f0c14b;
+    text-decoration: none;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .book-grid, .suggestions-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .book-card img, .suggestion-card img {
+        width: 120px;
+        height: 180px;
+    }
+}
+
+.library-controls {
+    margin-top: 2em;
+    text-align: center;
+}
+
+.library-controls input {
+    padding: 0.5em;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-right: 1em;
+}
+
+.library-controls button {
+    padding: 0.7em 1.5em;
+    font-size: 1em;
+    background-color: #f0c14b;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0.5em;
+    transition: background-color 0.3s ease;
+}
+
+.library-controls button:hover {
+    background-color: #dda20a;
+}

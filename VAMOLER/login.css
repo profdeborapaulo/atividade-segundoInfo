@@ -1,0 +1,102 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: #333;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 1.5em;
+}
+
+input {
+    width: 100%;
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background-color: #444;
+    color: #fff;
+}
+
+button {
+    padding: 0.8em;
+    width: 100%;
+    background-color: #f0c14b;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff9900;
+}
+
+.home-page {
+    background-image: url('img/background-image.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.site-title {
+    font-size: 5em;
+    color: #f0c14b; 
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.2em;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Texto de boas-vindas */
+.welcome-container h2 {
+    color: #fff;
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.welcome-container p {
+    color: #f0c14b;
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+
+@media (max-width: 768px) {
+    .site-title {
+        font-size: 3em;
+    }
+
+    .welcome-container h2 {
+        font-size: 2em;
+    }
+
+    .welcome-container p {
+        font-size: 1.2em;
+    }
+}
