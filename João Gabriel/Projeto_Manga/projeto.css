@@ -1,0 +1,97 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    background-image: url('Imagens/vecteezy_vector-abstract-background-with-soft-gradient-color-and_6404700.jpg');
+    background-size: 100%;
+    
+}
+.container{
+    width: 800px;
+    margin: 0 auto;
+}
+h1{
+    text-align: center;
+    color: #00b4d8;
+}
+input{
+    width: 250px;
+    height: 41px;
+    font-size: 20px;
+    text-align: center;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+table, th, td{
+    border: 1px solid rgb(0, 0, 0);
+}
+th, td{
+    padding: 12px;
+    text-align: left;
+}
+th{
+    background-color: #0077b6;
+    
+}
+tr{
+    color: #000000;    
+    background-color: #caf0f8;
+}
+button{
+    width: 120px;
+    height: 40px;
+    margin: 5%;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.Cadastrodeproduto{
+text-align: center;
+
+
+
+}
+
+
+.barra {
+    background-color: #03045e;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.barra a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.barra a:hover {
+    background-color: #ade8f4;
+    color: rgb(0, 0, 0);
+}
+
+
+.content {
+    padding-top: 50px; 
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+section h1 {
+    font-size: 24px;
+    margin-top: 0;
+} 
+

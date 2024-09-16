@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina do projeto</title>
+    <link rel="stylesheet" href="projeto.css">
+    <link rel="stylesheet" href="projeto.js"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    
+<div class="barra">
+<a href="Inicio.html">Inicio</a>
+<a href="projeto.html">Serviços</a>
+<a href="Informações.html">Sobre</a>
+</div>
+<br><br><br>     <br>
+
+
+<div class="container">
+    <h1>Cadastro de Livros</h1><br><br>
+    <form id="produto-form" class="Cadastrodeproduto">
+        <input type="text" id="nome-produto" placeholder="Nome do Livro" required>
+        <input type="number" id="preco-produto" placeholder="Preço" required>
+        <button type="submit" class="btn btn-outline-primary">Cadastro</button> <br><br>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>NOME DO LIVRO</th>
+                <th>PREÇO</th>
+            </tr>
+        </thead>
+        <tbody id='lista-produto'>
+            <!--Neste bloco serão listados dinamicamente, pelo javascript, os itens adicionados pelo array-->
+        </tbody>
+    </table>
+</div>
+
+
+<script src="projeto.js"></script> <!--Faltou isso para preencer os novos itens a lista-->
+
+
+
+
+
+
+
+
+</body>
+</html>
