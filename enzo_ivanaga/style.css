@@ -85,6 +85,7 @@ footer {
     color: #fff;
     font-size: 18px;
     border-radius: 5px;
+    cursor: pointer;
 }
 .main2{
     display: flex;
