@@ -283,17 +283,28 @@ document.addEventListener('DOMContentLoaded', function () {//executa o codigo ap
                     let New_Description = document.getElementById('descricao').value//pega o valor modificado do input descricao atividade
 
                     // Atualiza os valores da atividade existente
-                    atividadeAtual.nome = New_Name;
-                    atividadeAtual.data = New_Date;
-                    atividadeAtual.descricao = New_Description;
 
-                    // Procura o indice dentro do array pai que corresponda a condição. Substitui a atividade no array e salva no localStorage
-                    let indice = atividades.findIndex(atividade => atividade.id == id);
-                    atividades[indice] = atividadeAtual;
-                    localStorage.setItem('atividades', JSON.stringify(atividades));
+                    let nomeNormalizado = New_Name.trim().toLowerCase();
 
-                    // Redireciona para a página de exibição
-                    window.location.href = "index.html";
+                    // Verifica se já existe uma atividade com o mesmo nome
+                    let tituloIgual = atividades.find(atividade => atividade.nome.trim().toLowerCase() === nomeNormalizado);
+
+                    if(!tituloIgual){
+                        atividadeAtual.nome = New_Name;
+                        atividadeAtual.data = New_Date;
+                        atividadeAtual.descricao = New_Description;
+    
+                        // Procura o indice dentro do array pai que corresponda a condição. Substitui a atividade no array e salva no localStorage
+                        let indice = atividades.findIndex(atividade => atividade.id == id);
+                        atividades[indice] = atividadeAtual;
+                        localStorage.setItem('atividades', JSON.stringify(atividades));
+    
+                        // Redireciona para a página de exibição
+                        window.location.href = "index.html";
+                    }else{
+                        alert("Mude o Título!");
+                    }
+                    
                 }
 
                 // Evento para submeter os dados do formulário
