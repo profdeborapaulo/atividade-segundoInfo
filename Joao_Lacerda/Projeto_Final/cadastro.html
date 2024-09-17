@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro e venda</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <script src="cadastro.js" defer></script>
+    <link rel="icon" href="img/shopping-cart.png" type="image/png"> 
+</head>
+<body>
+    <div id="container">
+    </div>
+
+   <div class="bloco">
+    <h1 id="texto">Aqui você poderá cadastrar e vender suas roupas</h1>
+    <p id="texto">Apenas insira o tipo de roupa, a cor e o tamanho</p>
+    
+    <p id="saida">Deseja ir para outra página?</p>
+    <a href="home.html" id="link">Volte para a Home</a>
+    <br>
+    <a href="projeto.html" id="link">Conheça nosso Projeto</a>
+   </div>
+
+   <div id="catalogo">
+    <form action="" id="produto-form">
+        <input type="text" id="preco-produto" placeholder="Preço" required>
+        <input type="text" id="modelo-produto" placeholder="Modelo" required>
+        <input type="text" id="marca-produto" placeholder="Marca" required>
+        <input type="text" id="tamanho-produto" placeholder="Tamanho" required>
+        <input type="text" id="cor-produto" placeholder="Cor" required>
+        <button type="submit">Cadastrar</button>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Preço</th>
+                <th>Modelo</th>
+                <th>Marca</th>
+                <th>Tamanho</th>
+                <th>Cor</th>
+            </tr>
+        </thead>
+        <tbody id="lista-produto">
+            <!-- Neste bloco serão listados dinamicamente, pelo JavaScript, os itens adicionados pelo array -->
+        </tbody>
+    </table>
+  </div>
+</body>
+</html>

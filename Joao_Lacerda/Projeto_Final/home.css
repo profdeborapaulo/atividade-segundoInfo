@@ -1,0 +1,44 @@
+body {
+    background-image: url('img/home_background.jpg'); /* Caminho relativo correto */
+    background-size: 100%; /* Ajusta o tamanho da imagem para cobrir o fundo */
+    background-repeat: no-repeat; /* Opcional: impede a repetição da imagem */
+}
+.bloco{
+    background-color: rgb(0, 204, 255);
+    margin-left: 2%;
+    margin-top: 17%;
+    width: 35%;
+    height: 250px;
+    border: 5px solid rgb(255, 255, 255);
+    padding: 20px;
+    font-size: larger;
+}
+#texto {
+    font-size: 24px;
+    color: white;
+    flex: 1;
+    padding-right: 20px;
+ }
+ #link {
+    font-size: 20px;
+    color: rgb(199, 73, 73);
+ }
+ #saida {
+    font-size: 24px;
+    color: rgb(59, 12, 134);
+    flex: 1;
+    padding-right: 20px;
+ }
+.bloco2{
+    background-color: rgb(0, 204, 255);
+    margin-left: 60%;
+    margin-top: -25%;
+    width: 35%;
+    height:700px;
+    border: 5px solid rgb(255, 255, 255);
+    padding: 20px;
+}
+.bloco2 img{
+    width: 500px;
+    height: 300px;
+}
