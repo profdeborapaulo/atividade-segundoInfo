@@ -1,0 +1,37 @@
+body{
+    background-color: #0a181b;
+    color: #e5cba1;
+    text-align: center;
+    margin: 10px;
+    font-family: "Barlow Condensed", sans-serif;
+}
+p{
+    color: white;
+}
+#container{
+    display: flex;
+    margin: 20px;
+}
+img{
+    width: 350px;
+}
+.form{
+    background-color: #a18768;
+    color: #0a181b;
+    border-radius: 5px;
+    margin: 5px;
+    font-size:larger;
+}
+h3{
+    color: #462f1f;
+}
+label{
+    margin: 2px;
+}
+input{
+    border-radius: 5px;
+    border: none;
+    margin: 5px;
+    height: 20px;
+    width: auto;
+}
