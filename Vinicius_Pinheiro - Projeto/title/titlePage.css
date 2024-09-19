@@ -1,0 +1,186 @@
+main{
+    margin: 20px;
+    /* background-color: black; */
+}
+.card{
+    padding: 20px;
+    display: flex;
+    /* flex-direction: row; */
+    gap: 20px;
+    width: 100%;
+}
+
+.textCard{
+    /* background-color: rgb(18, 62, 62); */
+    width: 100%;
+    display: grid;
+    flex-direction: row;
+    /* gap: 20px;     */
+}
+
+.infoCard{
+    width: 100%;
+    display: flex;
+    font-size: 15px;
+}
+.textAbout{
+    padding: 20px;
+    display: grid;
+    gap: 15px;
+    /* width: 60%; */
+
+}
+
+.aboutCard{
+    /* background-color: brown; */
+    padding: 20px;
+    /* width: 100%; */
+    display: flex;
+    gap: 20px;
+}
+
+/* .textAboutVideoNone{
+    padding: 20px;
+    width: 100%;
+    display: grid;
+    gap: 20px;
+} */
+
+.imgCardDiv{
+    /* height: 50%; */
+    width: 40%;
+    justify-content: center;
+    text-align: center;
+    /* background-color: aquamarine; */
+}
+
+.imgCardDiv img{
+    /* height: 100%; */
+    width: 100%;
+    border: 3px black solid;
+
+}
+
+.gradeCard{
+    width: 100%;
+    display: flex;
+    gap: 5px;
+}
+
+.videoCard{
+    display: flex;
+    justify-content: center;
+}
+
+.videoCard video{
+    width: 90%;
+    background-color: black;
+}
+
+.optionsUser{
+    /* background-color: rgb(168, 207, 208); */
+    padding: 30px;
+    width: 100%;
+} 
+
+.gradeDiv{
+    display: flex;
+    gap: 2px;
+}
+
+.gradeDiv p:nth-child(2){
+    font-size: 13px;
+    /* align-items: center; */
+    /* text-align: center; */
+}
+
+/* 
+.commentsSession{
+
+    display: grid;
+    gap: 10px;
+
+    text-align: center;
+}
+
+.comments{
+    background-color: azure;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.otherComment{
+    text-align: start;
+    width: 20%;
+    background-color: rgb(207, 205, 201);
+    padding: 20px;
+    display: grid;
+    gap: 10px;
+
+}
+
+ */
+
+.optionsUser{
+    /* background-color: bisque; */
+    width: 80%;
+    display: grid;
+    gap: 20px;
+}
+
+.optionsUser button{
+    padding: 5px;
+    border: 2px black solid;
+    border-radius: 5px;
+
+}
+
+.options{
+    /* background-color: aqua; */
+    display: flex;
+    /* width: 50%; */
+    justify-content: center;
+}
+
+.userComment{
+    font-size: 13px;
+    padding: 20px;
+    /* background-color: rgb(86, 146, 146); */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+
+    
+}
+
+/* .userComment2{
+
+} */
+
+.options2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.userComment input{
+    width: 20%;
+    height: 20px;
+}
+
+/* .userComment textarea{
+    width: 100%;
+} */
+
+textarea {
+    width: 100%;
+    min-height: 100px;
+    resize: none; /* Impede o redimensionamento manual */
+    box-sizing: border-box; /* Inclui o padding e borda na largura e altura total */
+    overflow: hidden; /* Remove a barra de rolagem */
+}

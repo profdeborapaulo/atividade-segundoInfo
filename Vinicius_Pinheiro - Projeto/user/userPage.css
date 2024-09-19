@@ -1,0 +1,29 @@
+main{
+    margin: 20px;
+    /* background-color: black; */
+}
+
+.user{
+    /* background-color: blue; */
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.userImg{
+    width: 20%;
+}
+
+.userImg img {
+    width: 100%;
+}
+
+.userInfo{
+    padding: 20px;
+    /* background-color: rgb(107, 107, 90); */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+}
