@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'celeste';
+    src: url(fonte/Renogare-Regular.otf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #1d1a2f;
+}
+
+header
+{
+    background-color: #734f9a;
+    color: white;
+    text-align: center;
+    margin-bottom: 100px;
+    width: 100vw;
+    height: 90px;
+    position: fixed;
+    color: #ff8c28;
+}
+
+h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'celeste';
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding-right: 10px;
+    font-family: 'celeste';
+    transition: 0.5s;
+}
+
+a:hover {
+    color: #c6a1ee;
+}
+
+#centro
+{
+    font-family: 'celeste';
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    color: white;
+    font-size: 25px;
+}
+
+#centro > form {
+    margin: auto;
+}
+
+#botao
+{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    margin-bottom: 30px;
+}
+
+table {
+    color: white;
+   font-family: 'celeste';
+}
+
+th {
+    border: 1px solid gray;
+    padding: 10px;
+}
+

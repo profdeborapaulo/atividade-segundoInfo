@@ -1,0 +1,13 @@
+Para o site funcionar: 
+- Coloque o projeto na pasta "htdocs"
+- Ligue os serviçoes Apache e MySQL pelo XAMPP
+- abrir o phpMyAdmin clicando no botão "admin" ao lado de "mysql" no xampp
+- rodar o código:
+
+create table registrados (
+    codigo int not null PRIMARY KEY AUTO_INCREMENT,
+    nome varchar(255),
+    senha varchar(255)
+);
+
+- Abra as páginas pelo localhost
