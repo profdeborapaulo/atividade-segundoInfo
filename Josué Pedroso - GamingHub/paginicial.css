@@ -1,8 +1,0 @@
-#carouselExample{
-    margin: 0 auto;
-    background-color: black !important;
-}
-.slide, .carousel-item{
-    width: 800px;
-    background-color: black;
-}
