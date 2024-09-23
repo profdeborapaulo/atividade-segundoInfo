@@ -1,0 +1,249 @@
+.trem{
+    background-color: #3b3b3b;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    background-size: 100%;
+    background-color: #3b3b3b;
+    overflow-x: hidden;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p{
+    text-align: center;
+    color: #effaff;
+}
+
+.header{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.container{
+    width: 800px;
+    margin: 0 auto;
+    
+
+}
+h1{
+    text-align: center;
+    color: #e63931;
+}
+input{
+    width: 230px;
+    height: 40px;
+    font-size: 16px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    
+}
+table, th, td{
+    border: 5px solid #5a5252;
+    
+    
+}
+th, td{
+    padding: 8px;
+    text-align: left;
+    
+}
+th{
+    background-color: #831010;
+    overflow-wrap: normal;
+}
+tr{
+    color: #FFF;
+    background-color: #e63931;
+    
+}
+button{
+    width: 120px;
+    height: 40px;
+    margin: 5%;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.header{
+    background-color:#cdcddf;
+    padding: 10px;
+    border-radius: 15px;
+    width: 97.7%;
+    height: 70px;
+    border-style: solid;
+    border: 10px #5a5252 solid;
+    float: none;
+}
+
+.fontLink{
+    text-decoration: none;
+    color: #c52941;
+}
+
+.fontLink:hover{
+    color: #831010;
+}
+
+
+.jogos{
+    background-color: #0076ab;
+    opacity: 90%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 200px;
+    justify-content: center;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    float: left;
+}
+
+.jogos:hover{
+    background-color: #00638d;
+}
+
+.jogos img{
+    width: 80%;
+    margin-left: 30px;  
+}
+
+.logo img{
+    width: 300px;
+    margin-top: 10%;
+}
+
+.logo{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.descricao{
+    background-color: #5a5252;
+    opacity: 90%;
+    border-radius: 5px;
+    align-items: center;
+    width: 85%;
+    height: 100%;
+    margin: auto;
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 4vh;
+}
+
+.CartaImagem{
+    display: inline;
+    float: left;
+    width: 500px;
+    margin-right: 15px;
+}
+
+p{
+    color: #effaff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
+    opacity: 150%;
+    font-size: 150%;
+}
+
+.FontTitulo{
+    color: #effaff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-content: center;
+}
+
+.TituloDivisor{
+    background-color: #831010;
+    border: 10px #5a5252 solid;
+    border-radius: 30px;
+    width: 75%;
+    margin: auto;
+}
+
+.cartas{
+    width: calc(75vw/3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form{
+    width: 46.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #831010;
+    opacity: 100%;
+    border-radius: 30px;
+    border: #5a5252 solid 10px;
+}
+
+form{
+    width: 100%;
+    padding: 5vh;
+}
+ 
+.nome-carta{
+    width: 98%;
+    border-radius: 15px;
+    border: #000 5px solid;
+    color: #000;
+    padding-left: 10px;
+}
+
+.proposta{
+    width: 98%;
+    height: 15vh;
+    border-radius: 15px;
+    border: #000 5px solid;
+    color: #000;
+    padding-left: 10px;
+}
+
+.botaoC{
+    height: 10vh;
+    width: 40vw;
+    font-size: 3vh;
+    border-radius: 15px;
+    background-color: #3b3b3b;
+    border: #000 5px solid;
+    color: #000;
+}
+.botaoC:hover{
+    background-color: #a49c9c;
+}
+.botaoC:active{
+    background-color: #5a5252;
+    transform: translateY(5px);
+    transition: 50ms;
+}
+
+.submit{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.deck{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border: solid 30px #b9b9b9;
+    width: 75vw;
+    padding: 3vw;
+    border-radius: 10vh;
+} 
