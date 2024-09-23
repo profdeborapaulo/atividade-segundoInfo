@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Filmes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #141414;
+            color: #d8dfe5;
+        }
+
+        h1 {
+            text-align: center;
+            color: #d8dfe5;
+            margin-bottom: 20px;
+        }
+
+        .movie-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .movie-card {
+            background-color: #1f1f1f;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 200px;
+            overflow: hidden;
+            text-align: center;
+            position: relative;
+        }
+
+        .movie-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .movie-card h3 {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #d8dfe5;
+        }
+
+        .movie-card p {
+            font-size: 14px;
+            color: #b0b0b0;
+            padding: 0 10px 10px;
+        }
+
+        .movie-card button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        .movie-card button:hover {
+            background-color: #0056b3;
+        }
+
+        .movie-card .delete-button {
+            background-color: #dc3545;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .movie-card .delete-button:hover {
+            background-color: #c82333;
+        }
+
+        .edit-form {
+            display: none;
+            background-color: #1f1f1f;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #d8dfe5;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #333;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+            background-color: #333;
+            color: #d8dfe5;
+        }
+
+        .form-group input[type="file"] {
+            padding: 0;
+        }
+
+        button {
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Editar e Gerenciar Filmes</h1>
+
+    <div class="movie-container" id="movies"></div>
+
+    <div class="edit-form" id="editForm">
+        <h2>Editar Filme</h2>
+        <form id="movieEditForm">
+            <input type="hidden" id="editMovieId">
+            <div class="form-group">
+                <label for="editTitle">Título</label>
+                <input type="text" id="editTitle" required>
+            </div>
+            <div class="form-group">
+                <label for="editYear">Ano</label>
+                <input type="number" id="editYear" required>
+            </div>
+            <div class="form-group">
+                <label for="editBiography">Biografia</label>
+                <textarea id="editBiography" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="editDirector">Diretor</label>
+                <input type="text" id="editDirector" required>
+            </div>
+            <div class="form-group">
+                <label for="editImage">Imagem</label>
+                <input type="file" id="editImage" accept="image/*">
+            </div>
+            <div class="form-group">
+                <label for="editGenre">Gênero</label>
+                <select id="editGenre" required>
+                    <option value="Ação">Ação</option>
+                    <option value="Aventura">Aventura</option>
+                    <option value="Comédia">Comédia</option>
+                    <option value="Biográfico">Biográfico</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Ficção científica">Ficção científica</option>
+                    <option value="Terror">Terror</option>
+                    <option value="Documentário">Documentário</option>
+                    <option value="Suspense">Suspense</option>
+                    <option value="Fantasia">Fantasia</option>
+                    <option value="Musical">Musical</option>
+                    <option value="Faroeste">Faroeste</option>
+                    <option value="Crime">Crime</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="editPlatform">Onde Assistir</label>
+                <select id="editPlatform" required>
+                    <option value="Netflix">Netflix</option>
+                    <option value="Amazon Prime Video">Amazon Prime Video</option>
+                    <option value="Disney+">Disney+</option>
+                    <option value="HBO Max">HBO Max</option>
+                    <option value="Globoplay">Globoplay</option>
+                    <option value="Paramount+">Paramount+</option>
+                    <option value="Starzplay">Starzplay</option>
+                    <option value="Apple TV+">Apple TV+</option>
+                    <option value="YouTube Movies">YouTube Movies</option>
+                    <option value="Vudu">Vudu</option>
+                    <option value="Telecine">Telecine</option>
+                </select>
+            </div>
+            <button type="submit">Salvar Alterações</button>
+        </form>
+    </div><br>
+
+    <button onclick="deleteAllMovies()">Excluir Todos</button>
+
+    <script>
+        let dbInstance = null;
+
+        function openDB(callback) {
+            const request = indexedDB.open('movieDB', 1);
+            request.onsuccess = function (event) {
+                dbInstance = event.target.result;
+                if (callback) callback(dbInstance);
+            };
+            request.onerror = function (event) {
+                console.error('Erro ao abrir o banco de dados', event);
+            };
+        }
+
+        function getMovies(db, callback) {
+            const transaction = db.transaction('movies', 'readonly');
+            const store = transaction.objectStore('movies');
+            const request = store.getAll();
+            request.onsuccess = function () {
+                callback(request.result);
+            };
+            request.onerror = function () {
+                console.error('Erro ao buscar filmes.');
+            };
+        }
+
+        function updateMovie(db, movie) {
+            const transaction = db.transaction('movies', 'readwrite');
+            const store = transaction.objectStore('movies');
+            const request = store.put(movie);
+            request.onsuccess = function () {
+                alert('Filme atualizado com sucesso!');
+                document.getElementById('editForm').style.display = 'none';
+                loadMovies();
+            };
+            request.onerror = function () {
+                console.error('Erro ao atualizar o filme', request.error);
+                alert('Erro ao atualizar o filme.');
+            };
+        }
+
+        function deleteMovie(db, id) {
+            const transaction = db.transaction('movies', 'readwrite');
+            const store = transaction.objectStore('movies');
+            const request = store.delete(id);
+            request.onsuccess = function () {
+                alert('Filme excluído com sucesso!');
+                loadMovies();
+            };
+            request.onerror = function () {
+                alert('Erro ao excluir o filme.');
+            };
+        }
+
+        function deleteAllMovies() {
+            if (confirm('Tem certeza de que deseja excluir todos os filmes?')) {
+                openDB(function (db) {
+                    const transaction = db.transaction('movies', 'readwrite');
+                    const store = transaction.objectStore('movies');
+                    const request = store.clear();
+                    request.onsuccess = function () {
+                        alert('Todos os filmes foram excluídos!');
+                        loadMovies();
+                    };
+                    request.onerror = function () {
+                        alert('Erro ao excluir todos os filmes.');
+                    };
+                });
+            }
+        }
+
+        function displayMovies(movies) {
+            const movieContainer = document.getElementById('movies');
+            movieContainer.innerHTML = '';
+
+            movies.forEach(movie => {
+                const movieCard = document.createElement('div');
+                movieCard.className = 'movie-card';
+                movieCard.innerHTML = `
+                    <img src="${movie.image}" alt="${movie.title}">
+                    <h3>${movie.title} (${movie.year})</h3>
+                    <p><strong>Diretor:</strong> ${movie.director}</p>
+                    <p><strong>Gênero:</strong> ${movie.genre}</p>
+                    <p><strong>Plataforma:</strong> ${movie.platform}</p>
+                    <button onclick="editMovie(${movie.id})">Editar</button>
+                    <button class="delete-button" onclick="deleteMovie(dbInstance, ${movie.id})">Excluir</button>
+                `;
+                movieContainer.appendChild(movieCard);
+            });
+        }
+
+        function loadMovies() {
+            openDB(db => {
+                getMovies(db, displayMovies);
+            });
+        }
+
+        function editMovie(id) {
+            openDB(db => {
+                const transaction = db.transaction('movies', 'readonly');
+                const store = transaction.objectStore('movies');
+                const request = store.get(id);
+                request.onsuccess = function () {
+                    const movie = request.result;
+                    document.getElementById('editMovieId').value = movie.id;
+                    document.getElementById('editTitle').value = movie.title;
+                    document.getElementById('editYear').value = movie.year;
+                    document.getElementById('editBiography').value = movie.biography;
+                    document.getElementById('editDirector').value = movie.director;
+                    document.getElementById('editGenre').value = movie.genre;
+                    document.getElementById('editPlatform').value = movie.platform;
+                    document.getElementById('editForm').style.display = 'block';
+                };
+                request.onerror = function () {
+                    console.error('Erro ao buscar o filme para edição');
+                };
+            });
+        }
+
+        document.getElementById('movieEditForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const id = Number(document.getElementById('editMovieId').value);
+            const title = document.getElementById('editTitle').value;
+            const year = Number(document.getElementById('editYear').value);
+            const biography = document.getElementById('editBiography').value;
+            const director = document.getElementById('editDirector').value;
+            const genre = document.getElementById('editGenre').value;
+            const platform = document.getElementById('editPlatform').value;
+            const imageInput = document.getElementById('editImage');
+
+            if (imageInput.files.length > 0) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    const updatedMovie = { id, title, year, biography, director, genre, platform, image: e.target.result };
+                    openDB(db => {
+                        updateMovie(db, updatedMovie);
+                    });
+                };
+                reader.readAsDataURL(imageInput.files[0]);
+            } else {
+                openDB(db => {
+                    const transaction = db.transaction('movies', 'readonly');
+                    const store = transaction.objectStore('movies');
+                    const request = store.get(id);
+                    request.onsuccess = function () {
+                        const existingMovie = request.result;
+                        const updatedMovie = { id, title, year, biography, director, genre, platform, image: existingMovie.image };
+                        openDB(db => {
+                            updateMovie(db, updatedMovie);
+                        });
+                    };
+                    request.onerror = function () {
+                        console.error('Erro ao obter o filme existente');
+                    };
+                });
+            }
+        });
+
+        window.onload = loadMovies;
+    </script>
+</body>
+
+</html>

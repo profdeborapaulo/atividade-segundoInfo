@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Filmes</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #141414;
+        color: #d8dfe5;
+    }
+
+    /* Scrollbar Styles */
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: #d8dfe5 #141414;
+    }
+
+    *::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    *::-webkit-scrollbar-track {
+        background: #141414;
+    }
+
+    *::-webkit-scrollbar-thumb {
+        background-color: #d8dfe5;
+        border-radius: 20px;
+        border: 3px solid #141414;
+    }
+
+    /* Form Styles */
+    form {
+        background-color: #1f1f1f;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        max-width: 800px;
+        margin: 20px auto;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #333;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 16px;
+        background-color: #2c2c2c;
+        color: #d8dfe5;
+    }
+
+    .form-group input[type="file"] {
+        padding: 0;
+        border: none;
+    }
+
+    button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    .platform-section,
+    .actors-section {
+        margin-bottom: 20px;
+    }
+
+    .actors-section input {
+        margin-bottom: 10px;
+    }
+
+    /* Trailer Form Styles */
+    #trailerForm {
+        background-color: #1f1f1f;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        max-width: 800px;
+        margin: 20px auto;
+    }
+
+    #trailerForm label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    #trailerForm input[type="text"],
+    #trailerForm input[type="file"],
+    #trailerForm input[type="url"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #333;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 16px;
+        background-color: #2c2c2c;
+        color: #d8dfe5;
+    }
+
+    #trailerForm button {
+        background-color: #bc1111;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    #trailerForm button:hover {
+        background-color: #0056b3;
+    }
+
+    #trailerLimitMessage {
+        color: red;
+        display: none;
+    }
+</style>
+</head>
+
+<body>
+    <h1>Cadastro de Filme</h1>
+
+    <form id="movieForm" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="title">Título</label>
+            <input type="text" id="title" name="title" required>
+        </div>
+
+        <div class="form-group">
+            <label for="year">Ano</label>
+            <input type="number" id="year" name="year" required>
+        </div>
+
+        <div class="form-group">
+            <label for="biography">Biografia</label>
+            <textarea id="biography" name="biography" rows="4" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="director">Diretor</label>
+            <input type="text" id="director" name="director" required>
+        </div>
+
+        <div class="form-group">
+            <label for="image">Imagem</label>
+            <input type="file" id="image" name="image" accept="image/*" required>
+        </div>
+
+        <div class="form-group">
+            <label for="genre">Gênero</label>
+            <select id="genre" name="genre" required>
+                <option value="Ação">Ação</option>
+                <option value="Aventura">Aventura</option>
+                <option value="Comédia">Comédia</option>
+                <option value="Biográfico">Biográfico</option>
+                <option value="Romance">Romance</option>
+                <option value="Drama">Drama</option>
+                <option value="Ficção científica">Ficção científica</option>
+                <option value="Terror">Terror</option>
+                <option value="Documentário">Documentário</option>
+                <option value="Suspense">Suspense</option>
+                <option value="Fantasia">Fantasia</option>
+                <option value="Musical">Musical</option>
+                <option value="Faroeste">Faroeste</option>
+                <option value="Crime">Crime</option>
+            </select>
+        </div>
+
+        <div class="form-group platform-section">
+            <label for="platform">Onde Assistir</label>
+            <select id="platform" name="platform" required>
+                <option value="Netflix">Netflix</option>
+                <option value="Amazon Prime Video">Amazon Prime Video</option>
+                <option value="Disney+">Disney+</option>
+                <option value="HBO Max">HBO Max</option>
+                <option value="Globoplay">Globoplay</option>
+                <option value="Paramount+">Paramount+</option>
+                <option value="Starzplay">Starzplay</option>
+                <option value="Apple TV+">Apple TV+</option>
+                <option value="YouTube Movies">YouTube Movies</option>
+                <option value="Vudu">Vudu</option>
+                <option value="Telecine">Telecine</option>
+            </select>
+        </div>
+
+        <div class="form-group actors-section">
+            <label>Atores Principais</label>
+            <input type="text" id="mainActor1" name="mainActor1" placeholder="Ator Principal 1" required>
+            <input type="text" id="mainActor2" name="mainActor2" placeholder="Ator Principal 2" required>
+        </div>
+
+        <div class="form-group actors-section">
+            <label>Atores Secundários</label>
+            <input type="text" id="secondaryActor1" name="secondaryActor1" placeholder="Ator Secundário 1">
+            <input type="text" id="secondaryActor2" name="secondaryActor2" placeholder="Ator Secundário 2">
+            <input type="text" id="secondaryActor3" name="secondaryActor3" placeholder="Ator Secundário 3">
+            <input type="text" id="secondaryActor4" name="secondaryActor4" placeholder="Ator Secundário 4">
+            <input type="text" id="secondaryActor5" name="secondaryActor5" placeholder="Ator Secundário 5">
+            <input type="text" id="secondaryActor6" name="secondaryActor6" placeholder="Ator Secundário 6">
+        </div>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+
+
+
+    <script>
+        const dbName = 'movieDB';
+        const storeName = 'movies';
+
+        // Abrir banco de dados
+        function openDB(callback) {
+            const request = indexedDB.open(dbName, 1);
+            request.onupgradeneeded = function (event) {
+                const db = event.target.result;
+                db.createObjectStore(storeName, { keyPath: 'id', autoIncrement: true });
+            };
+            request.onsuccess = function (event) {
+                callback(event.target.result);
+            };
+            request.onerror = function (event) {
+                console.error('Erro ao abrir o banco de dados', event);
+            };
+        }
+
+        // Adicionar filme ao IndexedDB
+        function addMovie(db, movie) {
+            const transaction = db.transaction(storeName, 'readwrite');
+            const store = transaction.objectStore(storeName);
+            const request = store.add(movie);
+            request.onsuccess = function () {
+                alert('Filme cadastrado com sucesso!');
+                document.getElementById('movieForm').reset(); // Limpa o formulário após cadastro
+            };
+            request.onerror = function () {
+                alert('Erro ao cadastrar o filme.');
+            };
+        }
+
+        // Manipular o envio do formulário
+        document.getElementById('movieForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Evita o envio padrão do formulário
+
+            const title = document.getElementById('title').value;
+            const year = document.getElementById('year').value;
+            const biography = document.getElementById('biography').value;
+            const director = document.getElementById('director').value;
+            const genre = document.getElementById('genre').value;
+            const platform = document.getElementById('platform').value;
+
+            const mainActors = [
+                document.getElementById('mainActor1').value,
+                document.getElementById('mainActor2').value
+            ];
+
+            const secondaryActors = [
+                document.getElementById('secondaryActor1').value,
+                document.getElementById('secondaryActor2').value,
+                document.getElementById('secondaryActor3').value,
+                document.getElementById('secondaryActor4').value,
+                document.getElementById('secondaryActor5').value,
+                document.getElementById('secondaryActor6').value
+            ].filter(actor => actor.trim() !== ''); // Remove campos vazios
+
+            // Lê o arquivo da imagem
+            const imageFile = document.getElementById('image').files[0];
+            const reader = new FileReader();
+
+            reader.onloadend = function () {
+                const movie = {
+                    title,
+                    year,
+                    biography,
+                    director,
+                    image: reader.result,
+                    genre,
+                    platform,
+                    mainActors,
+                    secondaryActors
+                };
+
+                openDB(function (db) {
+                    addMovie(db, movie);
+                });
+            };
+
+            if (imageFile) {
+                reader.readAsDataURL(imageFile); // Lê o arquivo como URL de dados
+            }
+        });
+
+            const maxTrailers = 5;
+
+                function openDB(callback) {
+                    const request = indexedDB.open('movieDB', 1);
+                    request.onsuccess = function (event) {
+                        callback(event.target.result);
+                    };
+                    request.onerror = function (event) {
+                        console.error('Erro ao abrir o banco de dados', event);
+                    };
+                }
+
+                function checkTrailerLimit(db) {
+                    const transaction = db.transaction('trailers', 'readonly');
+                    const store = transaction.objectStore('trailers');
+                    const countRequest = store.count();
+
+                    countRequest.onsuccess = function () {
+                        if (countRequest.result >= maxTrailers) {
+                            document.getElementById('trailerLimitMessage').style.display = 'block';
+                            document.getElementById('trailerForm').querySelector('button[type="submit"]').disabled = true;
+                        } else {
+                            document.getElementById('trailerLimitMessage').style.display = 'none';
+                            document.getElementById('trailerForm').querySelector('button[type="submit"]').disabled = false;
+                        }
+                    };
+                }
+
+                document.getElementById('trailerForm').addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    openDB(function (db) {
+                        const transaction = db.transaction('trailers', 'readwrite');
+                        const store = transaction.objectStore('trailers');
+
+                        const trailer = {
+                            title: document.getElementById('trailerTitle').value,
+                            thumbnail: URL.createObjectURL(document.getElementById('trailerThumbnail').files[0]),
+                            video: document.getElementById('trailerVideo').value
+                        };
+
+                        store.add(trailer);
+                        alert('Trailer cadastrado com sucesso!');
+                        checkTrailerLimit(db);
+                    });
+                });
+
+                openDB(checkTrailerLimit);
+    </script>
+</body>
+
+</html>
