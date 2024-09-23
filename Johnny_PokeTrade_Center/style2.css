@@ -1,12 +1,12 @@
 .trem{
-    background-color: #FFF;
+    background-color: #3b3b3b;
 }
 
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
     background-size: 100%;
-    background-color: #FFF;
+    background-color: #3b3b3b;
     overflow-x: hidden;
 }
 .center{
@@ -17,7 +17,7 @@ body{
 
 .p{
     text-align: center;
-    color: #5a5252;
+    color: #effaff;
 }
 
 .header{
@@ -218,7 +218,7 @@ form{
     width: 40vw;
     font-size: 3vh;
     border-radius: 15px;
-    background-color: #fff;
+    background-color: #3b3b3b;
     border: #000 5px solid;
     color: #000;
 }
@@ -236,6 +236,7 @@ form{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .deck{
