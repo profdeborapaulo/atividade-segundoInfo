@@ -1,0 +1,106 @@
+.protest-guerrilla-regular {
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }.jacques-francois-shadow-regular {
+    font-family: "Jacques Francois Shadow", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Jacques francois Shadow", serif;
+}
+
+
+.titulo{
+background-color: rgba(88, 13, 187, 0.808);
+width: 30vw;
+height: 7vh;
+display: flex;
+text-align: center;
+justify-content: center;
+align-items: center;
+}
+
+
+
+#posicao-form{ 
+
+   
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}form{
+    
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(218,0,255);
+    background: linear-gradient(90deg, rgba(218,0,255,1) 0%, 
+    rgba(169,0,214,1) 54%, rgba(65,0,168,1) 100%);
+   
+}label{
+display: flex;
+position: relative;
+right: 10vw;
+font-size: 0.7rem;
+
+background-color: transparent;
+}input{
+    border: none;
+    border-bottom: 1px solid transparent;
+    width: 100%;
+    height: 5vh;
+}:focus{
+    border: none;
+    border-bottom: 1px solid transparent;
+   
+    box-shadow: none;
+    outline: 0;
+}::placeholder, :placeholder-shown, :-ms-input-placeholder, ::-webkit-input-placeholder{
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+} button{
+    width: 100%;
+    height: 4vh;
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;  
+    background-color: transparent; 
+    
+}button:active{
+    transform: translateY(5px);
+    box-shadow: 3px 5px  rgba(37, 3, 82, 0.808);
+    text-decoration: none;
+    border: none;
+}
+
+.esqueci{
+    border: none;
+    background-color: transparent;
+    border-color: transparent;
+    color: rgba(88, 13, 187, 0.808);
+    font-weight: bold;
+    font-size: 1.2rem;
+}.esqueci:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}.esqueci:active{
+    transform: none;
+    box-shadow: none;
+    text-decoration: none;
+    border: none;
+}
+
