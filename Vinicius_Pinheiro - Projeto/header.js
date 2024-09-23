@@ -14,15 +14,9 @@ titles.forEach(title =>{
     itensId.push(titles.indexOf(title));
 })
 
-// console.log(itensId);
-
-
-// const idUser = sessionStorage.getItem('idUser');
-
 document.addEventListener('DOMContentLoaded', () => {
     const bar = document.getElementById('searchBar');
     bar.addEventListener('input', () => {
-    //   console.log(bar.value);
     const f = bar.value.toLowerCase()
     const div = document.querySelector('.searchItens');
     
@@ -50,9 +44,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const p = document.createElement('p');
             p.innerHTML = itensName[i];
 
-            // const pClass= document.createElement('p');
-            // pClass.innerHTML = itensClass[i];
-
             divText.appendChild(p);
 
             divCard.append(divImg, divText);
@@ -63,19 +54,12 @@ document.addEventListener('DOMContentLoaded', () => {
             divCard.addEventListener('click', () => {
 
                 window.location.href = '../title/titlePage.html?idTitle='+t;
-                // console.log(itensId);
-                // console.log(i);
             })
             
 
         }
-        // console.log('f == de vazio');
      
     }
-    // return;
-    // const pMsg = document.createElement('p');
-    //     pMsg.innerHTML = 'Item não encontrado';
-    //     div.appendChild(pMsg);
 
     })
 })
@@ -97,7 +81,6 @@ document.addEventListener('click', (event) =>{
     if (divItens.classList.contains('hidden') == false){
         divItens.classList.add('hidden');
     }
-    // console.log();
 })
 
 
@@ -121,7 +104,6 @@ if (!userId){
     bttLogin.appendChild(linkLogin);
 
     dropdown.appendChild(bttLogin);
-    // console.log('Tem ususario');
 
 
     } else {
@@ -137,15 +119,10 @@ if (!userId){
         const linkUserPage = document.createElement('a');
         linkUserPage.href = '../user/userPage.html?idUser='+userId;
         linkUserPage.innerHTML = 'Usuário';
-        // console.log(linkUserPage);
 
         userPageBtt.appendChild(linkUserPage);
-        // console.log(userPageBtt);
 
         userLoginOptions.append(userPageBtt, logoutBtt);
 
 
     }
-
-
-// newData[iten.id] = iten.value;
