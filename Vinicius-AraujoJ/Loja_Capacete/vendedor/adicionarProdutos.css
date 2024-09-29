@@ -1,0 +1,125 @@
+body{
+    background-color: #e5cba1;
+    font-size: 24px;
+    background-size: 100%;
+    font-family: "Barlow Condensed", sans-serif;
+    color: #0a181b;
+    text-align: center;
+ 
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px;
+    background-color: #462f1f;
+    border-radius: 20px;
+    color: white;
+}
+
+.navbar, h3{
+    margin: 0;
+}
+
+.bt-encerrar {
+    padding: 10px 20px;
+    background-color: #a18768;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.bt-encerrar:hover {
+    background-color: #b0612f;
+}
+
+.container{
+    width: 800px;
+    margin: 0 auto;
+}
+input{
+    width: 230px;
+    height: 40px;
+    font-size: 16px;
+}
+select{
+    height: 45px;
+    font-size: 16px;
+    background-color: #462f1f;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+table, th, td{
+    border: 1px solid #e5cba1;
+}
+th, td{
+    padding: 8px;
+    text-align: left;
+}
+th{
+    background-color: #462f1f;
+}
+tr{
+    color: #e5cba1;
+    background-color: white;
+}
+.bt-cadastro{
+    width: 120px;
+    height: 45px;
+    margin: 5%;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    background-color: #0a181b;
+    color: white;
+}
+
+#produtos-adicionados{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    width: 100vw;
+    margin:20px;
+    align-items: center;
+    font-size: 15px;
+}
+
+.produto{
+    width: 200px;
+    height: 370px;
+    margin: 20px;
+    background-color: #0a181b;
+    color: white !important;
+    border-radius: 5px;
+}
+.informacoes-produto{
+    text-align: left;
+    margin: 10px;
+}
+.img-produto{
+    text-align: center;
+}
+img{
+    width: 180px;
+    height: 200px;
+    border-radius: 5px;
+}
+.centralizar-bt{
+    text-align: center;
+}
+.bt-apagar{
+    width: 150px;
+    height: 25px;
+    background-color: #462f1f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
