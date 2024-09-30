@@ -5,18 +5,6 @@ document.addEventListener('DOMContentLoaded', function () {//executa o codigo ap
         document.body.classList.add('loaded');//... ele adiciona a class loaded para uma transição suave
     });
 
-    //Botao da navbar
-
-    const menuBtn = document.getElementById('menu-btn');
-    if (menuBtn) { // Verifica se o botão existe no DOM
-        menuBtn.addEventListener('click', function () {
-            const navLinks = document.getElementById('nav-links'); // pega o elemento nav links e guarda na variavel
-            if (navLinks) { // Verifica se o navLinks existe
-                navLinks.classList.toggle('active'); // muda a classe para active
-            }
-        });
-    }
-
     //Inicio da pagina de cadastro
 
     // Capturar os dados do formulário de cadastro
@@ -24,15 +12,6 @@ document.addEventListener('DOMContentLoaded', function () {//executa o codigo ap
 
     function geradorID() {
         return Date.now(); // gera um ID baseado no timestamp atual
-    }
-
-    // Evento para submeter os dados do formulário
-    if (formAtividade) {//verifica se formulario de cadastro existe na pagina
-        formAtividade.addEventListener('submit', function (e) {//aciona um evento quando o formulário for enviado
-            e.preventDefault();//previne o comportamento padrao para melhor controle
-            geradorID(); //aciona a função de gerar id
-            addAtividade(); //aciona a função de adicionar atividade
-        });
     }
 
     // Função para adicionar atividade
@@ -44,37 +23,34 @@ document.addEventListener('DOMContentLoaded', function () {//executa o codigo ap
         // Recupera atividades existentes ou cria um array vazio 
         let atividades = JSON.parse(localStorage.getItem('atividades')) || [];//pega o json ou cria um array vazio
 
-        let nomeNormalizado = nomeAtividade.trim().toLowerCase();
+        // armazena tudo em um array
 
-        // Verifica se já existe uma atividade com o mesmo nome
-        let tituloIgual = atividades.find(atividade => atividade.nome.trim().toLowerCase() === nomeNormalizado);
+        let atividade = {
+            id: geradorID(),
+            nome: nomeAtividade,
+            data: dataAtividade,
+            descricao: descricaoAtividade
+        };
 
-        if (!tituloIgual) {
+        atividades.push(atividade); // Adiciona a atividade ao array que ficará no local storage
+        localStorage.setItem('atividades', JSON.stringify(atividades)); // Salva no localStorage
 
-            //se sim ocorre tudo normalmente
-            // armazena tudo no array
-            let atividade = {
-                id: geradorID(),
-                nome: nomeAtividade,
-                data: dataAtividade,
-                descricao: descricaoAtividade
-            };
+        // Limpar os campos de entrada
+        document.getElementById('nome-atividade').value = '';
+        document.getElementById('data-atividade').value = '';
 
-            atividades.push(atividade); // Adiciona a atividade ao array que ficará no local storage
-            localStorage.setItem('atividades', JSON.stringify(atividades)); // Salva no localStorage
+        // Redirecionamento suave para a página de exibição
 
-            // Limpar os campos de entrada
-            document.getElementById('nome-atividade').value = '';
-            document.getElementById('data-atividade').value = '';
+        window.location.href = "index.html";
+    }
 
-            // Redirecionamento suave para a página de exibição
-
-            window.location.href = "index.html";
-
-        } else {
-            alert('Mude o título!!!');//se não a atividade nao é salva
-        }
-
+    // Evento para submeter os dados do formulário
+    if (formAtividade) {//verifica se formulario de cadastro existe na pagina
+        formAtividade.addEventListener('submit', function (e) {//aciona um evento quando o formulário for enviado
+            e.preventDefault();//previne o comportamento padrao para melhor controle
+            geradorID(); //aciona a função de gerar id
+            addAtividade(); //aciona a fução de adicionar atividade
+        });
     }
 
     //Fim da página de cadastro
@@ -93,6 +69,18 @@ document.addEventListener('DOMContentLoaded', function () {//executa o codigo ap
             }
         });
     }
+
+
+    const pesquisa2 = document.getElementById('pesquisa_container');//pega o container 
+
+    if (pesquisa2) {//verifica se ele está presente na página
+        //evento baseado no submit do botão
+        pesquisa2.addEventListener('submit', function (event) {
+            event.preventDefault();//previne o comportamento padrao para melhor controle
+            pesquisar();
+        });
+    }
+
 
     //Função pesquisar
 
@@ -283,28 +271,17 @@ document.addEventListener('DOMContentLoaded', function () {//executa o codigo ap
                     let New_Description = document.getElementById('descricao').value//pega o valor modificado do input descricao atividade
 
                     // Atualiza os valores da atividade existente
+                    atividadeAtual.nome = New_Name;
+                    atividadeAtual.data = New_Date;
+                    atividadeAtual.descricao = New_Description;
 
-                    let nomeNormalizado = New_Name.trim().toLowerCase();
+                    // Procura o indice dentro do array pai que corresponda a condição. Substitui a atividade no array e salva no localStorage
+                    let indice = atividades.findIndex(atividade => atividade.id == id);
+                    atividades[indice] = atividadeAtual;
+                    localStorage.setItem('atividades', JSON.stringify(atividades));
 
-                    // Verifica se já existe uma atividade com o mesmo nome
-                    let tituloIgual = atividades.find(atividade => atividade.nome.trim().toLowerCase() === nomeNormalizado);
-
-                    if(!tituloIgual){
-                        atividadeAtual.nome = New_Name;
-                        atividadeAtual.data = New_Date;
-                        atividadeAtual.descricao = New_Description;
-    
-                        // Procura o indice dentro do array pai que corresponda a condição. Substitui a atividade no array e salva no localStorage
-                        let indice = atividades.findIndex(atividade => atividade.id == id);
-                        atividades[indice] = atividadeAtual;
-                        localStorage.setItem('atividades', JSON.stringify(atividades));
-    
-                        // Redireciona para a página de exibição
-                        window.location.href = "index.html";
-                    }else{
-                        alert("Mude o Título!");
-                    }
-                    
+                    // Redireciona para a página de exibição
+                    window.location.href = "index.html";
                 }
 
                 // Evento para submeter os dados do formulário

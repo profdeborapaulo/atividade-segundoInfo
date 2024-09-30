@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 
-    <title>Pagina Principal</title>
+    <title>Cadastro de Atividades</title>
 </head>
 
 <body>
@@ -15,20 +15,17 @@
     <!--Área da navbar-->
     <header>
         <nav>
+
             <div class="logo-container">
                 <img class="logo" src="imagens/logo.png" alt="logo" title="logo">
-                <a class="logo1">Task Minder</a>
+                <a class="logo1" class="all_link">Task Minder</a>
             </div>
-            <div class="menu-btn" id="menu-btn">
-                &#9776; 
-            </div>
-            <ul class="nav-list" id="nav-links">
+            <ul class="nav-list">
                 <li><a class="nav-link" href="index.html">Inicio</a></li>
                 <li><a class="nav-link" href="cadastro.html">Adicionar</a></li>
             </ul>
         </nav>
     </header>
-    
 
     <!--Corpo da página-->
     <main>
@@ -36,6 +33,9 @@
         <div id="pesquisa_container">
             <form id="pesquisa_form">
                 <input type="text" id="pesquisar" placeholder="Pesquisa por Título">
+                <button type="submit">
+                    <img class="lupa" src="imagens/lupa.png" alt="pesquisar" title="pesquisar">
+                </button>
             </form>
         </div>
 
