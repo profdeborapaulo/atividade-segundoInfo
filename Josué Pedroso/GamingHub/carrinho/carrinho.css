@@ -1,0 +1,24 @@
+body {
+    color: white;
+}
+h1, h3 {
+    margin-left: 40px;
+}
+.carrinho{
+    list-style: none;
+    display: flex;
+    justify-content: space-around; 
+    gap: 100px;
+    border: solid 2px #aaa;
+    border-radius: 5px;
+    max-width: 63%;
+    margin-left: 40px;
+}
+.carrinho img{
+    width: 400px;
+    aspect-ratio: 16/9;
+}
+.descricao{
+    display: block;
+    font-size: 24px;
+}
