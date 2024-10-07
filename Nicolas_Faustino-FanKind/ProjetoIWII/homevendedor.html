@@ -29,21 +29,23 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const data = localStorage.getItem('anuncioData');
+            const data = localStorage.getItem('anuncios');
             if (data) {
-                const { artista, motivo, data: eventoData, preco } = JSON.parse(data);
-                document.getElementById('card-container').innerHTML = `
-                    <div class="card">
-                        <h2>${artista}</h2>
-                        <p><strong>Setor:</strong> ${motivo}</p>
-                        <p><strong>Data:</strong> ${eventoData}</p>
-                        <p><strong>Preço:</strong> R$ ${preco}</p>
-                    </div>
-                `;
-                localStorage.removeItem('anuncioData'); 
+                const anuncios = JSON.parse(data);
+                const cardContainer = document.getElementById('card-container');
+                
+                anuncios.forEach(({ artista, motivo, data: eventoData, preco }) => {
+                    cardContainer.innerHTML += `
+                        <div class="card">
+                            <h2>${artista}</h2>
+                            <p><strong>Setor:</strong> ${motivo}</p>
+                            <p><strong>Data:</strong> ${eventoData}</p>
+                            <p><strong>Preço:</strong> R$ ${preco}</p>
+                        </div>
+                    `;
+                });
             }
         });
     </script>
     
 </body>
-</html>
