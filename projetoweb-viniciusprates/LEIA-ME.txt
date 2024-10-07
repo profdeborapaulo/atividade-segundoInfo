@@ -4,10 +4,14 @@ Para o site funcionar:
 - abrir o phpMyAdmin clicando no botão "admin" ao lado de "mysql" no xampp
 - rodar o código:
 
+create database cadastrados,
+use database cadastrados,
+
 create table registrados (
     codigo int not null PRIMARY KEY AUTO_INCREMENT,
     nome varchar(255),
     senha varchar(255)
 );
 
+na aba "SQL"
 - Abra as páginas pelo localhost
