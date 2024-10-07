@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" 
+    rel="stylesheet">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap');
+      </style>
+
+    <title>Area Logada - Cliente</title>
+</head>
+<body>
+    
+
+
+<div class="titulo">
+  <a href="index.html" class="links">Home</a>
+    <h1>Area do Cliente</h1>
+    <a href="loginCliente.html" class="links">voltar</a>
+</div>
+
+<div id="posicaoTable">
+<!-- Tabela para exibir as cobranças do cliente -->
+<h2>Minhas Cobranças</h2>
+<table id='lista-cobrancas'>
+  <tr>
+    <th>Descrição</th>
+    <th>Valor</th>
+    <th>Status</th>
+  </tr>
+  <tbody id='lista-cobrancas'>
+
+  </tbody>
+</table>
+<br>
+<!-- Botão para o cliente visualizar suas cobranças -->
+<button class="botao" onclick="exibirCobrancas(clienteCpf)">Ver Cobranças</button>
+
+</div>
+
+
+
+</body>
+</html>
