@@ -1,0 +1,49 @@
+body{
+    background-color: #2b2b2b;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3vh;
+}
+div{
+    padding: 5vh;
+    
+}
+input{
+    padding-left: 1vh;
+    height: 4vh;
+    width: 20vw;
+    margin: 1vh;
+    border-radius: 2vh;
+    border: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    font-size: 2vh;
+}
+
+button{
+    font-family: 'Courier New', Courier, monospace;
+    height: 3vh;
+    width: fit-content;
+    font-size: 2vh;
+    padding: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 300ms;
+    cursor: pointer;
+    border-radius: 2vh;
+    border: 0px;
+}
+
+button:active{
+    transform: translateY(0.3vh);
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

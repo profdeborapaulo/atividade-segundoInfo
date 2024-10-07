@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log/Sign in</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="register">
+        <h2>sign in</h2>
+        <input type="text" id="new-username" placeholder="Nome" required><br>
+        <input type="password" id="new-password" placeholder="Senha" required><br>
+        <div class="center">
+            <button onclick="adduser()">Registrar</button>
+        </div>
+        <p id="signinwarn"></p>
+    </div>
+
+    <div id="login">
+        <h2>login</h2>
+        <input type="text" id="username" placeholder="Nome" required><br>
+        <input type="password" id="password" placeholder="Senha" required><br>
+        <div class="center">
+            <button onclick="login()">Entrar</button>
+        </div>
+        <p id="loginwarn"></p>
+    </div>  
+    <script src="./js/login.js"></script>
+</body>
+</html>
