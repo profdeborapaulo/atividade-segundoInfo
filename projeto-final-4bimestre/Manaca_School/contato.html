@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/contato.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <script src="js/contato.js"></script>
+  </head>
+  <body>
+    <header id="menu">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html"><img src="img/logo2-remove.png" alt="Logo" /></a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="servico.html">Serviços</a></li>
+        </ul>
+        <div class="contact-btn">
+          <a href="contato.html">Contate-nos</a>
+        </div>
+      </nav>
+    </header>
+
+    <header>
+      <h1>Contato</h1>
+      <p>Preencha o formulário abaixo e entraremos em contato em breve!</p>
+    </header>
+    <main>
+      <form id="contactForm" onsubmit="handleSubmit(event)">
+        <label for="name">Nome</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Seu nome"
+          required
+        />
+
+        <label for="email">E-mail</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Seu e-mail"
+          required
+        />
+
+        <label for="description">Descrição</label>
+        <textarea
+          id="description"
+          name="description"
+          rows="5"
+          placeholder="Descreva sua ordem ou dúvida"
+          required
+        ></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+
+      <div id="orderSummary" class="order-summary" style="display: none">
+        <h3>Resumo da Ordem</h3>
+        <p><strong>Número da Ordem:</strong> <span id="orderNumber"></span></p>
+        <p><strong>Resumo:</strong> <span id="orderDetails"></span></p>
+      </div>
+    </main>
+
+    <!-- ---------------------FOOTER--------------------- -->
+    <footer>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Serviços</a>
+        <a href="ajuda.html">Contato</a>
+      </div>
+
+      <div class="footer-logo">
+        <img src="img/logo2-remove.png" alt="Logo do Projeto" />
+      </div>
+
+      <div class="footer-copyright">
+        João Espeleta 2024 &copy; Todos os direitos reservados.
+      </div>
+    </footer>
+  </body>
+</html>
