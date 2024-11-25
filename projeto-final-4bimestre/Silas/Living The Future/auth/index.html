@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | LTF Auto</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="/assets/js/getUser.js"></script>
+    <link rel="shortcut icon" href="/assets/imgs/favicon.png" type="image/x-icon">
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="form-container sign-up-container">
+        <form action="#" data-form="sign-up">
+          <h1>Criar uma conta</h1>
+          <input type="text" name="name" placeholder="Nome" />
+          <input type="email" name="email" placeholder="Email" />
+          <input type="text" name="cpf" placeholder="CPF" />
+          <input type="password" name="password" placeholder="Senha" />
+          <input type="password" name="confirmPassword" placeholder="Confirme a senha" />
+          <button>Registre-se</button>
+        </form>
+      </div>
+      <div class="form-container sign-in-container">
+        <form action="#" data-form="sign-in">
+          <h1>Acesse</h1>
+          <input type="email" name="email" placeholder="Email" />
+          <input type="password" name="password" placeholder="Password" />
+          <button>Acessar</button>
+        </form>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1>Bem vindo de volta!</h1>
+            <p>
+              Para se manter conectado conosco, faça login com suas informações
+              pessoais
+            </p>
+            <button class="ghost" id="signIn">Sign In</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1>Olá, amigo!</h1>
+            <p>Insira seus dados pessoais e comece sua jornada conosco</p>
+            <button class="ghost" id="signUp">Registre-se</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

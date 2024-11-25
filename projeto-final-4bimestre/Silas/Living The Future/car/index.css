@@ -1,0 +1,25 @@
+.car-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 600px;
+}
+
+.car-container article {
+    display: flex;
+    flex-direction: column;
+    width: 45vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    height: 100%;
+}
+
+.car-card-info-container {
+    background-color: white;
+    padding: 2rem;
+}
+
+.car-card-login {
+    margin-top: 5px;
+}
