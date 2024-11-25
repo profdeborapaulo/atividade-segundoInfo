@@ -1,0 +1,372 @@
+/*___________________________________INDEX___________________________________*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: transparent;
+  padding: 20px 40px;
+  z-index: 1000;
+}
+.typing-effect {
+  font-size: 70px;
+  font-weight: bold;
+  border-right: 4px solid white;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(18, end), blink 0.6s step-end infinite;
+  animation-fill-mode: forwards;
+}
+.typing-effect[data-typed="true"] {
+  overflow: visible;
+  border-right: none;
+  animation: none;
+}
+.hero {
+  height: 100vh;
+  background: url("../img/Scene\ 10.jpg") no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  opacity: 0.9;
+}
+
+.typing-effect {
+  font-size: 70px;
+  font-weight: bold;
+  border-right: 4px solid white;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(18, end), blink 0.6s step-end infinite;
+  animation-fill-mode: forwards;
+}
+
+.btn-container {
+  margin-top: 50px;
+}
+
+.btn-conheca-mais {
+  display: inline-block;
+  background-color: rgba(255, 215, 0, 0.9);
+  color: black;
+  font-size: 16px;
+  padding: 15px 30px;
+  border-radius: 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.btn-conheca-mais:hover {
+  background-color: rgba(255, 193, 7, 1);
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .typing-effect {
+    font-size: 50px;
+  }
+  .btn-conheca-mais {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .typing-effect {
+    font-size: 35px;
+  }
+  .btn-conheca-mais {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+}
+
+/* Animação Bounce no Carregamento */
+.bounce {
+  animation: bounce 1s ease;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  70% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/* Animação Typing */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 18ch;
+  }
+}
+@keyframes blink {
+  from {
+    border-color: white;
+  }
+  to {
+    border-color: transparent;
+  }
+}
+
+/*______________________________SEC03______________________________*/
+
+/*------------ Seção Sobre a Escola ------------*/
+#about-school {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 10%;
+  background-color: #1a1a1a;
+  color: #fff;
+  max-height: 100vh;
+}
+#about-school .content-wrapper {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#about-school .text-content {
+  flex: 1;
+}
+#about-school .text-content h2 {
+  font-size: 2.5rem;
+  color: #ffd700;
+  margin-bottom: 20px;
+}
+#about-school .text-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+#about-school .learn-more-btn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #ffd700;
+  color: #1a1a1a;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+#about-school .learn-more-btn:hover {
+  background-color: #ffc107;
+  transform: scale(1.1);
+}
+#about-school .image-content {
+  flex: 1;
+  text-align: center;
+  padding: 5%;
+}
+#about-school .image-content img {
+  width: 50vw;
+  height: 85vh;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+#about-school .image-content img:hover {
+  transform: scale(1.05);
+}
+.animated-icons {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+.animated-icons .icon {
+  font-size: 40px;
+  color: #ffd700;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/*------------SERVIÇOS-HOME------------*/
+#services {
+  padding: 50px 10%;
+  background-color: #121212;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#services h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ffb400;
+  margin-bottom: 20px;
+}
+#services p {
+  text-align: center;
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  color: #bbb;
+}
+.services-container {
+  text-align: center;
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-items: center;
+}
+.service-card {
+  background-color: #1e1e1e;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+.service-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+.service-card h3 {
+  font-size: 1.6rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.service-card p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+.service-card .btn {
+  padding: 12px 20px;
+  background-color: #ffb400;
+  color: #1a1a1a;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.service-card .btn:hover {
+  background-color: #e69a00;
+  transform: scale(1.05);
+}
+@media (max-width: 768px) {
+  #services {
+    padding: 40px 5%;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .service-card {
+    max-width: 100%;
+  }
+}
+
+/*______________________________SEC04______________________________*/
+
+#sec02 {
+  height: 100vh;
+}
+
+/*------------FAQ------------*/
+/* FAQ Section */
+.faq {
+  background-color: black;
+  padding: 40px 20px;
+  text-align: center;
+}
+.faq-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #b58900;
+}
+.accordion {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+.accordion-item {
+  margin-bottom: 10px;
+  border: 1px solid #ffd700;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.accordion-header {
+  display: block;
+  background-color: #ffeb99;
+  color: #8a6d00;
+  padding: 15px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.accordion-header:hover {
+  background-color: #ffd700;
+  color: #fff;
+}
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  background-color: #262626;
+  padding: 0 20px;
+  transition: max-height 0.3s ease;
+  font-size: 14px;
+  color: #555;
+  color: white;
+}
+.accordion-radio {
+  display: none;
+}
+.accordion-radio:checked + .accordion-header + .accordion-content {
+  max-height: 200px;
+  padding: 15px 20px;
+  border-top: 1px solid #ffd700;
+}
