@@ -1,0 +1,45 @@
+Projeto Final 4º Bimestre
+Tema do Projeto: "Futuro"
+
+Objetivo: Desenvolver um site que represente uma visão criativa sobre o tema "Futuro".
+
+Critérios de Avaliação:
+
+1 - Criatividade: Avaliarei a originalidade e a inovação no conceito e na execução do projeto.
+
+2 - Qualidade do Código:
+Uso de boas práticas, como indentação, nomenclatura de variáveis e organização de arquivos.
+Estrutura de código limpa e modular.
+
+3 - Qualidade Lógica:
+
+Implementação lógica eficiente e funcional.
+Resolução clara de problemas e coerência entre funcionalidades.
+Qualidade Visual e Interação (Design e UX):
+Design atraente e alinhado ao tema.
+Boa experiência do usuário, com navegação intuitiva e interações interativas.
+
+4 - Responsividade:
+O site deve ser acessível e funcional em dispositivos móveis, tablets e desktops, com layout adaptável.
+
+5 - Documentação:
+Documentação completa do código em um arquivo separado (ex.: README.md).
+Explicação do propósito de cada funcionalidade e a organização geral do projeto.
+Especificações Técnicas:
+
+5 - Tecnologias Obrigatórias:
+HTML, CSS e JavaScript (puro ou com uso de frameworks leves(Bootstrap) se desejado).
+Estrutura do Site:
+Deve conter pelo menos uma página inicial e outras seções que explorem o tema "Futuro" (ex.: Visão, Tecnologia, Sociedade, etc.).
+
+6 - Interatividade:
+Adicione elementos interativos com JavaScript, como animações, transições ou interações responsivas, que reforcem o tema "Futuro".
+
+7 - Responsividade:
+Utilize CSS flexbox ou grid e media queries para garantir que o layout seja adaptável.
+Design e Estética:
+Escolha uma paleta de cores e tipografia moderna que transmita uma visão futurista.
+Considere o uso de elementos visuais como ícones, imagens e ilustrações que reforcem o tema. 
+
+Quanto a entrega, vocês irão entregar todos os arquivos em uma pasta com seu nome no Github. Tem um repositório para o 2º Informática para realizarem as entregas.
+Postar no teams um arquivo com o link para o github e marcar como concluído.
