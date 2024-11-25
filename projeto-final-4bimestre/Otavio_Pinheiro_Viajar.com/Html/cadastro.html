@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Viajar.com</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+ <link rel="stylesheet" href="../Style_Tudo/Style_Cadastro.css">
+
+ <Script src="../JavaScript/JavaScript_Cadastro.js" defer></Script>
+
+ <link rel="icon" href="../img/Logo.webp">
+
+</head>
+<body>
+
+    <!-- Código html para navbar -->
+
+    <nav class="navbar">
+       
+        <div class="navbar-left">
+
+            <img src="../img/Logo.webp" alt="logo" class="logo">
+
+            <span class="navbar-text">VIAJAR.COM</span>
+
+        </div>
+
+        <ul class="navbar-right">
+
+            <li><a href="../index.html">Home</a></li>
+
+            <li><a href="Login.html">Login</a></li>
+
+            <li><a href="cadastro.html">Cadastro</a></li>
+
+            <li><a href="passagens.html">Passagens</a></li>
+
+            <li><a href="#" id="logout">Sair</a></li>
+
+        </ul>
+
+    </nav>
+
+<!-- Forms para cadastro no site -->
+
+    <div class="form-container">
+
+        <h2>Cadastro</h2>
+
+        <form action="/submit-form" method="POST">
+
+            <label for="nome">Nome</label>
+
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+            <label for="email">E-mail</label>
+
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+            <label for="senha">Senha</label>
+
+            <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+
+            <input type="submit" value="Cadastrar">
+
+        </form>
+
+<!-- Código para caso o usuário já tenha uma conta, ele possa já ir para a página de login -->
+
+        <div class="message">
+
+            <p>Já tem uma conta? <a href="Login.html">Faça login</a></p>
+
+        </div>
+        
+    </div>
+
+</body>
+</html>
