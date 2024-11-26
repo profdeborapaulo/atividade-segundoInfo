@@ -1,4 +1,4 @@
-/* Estilo Geral */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f7f7f7;
@@ -32,11 +32,11 @@ p {
 
 .resultado {
     display: flex;
-    flex-direction: column; /* Empilhar os itens verticalmente */
-    align-items: center;    /* Centralizar horizontalmente */
-    justify-content: center; /* Centralizar verticalmente dentro da div, se necessário */
-    margin-top: 10px;       /* Espaço acima da div */
-    text-align: center;     /* Alinhar textos no centro */
+    flex-direction: column; 
+    align-items: center;    
+    justify-content: center; 
+    margin-top: 10px;      
+    text-align: center;     
 }
 
 .qualidade-ar {
