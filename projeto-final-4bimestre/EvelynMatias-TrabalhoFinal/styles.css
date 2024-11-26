@@ -1,4 +1,4 @@
-/* Estilos globais */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,14 +7,14 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #fbe4eb; /* Cor de fundo suave e feminina */
+    background-color: #fbe4eb; 
     color: #333;
     line-height: 1.6;
 }
 
-/* Navbar */
+
 .navbar {
-    background-color: #ff6f91; /* Rosa suave */
+    background-color: #ff6f91; 
     color: white;
     padding: 15px;
     text-align: center;
@@ -44,12 +44,12 @@ body {
 }
 
 .navbar nav ul li a:hover {
-    color: #fdb1c3; /* Amarelo suave */
+    color: #fdb1c3; 
 }
 
-/* Hero Section */
+
 .hero {
-    background-color: #f3c0d7; /* Rosa pastel */
+    background-color: #f3c0d7; 
     color: #fff;
     text-align: center;
     padding: 100px 20px;
@@ -69,7 +69,7 @@ body {
 }
 
 .hero .cta-button {
-    background-color: #ff8a80; /* Rosa claro */
+    background-color: #ff8a80; 
     padding: 15px 30px;
     font-size: 1.2rem;
     color: white;
@@ -79,10 +79,10 @@ body {
 }
 
 .hero .cta-button:hover {
-    background-color: #ff6f91; /* Rosa vibrante */
+    background-color: #ff6f91; 
 }
 
-/* Section Content */
+
 .content-section {
     text-align: justify;
     padding: 50px 20px;
@@ -94,7 +94,7 @@ body {
 
 .content-section h2 {
     font-size: 2.5rem;
-    color: #b39ddb; /* Lilás suave */
+    color: #b39ddb; 
     margin-bottom: 20px;
 }
 
@@ -103,9 +103,9 @@ body {
     color: #666;
 }
 
-/* Footer */
+
 .footer {
-    background-color: #ff6f91; /* Rosa suave */
+    background-color: #ff6f91; 
     color: white;
     text-align: center;
     padding: 20px;
@@ -118,9 +118,9 @@ body {
     font-size: 1rem;
 }
 
-/* Button - Mini-jogos */
+
 button.cta-button {
-    background-color: #ff6f91; /* Verde menta */
+    background-color: #ff6f91; 
     padding: 15px 30px;
     font-size: 1.2rem;
     color: white;
@@ -131,5 +131,5 @@ button.cta-button {
 }
 
 button.cta-button:hover {
-    background-color: #fa9bb1; /* Verde suave mais intenso */
+    background-color: #fa9bb1; 
 }
