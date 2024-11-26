@@ -1,0 +1,339 @@
+body {
+    background-color: #020214;
+    width: 100vw;
+}
+
+
+/* Bloco de introdução ao site */
+.introduction-block{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    z-index: 1;
+    margin-top: 20px;
+}
+    .intro-block-left{
+        width: 40%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: inset 0px 0px 87px 15px rgba(0,0,0,0.75);
+    }
+    .intro-block-left-fundo{
+        height: 100%;
+        width: 60%;
+        filter: blur(1.5px);
+        position: absolute;
+        z-index: -1;
+    }
+    .intro-block-left-logo{
+        height: 30%;
+        width: 30%;
+        z-index: 3;
+        position: absolute;
+    }
+    .intro-block-right {
+        width: 60%;
+        height: 100%;
+        background-color: #020214;
+        color: white;
+        box-shadow: inset 0px 0px 87px 15px rgba(0,0,0,0.75);
+        border-left: 3px solid #ffffff ;
+        z-index: 2;
+        background: url(../imgs/introducaoImg.jpg);
+        background-position: 55%;
+        background-size: 150%;
+    }
+    .intro-block-right ul {
+        margin-top: 10%;
+        text-align: center;
+        z-index: 5;
+        background-color: #020214de;
+        list-style-type: none;
+        }
+    .intro-block-right li {
+        font-size: 38px;
+        color: white;
+        margin-top: 25px;
+        padding: 20px 0;
+    }
+    #btn-intro{
+        animation: btn-intro-pulse 2.5s infinite linear;
+    }
+    #btn-intro:hover{
+        animation-play-state: paused;
+    }
+
+
+
+
+/* Produtos mais vendidos: */
+.main-products{
+    background: rgb(201,201,201);
+    background: linear-gradient(90deg, rgba(201,201,201,1) 0%, rgba(244,244,244,1) 33%, rgba(255,255,255,1) 50%, rgba(244,244,244,1) 66%, rgba(201,201,201,1) 100%);
+    height: 600px;
+    width: 100%;
+    padding: 0 0 100px 0;
+    display: block;
+    border-top: 5px gray solid;
+    border-bottom: 5px gray solid;
+    z-index: 6;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+    .slide-products{
+        background-color: #5151f8;
+        display: inline-flex;
+        align-items: flex-end;
+        height: 400px;
+        bottom: 0;
+        margin-top: auto;
+        gap: 50px;
+        animation: slide-products 5s infinite ease-in-out;
+    }
+
+    .slide-title{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        width: 100%;
+        height: 20%;
+        font-size: 25px;
+    }
+
+    .products {
+        overflow: hidden;
+        padding: 60px 0;
+        align-items: flex-end;
+        display: flex;
+        white-space: nowrap;
+        position: relative;
+        height: 95%;
+    }
+    /* Fade In dos lados: */
+    .products:before,
+    .products:after {
+        position: absolute;
+        top: 0;
+        width: 250px;
+        height: 100%;
+        content: "";
+        z-index: 2;
+    }
+    
+    .products:before {
+        left: 0;
+        background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(201,201,201,1));
+    }
+    
+    .products:after {
+        right: 0;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(201,201,201,1));
+    }
+    /* Pausar quando mouse estiver em cima: */
+    .products:hover .products-slide {
+        animation-play-state: paused;
+    }
+    /* Alinhação das duas fileiras e ajuste para segunda fileira: */
+    .products-slide {
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        min-height: 340px;
+        max-height: 340px;
+        margin-top: 50px;
+        animation: 35s slide infinite linear;
+        transition: 1s;
+        margin: auto;
+    }
+    
+    .products-slide .main-product-item {
+        margin: 0 40px 0 40px;
+    }
+    .products-slide:hover {
+        width: 117%;
+    }
+    #slide-repeat {
+        transition: 1s;
+        margin-left: 0;
+    }
+    #slide-repeat:has(.main-product-item:hover) {
+        margin-left: 90px;
+    }
+    /* Item de produto mais vendido: */
+    .main-product-item{
+        color: rgb(0, 0, 0);
+        border: 2px white solid;
+        border-radius: 15px;
+        width: 350px;
+        height: 200px;
+        padding: 20px;
+        background: rgb(210,210,210);
+        background: radial-gradient(circle, rgb(173, 173, 173) 8%, rgba(238,238,238,1) 91%, rgba(238,238,238,1) 100%);
+        transition: 1s;
+        animation-name: hoverMainProductsOUT;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-in-out;
+        -webkit-box-shadow: 0px 4px 16px 1px rgba(0,0,0,0.35);
+        -moz-box-shadow: 0px 4px 16px 1px rgba(0,0,0,0.35);
+        box-shadow: 0px 4px 16px 1px rgba(0,0,0,0.35);
+        overflow: hidden;
+    }
+
+    .main-product-item img{
+        height: 100%;  
+    }
+
+    .main-product-item a {
+        text-decoration: none;
+    }
+
+    .main-product-item:hover{
+        margin: 0;
+        color: white;
+        border: 0;
+        border-radius: 15px;
+        width: 568.75px;
+        height: 325px;
+        background: rgb(23,23,40);
+        background: radial-gradient(circle, rgba(24,24,32,1) 8%, rgba(2,2,17,1) 91%, rgba(2,2,17,1) 100%);
+        animation-name: hoverMainProductsIN;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-in-out;
+        -webkit-box-shadow: 0px 20px 52px 4px rgba(0,0,0,0.78);
+        -moz-box-shadow: 0px 20px 52px 4px rgba(0,0,0,0.78);
+        box-shadow: 0px 20px 52px 4px rgba(0,0,0,0.78);
+    }
+
+
+
+
+
+
+.contents-block{
+    background-color: rgba(248,248,255,255);
+    width: 1300px;
+    margin: auto;
+    box-shadow: inset 0px -2px 23px -6px rgba(0,0,0,0.55), 0px 0px 32px -6px rgba(0,0,0,0.69);
+    padding-bottom: 5%;
+}
+
+    .grid-products{
+        width: 100%;
+        height: 100%;
+        padding: 2% 5%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: space-evenly;
+    }
+
+    .product-item{
+        width: 250px;
+        height: 350px;
+        border-radius: 15px;
+        border: 2px white solid;
+        overflow: hidden;
+        transition: 0.3s ease-in-out;
+        box-shadow: 0px 0px 13px -6px rgba(0,0,0,0.55);;
+        color: #020214;
+        margin-bottom: 5%;
+    }
+
+    .product-item:hover{
+        transform: scale(1.05);
+        border: 2px #5151f8 solid;
+        box-shadow: rgba(81, 81, 248, 0.4) 0px 5px, rgba(81, 81, 248, 0.3) 0px 10px, rgba(81, 81, 248, 0.2) 0px 15px, rgba(81, 81, 248, 0.1) 0px 20px, rgba(81, 81, 248, 0.05) 0px 25px, 0px 0px 23px -6px rgba(0,0,0,0.55);;
+        color: #5151f8;
+    }
+
+    .product-item-header{
+        width: 100%;
+        height: 50%;
+        overflow: hidden;
+    }
+    .product-item-header img{
+        height: 100%;
+        width: 100%;
+    }
+
+    .product-item-body{
+        background-color: white;
+        height: 50%;
+        box-shadow: inset 0px -6px 20px 1px rgba(0, 0, 0, 0.438);
+    }
+
+    .product-item-title{
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 2px solid rgba(128, 128, 128, 0.24);
+        border-bottom: 2px solid rgba(128, 128, 128, 0.24);
+        font-size: 75%;
+    }
+
+    .product-item-title h1 a{
+        color: #020214;
+        transition: 0.2s;
+    }
+    .product-item-title h1 a:hover{
+        color: #5151f8;
+    }
+
+    .product-item-price{
+        height: 50%;
+        display: flex;
+        align-items: center;
+    }
+    .product-item-price h2{
+        margin-left: 5%;
+    }
+
+
+
+
+
+
+        /* ANIMAÇÕES / KEYFRAMES */
+
+
+/* Keyframes para transição das cores dos produtos principais: */
+@keyframes hoverMainProductsIN {
+    from{
+        background: rgb(210,210,210);
+    }   
+    to{
+        background: rgb(23,23,40);
+    }
+}
+@keyframes hoverMainProductsOUT {
+    from{
+        background: rgb(23,23,40);
+    }
+    to{
+        background: rgb(210,210,210);
+    }
+}
+
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+@keyframes btn-intro-pulse {
+    0% {
+        transform: scale(0.95);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(0.95);
+    }
+}

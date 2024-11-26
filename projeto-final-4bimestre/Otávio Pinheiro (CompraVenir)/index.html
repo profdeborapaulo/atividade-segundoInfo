@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compravenir</title>
+
+    <!-- Links CSS -->
+        <link rel="stylesheet" href="/css/formatting.css">
+        <link rel="stylesheet" href="/css/index.css">
+
+    <!-- Links Fontes -->
+        <!-- Fonte padrão -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+        <!-- Fonte titulos -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,100..900;1,100..900&family=Major+Mono+Display&family=Outfit:wght@100..900&family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+
+</head>
+<body onload="carregarProdutos()">
+
+    <!-- Header -->
+    <header class="header">
+        <img src="/imgs/logo.png" alt="CompraVenir" class="header-logo">
+
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/html/about-page.html">Sobre</a></li>
+        </ul>
+    </header>
+
+    <!-- Landing page -->
+     <br><br><br>
+    <div class="introduction-block">
+        <div class="intro-block-left">
+            <img src="/imgs/logo.png" alt="Logo" class="intro-block-left-logo">
+
+            
+        </div>
+        
+        <div class="intro-block-right">
+            <!-- Slogan -->
+
+                <!-- <img src="../imgs/introducaoImg.jpg" class="intro-block-left-fundo"> -->
+                <ul>
+                    <li class="title-font">Do <span style="color: #B3B3FF;" class="title-font">futuro</span> para o <span style="color: #B3B3FF;" class="title-font">presente</span>.</li>
+                    <li class="title-font">Do <span style="color: #B3B3FF;" class="title-font">imaginário</span> para o <span style="color: #B3B3FF;" class="title-font">palpável</span>.</li>
+                    <li class="title-font">Do <span style="color: #B3B3FF;" class="title-font">impossível</span> para o <span style="color: #B3B3FF;" class="title-font">alcançável</span>.</li>
+                    <li class="title-font">Da <span style="color: #B3B3FF;" class="title-font">nossa loja</span> para suas <span style="color: #B3B3FF;" class="title-font">mãos</span>.</li>
+                </ul>
+                
+                <div class="btn-area" style="margin: auto; margin-bottom: 5%;">
+                    <a href="#products">
+                    <button class="btn-default" id="btn-intro">
+                        Ver Produtos
+                    </button></a>
+                </div>
+
+        </div>
+    </div>
+
+<!-- Bloco com produtos mais vendidos -->
+    <div class="main-products">
+        <div class="slide-title">
+            <h1>Produtos mais vendidos do seu ano</h1>
+        </div>
+            <!-- Cards com os produtos -->
+            <div class="products">
+                <div class="products-slide">
+                    <a href="/html/product-page.html?id=DeLorean"><div class="main-product-item">
+                        <p>DeLorean</p>
+                        <img src="https://www.pngmart.com/files/23/Delorean-PNG-Isolated-Pic.png" alt="">
+                    </div></a>
+
+                    <a href="/html/product-page.html?id=Sabres de Luz"><div class="main-product-item">
+                        <p>Sabres de Luz</p>
+                        <img src="https://clipart-library.com/images_k/light-saber-transparent/light-saber-transparent-1.png" alt="">
+                    </div></a>
+
+                    <a href="/html/product-page.html?id=Portal Gun"><div class="main-product-item">
+                        <p>Portal Gun</p>
+                        <img src="https://www.models-resource.com/resources/big_icons/29/28445.png?updated=1549681629" alt="">
+                    </div></a>
+
+                    <a href="/html/product-page.html?id=TARDIS"><div class="main-product-item">
+                        <p>TARDIS</p>
+                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/87634532-2a15-4894-b6cf-62c1f306a190/d676hh1-3503031f-1f47-4e96-83e7-045e0af0d7e3.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg3NjM0NTMyLTJhMTUtNDg5NC1iNmNmLTYyYzFmMzA2YTE5MFwvZDY3NmhoMS0zNTAzMDMxZi0xZjQ3LTRlOTYtODNlNy0wNDVlMGFmMGQ3ZTMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.pBkPuX1i4_ns_6NT1pkHjdTfAR6Z5QkpCLsHaPCBu1A" alt="">
+                    </div></a>
+                </div>
+                <!-- Duplicata dos cards para efeito de loop -->
+                <div class="products-slide" id="slide-repeat">
+                    <a href="/html/product-page.html?id=DeLorean"><div class="main-product-item">
+                        <p>DeLorean</p>
+                        <img src="https://www.pngmart.com/files/23/Delorean-PNG-Isolated-Pic.png" alt="">
+                    </div></a>
+
+                    <a href="/html/product-page.html?id=Sabres de Luz"><div class="main-product-item">
+                        <p>Sabres de Luz</p>
+                        <img src="https://clipart-library.com/images_k/light-saber-transparent/light-saber-transparent-1.png" alt="">
+                    </div></a>
+
+                    <a href="/html/product-page.html?id=Portal Gun"><div class="main-product-item">
+                        <p>Portal Gun</p>
+                        <img src="https://www.models-resource.com/resources/big_icons/29/28445.png?updated=1549681629" alt="">
+                    </div></a>
+
+                    <a href="/html/product-page.html?id=TARDIS"><div class="main-product-item">
+                        <p>TARDIS</p>
+                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/87634532-2a15-4894-b6cf-62c1f306a190/d676hh1-3503031f-1f47-4e96-83e7-045e0af0d7e3.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg3NjM0NTMyLTJhMTUtNDg5NC1iNmNmLTYyYzFmMzA2YTE5MFwvZDY3NmhoMS0zNTAzMDMxZi0xZjQ3LTRlOTYtODNlNy0wNDVlMGFmMGQ3ZTMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.pBkPuX1i4_ns_6NT1pkHjdTfAR6Z5QkpCLsHaPCBu1A" alt="">
+                    </div></a>
+                </div>
+
+              </div>
+        </div>
+
+    </div>
+
+    <!-- View para exibição de todos os produtos -->
+    <div class="contents-block" id="products">
+        <h1 style="padding: 5% 5% 0 5%; font-size: 50px;" id="products">Produtos</h1>
+        <div class="grid-products" id="grid-products">
+
+
+<script>
+function carregarProdutos() {
+    fetch('/dados')
+        .then(response => response.json())
+        .then(data => {
+
+                        if (Array.isArray(data)) { //verifica se retornou como um array
+                data.forEach(produto => {
+                    const div = document.createElement('div');
+                    div.className = "product-item";
+
+                    //Atribuindo elementos dentro da DIV, substituindo os placeholders pelos valores reais de cada produot
+                    div.innerHTML = `
+                        <h1 style="display: none">${produto.name}</h1>
+                        <a href="/html/product-page.html?id=${produto.name}">
+                        <div class="product-item-header">
+                            <img src="${produto.image}" alt="produto-image">
+                        </div></a>
+
+                        <div class="product-item-body">
+                            <div class="product-item-title">
+                                <h1><a href="/html/product-page.html?id=${produto.name}" style="text-decoration: none;">${produto.name}</a></h1>
+                            </div>
+                            <div class="product-item-price">
+                                <h2>R$ ${produto.price}</h2>
+                            </div> 
+                        </div>`;
+
+                    document.getElementById("grid-products").appendChild(div);
+                });
+
+        }})
+        .catch(error => console.error('Erro ao carregar os dados:', error));
+}
+</script>
+            <div class="product-item" style="display:none">
+                <h1 style="display: none">ID</h1>
+                <div class="product-item-header" ">
+                    
+                </div>
+
+                <div class="product-item-body">
+
+                    <div class="product-item-title">
+                        <h1>Produto</h1>
+                    </div>
+
+                    <div class="product-item-price">
+                        <h2>R$xx,xx</h2>
+                    </div>
+
+                </div>
+            </div>
+
+            
+
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <h1>COMPRA<span style="color: #020214; font-family: 'Times New Roman', Times, serif;">V</span>ENIR</h1>
+    </footer>
+    
+</body>
+</html>
