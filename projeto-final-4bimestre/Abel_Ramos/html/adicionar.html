@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../javascript/script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/forms.css">
+    <title>SpaceIgnite</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../images/logo.png" height="50px" width="200px" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" style="color: white;"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="inicio.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cadastro.html">Cadastro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="adicionar.html">Adicionar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" id="logout-link" onclick="logout()">Sair</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <button id="open-popup" class="popup-btn">Exemplo</button>
+
+        <!-- Pop-up -->
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span id="close-popup" class="close-btn">&times;</span>
+                <div class="image-container">
+                    <img src="../images/print1.png" alt="print1">
+                    <img src="../images/print2.png" alt="print 2">
+                    <img src="../images/print3.png" alt="print 3">
+                </div>
+            </div>
+        </div>
+
+        <center>
+            <div class="Titulo">
+                <h2>Adicionar Noticias</h2>
+            </div>
+        </center>
+
+        <div id="container-add">
+            <form id="add-form">
+                <label for="titulo">Titulo</label>
+                <input type="text" id="titulo-noticia" name="titulo" required>
+                <label for="explicacao">Apresentação</label>
+                <input type="text" name="explicacao" id="explicacao" required>
+                <label for="subtitulo-1">Subtitulo 1</label>
+                <input type="text" id="subtitulo-1" name="subtitulo-1" required>
+                <label for="subtitulo-2">Subtitulo 2</label>
+                <input type="text" name="subtitulo-2" id="subtitulo-2" required>
+                <label for="subtitulo-3">Subtitulo 3</label>
+                <input type="text" id="subtitulo-3" name="subtitulo-3" required>
+                <label for="texto-1">Texto Card1</label>
+                <textarea type="text" name="texto-1" id="texto-1" required></textarea>
+                <label for="texto-2">Texto Card2</label>
+                <textarea type="text" name="texto-2" id="texto-2" required></textarea>
+                <label for="texto-3">Texto Card3</label>
+                <textarea type="text" name="texto-3" id="texto-3" required></textarea>
+                <label for="imagem-noticia">Imagem da noticia</label>
+                <input type="file" name="imagem-noticia" accept="image/*" id="imagem-noticia" required>
+                <label for="link-noticia">Link do video</label>
+                <input type="text" name="link-noticia" id="link-noticia"
+                    placeholder="Somente o entre parenteses, ex: https://www.youtube.com/watch?v=(n84iY-vcdi0) ">
+                <button class="botao" id="addButton" type="submit"><span>Add</span></button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;SpaceIgnite</p>
+    </footer>
+</body>
+</html>

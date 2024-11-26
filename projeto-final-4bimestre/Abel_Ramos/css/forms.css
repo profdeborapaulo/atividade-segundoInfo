@@ -1,0 +1,509 @@
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    opacity: 0;
+    transition: 0.5s ease-in;
+    z-index: 1;
+    background-color: rgb(4, 1, 26);
+}
+
+.visivel {
+    opacity: 1;
+}
+
+.navbar-custom {
+    background-color: black;
+    height: auto;
+}
+
+.navbar-toggler {
+    border: none;
+
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-brand:hover {
+    opacity: 0.8;
+}
+
+.nav-link {
+    color: white;
+    transition: 0.5s ease-in;
+    margin-right: 10px;
+}
+
+.nav-link:hover {
+    opacity: 0.5;
+
+    color: white;
+}
+
+.Titulo {
+    background-color: #ffffff;
+    width: 20%;
+    border-radius: 5px;
+    margin-top: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+/* Centraliza o contêiner principal */
+#container-cadastro {
+    width: 30%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.949);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#cadastro-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cadastro-form label {
+    width: 120%;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+}
+
+#cadastro-form input {
+    width: 120%;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid #000;
+    outline: none;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+
+/* Contêiner de imagens */
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.image-container img {
+    width: 40%;
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.image-container img:hover {
+    transform: scale(1.1);
+}
+
+/*Botoes*/
+
+.botao {
+    background: rgb(255, 255, 255);
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    width: 120px;
+    height: 50px;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.botao span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.botao:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    z-index: 1;
+    transition: transform 0.3s ease;
+    transform: translateY(0);
+}
+
+.botao:hover {
+    color: rgb(255, 255, 255);
+}
+
+.botao:hover:before {
+    transform: translateY(-100%);
+}
+
+/*Responsividade*/
+@media (max-width: 768px) {
+
+    .Titulo {
+        width: 80%;
+        margin-top: 20px;
+        font-size: 24px;
+    }
+
+    #container-cadastro {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    #cadastro-form input {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .botao {
+        width: 100%;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+}
+
+
+/*Login*/
+
+/* Estiliza o contêiner principal */
+#container-Login {
+    width: 30%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.949);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estiliza o contêiner interno do formulário */
+#container-Lform {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estiliza o formulário */
+#login-form label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+}
+
+#login-form input {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid #000;
+    outline: none;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+/* Estiliza o botão de login */
+#login-form .botao {
+    background: rgb(255, 255, 255);
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    width: 120px;
+    height: 50px;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    cursor: pointer;
+    border: 3px solid rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* Estilo de hover para o botão */
+#login-form .botao span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+#login-form .botao:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    z-index: 1;
+    transition: transform 0.3s ease;
+    transform: translateY(0);
+}
+
+#login-form .botao:hover {
+    color: rgb(255, 255, 255);
+}
+
+#login-form .botao:hover:before {
+    transform: translateY(-100%);
+}
+
+@media (max-width: 768px) {
+    #container-Login {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .Titulo {
+        width: 80%;
+        margin-top: 20px;
+        font-size: 24px;
+    }
+
+    #container-Lform {
+        width: 100%;
+    }
+
+    #login-form input {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    #login-form .botao {
+        width: 100%;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+}
+
+/*ADD NOTICIA*/
+
+/*PopUp*/
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background: #fff;
+    width: 45%;
+    max-height: 70%; 
+    overflow-y: auto; 
+    overflow-x: hidden; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.image-container img {
+    width: 100%; 
+    height: 40vh; 
+    max-height: 60vh;
+    object-fit: cover; 
+    border-radius: 4px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: rgb(7, 0, 43);
+}
+
+#container-add {
+    width: 50%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.949);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#add-form,
+#editar-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#add-form label,
+#editar-form label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+}
+
+#add-form input,
+#editar-form input {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid #000;
+    outline: none;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 50%;
+    height: 10vh;
+    max-height: 100px;
+    max-width: 500px;
+    min-height: 100px;
+    min-width: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    border: solid #000000 3px;
+    outline: none;
+}
+
+.imagem-noticia {
+    border: none;
+}
+
+footer {
+    height: 10vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    bottom: -800px;
+}
+
+@media (max-width: 768px) {
+
+    /* Botão Pop-up */
+     
+    .popup-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+        border-radius: 4px;
+    }
+
+    .popup {
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 20px;
+    }
+
+    .popup-content {
+        width: 90%;
+        max-height: 80%;
+        padding: 15px;
+        overflow-y: auto; 
+    }
+
+    .image-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+        max-height: none; 
+    }
+    
+    
+
+    /* Formulários */
+    #add-form input,
+    #editar-form input {
+        width: 90%; 
+    }
+
+    /* Textarea */
+    textarea {
+        width: 90%; 
+        max-width: 90%;
+        min-width: 90%;
+    }
+
+    /* Footer */
+    footer {
+        height: auto;
+        font-size: 14px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    /* Contêiner principal */
+    #container-add {
+        width: 90%; 
+        margin: 20px auto; 
+    }
+}

@@ -1,0 +1,151 @@
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.5s ease-in;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin-bottom: 0;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(4, 1, 26);
+}
+
+.apresentacao {
+    text-align: left;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.digitar {
+    font-weight: 700;
+    border-right: 3px solid #fff;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#texto,
+#texto2 {
+    word-wrap: break-word;
+    white-space: normal;
+    max-width: 100%;
+    overflow-wrap: break-word;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+p {
+    font-size: x-large;
+}
+
+.oculto {
+    opacity: 0;
+}
+
+.visivel {
+    opacity: 1;
+}
+
+button {
+    width: 20%;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    background-color: black;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+    opacity: 1;
+    font-weight: bold;
+}
+
+
+button:hover {
+    background-color: #e3d6d6;
+    color: #000000;
+}
+
+.linha-vertical {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 10px;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    transform: translateX(-50%);
+}
+
+#gif-inicial {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+    background-color: #000000;
+    color: #fff;
+    padding-right: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+        opacity: 0;
+        transition: 0.5s ease-in;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .linha-vertical,
+    #gif-inicial {
+        display: none; 
+    }
+
+    .container {
+        width: 100%; 
+        border-radius: 0px;
+    }
+
+    .apresentacao {
+        max-width: 100%; 
+        text-align: center; 
+        padding: 10px;
+        box-shadow: none; 
+    }
+
+    h1 {
+        font-size: 1.5rem; 
+    }
+
+    p {
+        font-size: 1rem; 
+    }
+
+    button {
+        width: 100%;
+        height: auto; 
+        padding: 15px;
+        font-size: 1rem;
+    }
+}
