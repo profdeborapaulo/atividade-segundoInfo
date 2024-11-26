@@ -1,0 +1,84 @@
+/* Estilo Geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 20px;
+    color: #333;
+}
+
+p {
+    font-size: 1.2em;
+    color: #555;
+    margin-top: 15px;
+}
+
+.resultado {
+    display: flex;
+    flex-direction: column; /* Empilhar os itens verticalmente */
+    align-items: center;    /* Centralizar horizontalmente */
+    justify-content: center; /* Centralizar verticalmente dentro da div, se necessário */
+    margin-top: 10px;       /* Espaço acima da div */
+    text-align: center;     /* Alinhar textos no centro */
+}
+
+.qualidade-ar {
+    font-size: 2em;
+    padding: 10px;
+    display: inline-block;
+    background-color: #ff6f00;
+    color: white;
+    border-radius: 5px;
+}
+
+.mask-image {
+    width: 100px;
+    margin-top: 10px;
+}
+
+form {
+    margin-top: 30px;
+}
+
+label {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+button {
+    background-color: #ff6f00;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #e65c00;
+}
