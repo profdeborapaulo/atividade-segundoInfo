@@ -1,0 +1,146 @@
+body {
+    background-image: url(../img/planeta.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #000000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+   
+}
+    
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #000000;
+        padding: 10px 20px;
+        color: white;
+    }
+    
+    
+    .navbar-left {
+        display: flex;
+        align-items: center;
+        
+    }
+    
+    .logo {
+        height: 70px;
+        margin-right: 10px;
+    }
+    
+    .navbar-text {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: white;
+    
+    }
+    
+    
+    .navbar-right {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+    
+    .navbar-right li {
+        position: relative;
+        
+    }
+    
+    
+    .navbar-right a {
+        color: white;
+        font-size: 1rem;
+        padding: 5px 10px;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .navbar-right a:hover {
+        background-color: #333;
+    }
+    
+    
+    @media (max-width: 768px) {
+        .navbar {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        .navbar-right {
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+    .efeito-digitacao {
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 150%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        margin-top: 8%;
+    }
+    .planetas-container {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin: 50px auto;
+        flex-wrap: wrap; /* Permite a quebra para o próximo linha, se necessário */
+    }
+    
+    /* Cada planeta */
+    .planeta {
+        text-align: center;
+    }
+    
+    /* Estilos das imagens */
+    .planeta img {
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+        border: 2px solid white;
+        transition: transform 0.3s ease;
+        margin: 10px; 
+    }
+    
+    
+    .planeta img:hover {
+        transform: scale(1.1);
+    }
+    
+    
+    .planeta h3 {
+        margin-top: 10px;
+        font-size: 30px;
+        color: white;
+    }
+    
+ 
+    @media (max-width: 768px) {
+        
+        .planetas-container {
+            flex-direction: column; 
+            align-items: center;    
+        }
+    
+      
+        .planeta img {
+            width: 250px;  
+            height: 250px;
+        }
+    
+        
+        .planeta h3 {
+            font-size: 20px; 
+        }
+    }

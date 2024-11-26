@@ -1,0 +1,129 @@
+body {
+    background-image: url(../img/Fundo3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #000000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+   
+}
+
+
+    
+    
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #000000;
+        padding: 10px 20px;
+        color: white;
+    }
+    
+    
+    .navbar-left {
+        display: flex;
+        align-items: center;
+        
+    }
+    
+    .logo {
+        height: 70px;
+        margin-right: 10px;
+    }
+    
+    .navbar-text {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: white;
+    
+    }
+    
+    
+    .navbar-right {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+    
+    .navbar-right li {
+        position: relative;
+        
+    }
+    
+    
+    .navbar-right a {
+        color: white;
+        font-size: 1rem;
+        padding: 5px 10px;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .navbar-right a:hover {
+        background-color: #333;
+    }
+    
+    
+    @media (max-width: 768px) {
+        .navbar {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        .navbar-right {
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+    .form-container {
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 30px;
+        border-radius: 8px;
+        width: 400px;
+        margin: 100px auto;
+    }
+    
+    .form-container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    input {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: #222;
+        color: white;
+    }
+    
+    input[type="submit"] {
+        background-color: #feffff;
+        color: rgb(0, 0, 0);
+        border: none;
+        cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: #b1b2b3;
+    }
+
+
+.message {
+    font-size: 14px;
+    margin-top: 10px;
+
+}
+
+   
