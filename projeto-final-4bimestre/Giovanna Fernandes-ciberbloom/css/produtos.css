@@ -1,0 +1,123 @@
+@font-face {
+    font-family: "Filia-Regular";
+    src: url(font/Filia-Regular.otf);
+}
+body {
+    font-family: "Livvic", sans-serif;
+  
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    margin-top: 50px;
+    margin-inline: 30px;
+}
+
+.telaproduto{
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 20px;
+    color: #7b22e0; 
+    width: 400px;
+    height: auto;
+    min-height: 450px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+   
+    
+}
+.imgproduto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imgproduto img{
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+.botoes{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.retangulo{
+   width: 30%;
+   height: 500px;
+   display: flex;
+   justify-content: center;
+   margin-bottom: 40px;
+}
+form{
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.informacao{
+    padding-inline: 10%;
+    width: 100%;
+    margin-bottom: 15px;
+}
+ h3{
+    text-align: center;
+    margin-bottom: 7px;
+}
+.linha {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 8px;
+    border: 1.8px solid #00b436;
+}
+
+
+button{
+    background-color: #7b22e0; 
+    padding: 8px;
+    padding-block: 15px;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    width: 38%;
+    border-radius: 13px;
+    cursor: pointer;
+    color: rgba(255, 248, 244, 1);
+
+}
+button:hover{
+    background-color: #2759ff;
+}
+
+
+
+@media (max-width: 1000px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100vw;
+        margin-top: 50px;
+    }
+    .retangulo {
+        width: 45%;
+        height: auto;
+    }
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina de login</title>
+
+
+    <link rel="stylesheet" href="css/login.css">
+
+    <link rel="stylesheet" href="css/nav.css">
+
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+
+            <img src="img/logo.png" width=200 height=60 style="margin-top: 10px;">
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li>|</li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li>|</li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <div class="retangulo">
+            <div class="telalogin">
+                <h1>Área do ADM</h1>
+
+
+                <form action="" method="post">
+                    <div class="espaço-login">
+                        <div>
+                            <img src="img/icons8-pessoa-32.png" alt="paralogin" class="imglogin">
+                            <label for="login">Login</label>
+                        </div>
+
+                        <input type="text" id="login" placeholder="Insira seu username: ">
+                    </div>
+
+                    <div class="espaço-registrar">
+                        <div>
+                            <img src="img/icons8-cadeado-32.png" alt="parasenha" class="imgsenha">
+                            <label for="senha">Senha</label>
+                        </div>
+
+                        <input type="password" id="senha" placeholder="Insira sua senha: ">
+                    </div>
+                </form>
+
+                <button onclick="autenticar(event)"> Enviar </button>
+                <p id="mensagem"> </p>
+
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="logo">
+                <img src="img/logo.png" width=250 height=80>
+            </div>
+            <div class="footer-section">
+                <h4>Produtos</h4>
+                <ul>
+                    <li>
+                        <a href="produtos.html">Natureza cibernética</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Institucional</h4>
+                <ul>
+                    <li>
+                        <a href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <ul>
+                    <li>
+                        <a href="contato.html">Fale Conosco</a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="#"><img src="img/instagram.png" width="30" alt="Instagram"></a>
+                        <a href="#"><img src="img/whatts.png" width="30" alt="TikTok"></a>
+                        <a href="#"><img src="img/youtube.png" width="30" alt="YouTube"></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <br>
+        <div class="footer-bottom">
+            <p style="color: #8F00FF;"> "CyberBloom, natureza cibernetica."</p>
+            <br>
+            <p>&copy;2024CyberBloom, natureza atualizada, feito por Giovanna. Todos os direitos reservados</p>
+        </div>
+    </footer>
+    <script src="js/mobile-navbar.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>
