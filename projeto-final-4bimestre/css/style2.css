@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); 
+    color: #fff;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #00bcd4;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-shadow: 0px 0px 20px rgba(0, 188, 212, 0.5);
+}
+
+form {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 188, 212, 0.2);
+    max-width: 700px;
+    width: 100%;
+    backdrop-filter: blur(10px); 
+}
+
+select {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid #00bcd4;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 12px 18px;
+    border-radius: 5px;
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+select:focus {
+    border-color: #00ffcc;
+    background-color: rgba(2, 109, 88, 0.281);
+}
+
+button {
+    background: linear-gradient(135deg, #006674, #00ffcc);
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    color: white;
+    font-size: 1.3em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 20px rgba(0, 188, 212, 0.4);
+    margin-top: 20px;
+}
+
+button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 188, 212, 0.6);
+}
+
+#futuroImagem {
+    width: 100%;
+    max-height: 500px;
+    border-radius: 15px;
+    box-shadow: 0 5px 30px rgba(0, 188, 212, 0.3);
+    margin-top: 30px;
+}
+
+#descricao {
+    font-size: 1.5em;
+    line-height: 1.6;
+    color: #f4f4f4;
+    margin-top: 20px;
+    text-shadow: 0px 0px 10px rgba(0, 188, 212, 0.4);
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px rgba(0, 188, 212, 0.7), 0 0 20px rgba(0, 188, 212, 0.6), 0 0 30px rgba(0, 188, 212, 0.5);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(0, 188, 212, 1), 0 0 40px rgba(0, 188, 212, 0.8), 0 0 60px rgba(0, 188, 212, 0.5);
+    }
+    100% {
+        text-shadow: 0 0 10px rgba(0, 188, 212, 0.7), 0 0 20px rgba(0, 188, 212, 0.6), 0 0 30px rgba(0, 188, 212, 0.5);
+    }
+}
+
+h1 {
+    animation: glow 1.5s infinite alternate;
+}
