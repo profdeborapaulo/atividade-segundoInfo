@@ -1,0 +1,137 @@
+.wrapper {
+    position: relative;
+    height: auto;
+    width: 100%;
+    background: transparent;
+    border-radius: 10px;
+    margin-block: 30px;
+    cursor: default;
+    padding: 4px;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.before-wrapper {
+    position: absolute;
+    display: none;
+    width: 110%;
+    height: 70%;
+    background: linear-gradient(135deg, #14ffe9, #3b7cff, #bf00ff);
+    border-radius: 15px;
+    transform-origin: center;
+    z-index: -2;
+    animation: rotateBackground 3s infinite linear;
+}
+
+.display {
+    box-sizing: border-box;
+    height: auto;
+    z-index: 1;
+    height: calc(100% - 10px);
+    width: 100%;
+    border-radius: 6px;
+    border: #3b7cff solid 2px;
+    box-shadow: inset 0px 0px 40px 1px #3b7cff;
+    background-color: black;
+
+}
+
+.textos {
+    height: auto;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: arial;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes rotateBackground {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+.wrapper span {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background: inherit;
+}
+
+.wrapper span:first-child {
+    filter: blur(7px);
+}
+
+.wrapper span:last-child {
+    filter: blur(20px);
+}
+
+.nome {
+    font-size: 10px;
+    width: auto;
+    height: 20%;
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+.comentario {
+    font-size: 15px;
+    height: 70%;
+}
+.tags {
+    color: #3b7cff;
+    font-size: 10px;
+    text-decoration:underline;
+}
+
+@media (max-width: 960px) {
+    .display {
+        box-sizing: border-box;
+        height: auto;
+        z-index: 1;
+        height: calc(100% - 10px);
+        width: 100%;
+        border-radius: 6px;
+        border: #3b7cff solid 2px;
+        box-shadow: inset 0px 0px 40px 1px #3b7cff;
+        background-color: black;
+    }
+    .textos {
+        height: auto;
+        box-sizing: border-box;
+        color: #fff;
+        font-size: auto;
+        font-weight: 600;
+        font-family: arial;
+        padding: 20px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .nome {
+        font-size: 30%;
+        width: auto;
+        height: 20%;
+        flex-shrink: 0;
+        margin-right: 20px;
+    }
+    
+    .comentario {
+        font-size: 50%;
+        height: 70%;
+    }
+    .tags {
+        color: #3b7cff;
+        font-size: 25%;
+        text-decoration:underline;
+    }
+    
+}

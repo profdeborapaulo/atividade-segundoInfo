@@ -1,0 +1,125 @@
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #000100;
+    overflow-x: hidden;
+}
+
+nav {
+    box-sizing: border-box;
+    height: 70px;
+    width: 100%;
+    padding-right: 20%;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(50, 50, 50, 0.5);
+    filter: blur(1.3);
+    font-family: arial;
+    font-weight: bold;
+    color: white;
+}
+nav h2 {
+    cursor: pointer;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    margin-inline: 10px;
+}
+.parallax {
+    position: absolute;
+    width: 100vw;
+    height: 150%;
+    z-index: -2;
+    transition: transform 1s ease-out;
+    background-image: url(../designs\ e\ ideias/fundo\ de\ estrela\ V2.png);
+    background-size: 100vw 200vh;
+    background-repeat: repeat-y;
+    background-position: center;
+    z-index: -2;
+    filter: brightness(2);
+}
+
+main {
+    box-sizing: border-box;
+    width: 100vw;
+    height: auto;
+    min-height: 500px;
+    padding: 250px;
+}
+
+.titulo h1 {
+    color: white;
+    font-family: arial;
+    font-size: 40px;
+    margin: 0;
+}
+.titulo {
+    width: 100%;
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: center;
+    
+}
+.filtrar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.funcional  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.conjuntoTodo {
+    padding: 30px;
+    border-radius: 30px;
+}
+@media (max-width: 960px) {
+    nav {
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgba(20, 20, 20, 0.8);
+        filter: blur(1.3);
+        font-family: arial;
+        font-weight: bold;
+        color: white;
+    }
+    main {
+        box-sizing: border-box;
+        width: 100vw;
+        height: auto;
+        margin-top: 100px;
+        min-height: 500px;
+        padding: 5%;
+    }
+    .filtrar {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .boton-elegante {
+        width: 100%;
+    }
+    .boton-elegante h2 {
+        font-size: 70%;
+    }
+}
+@media (max-width: 450px) {
+    .boton-elegante h2 {
+        font-size: 5px;
+    }
+}

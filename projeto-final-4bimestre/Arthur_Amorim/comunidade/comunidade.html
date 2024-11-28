@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreativeX</title>
+    <link rel="icon" href="../imgs/Logo CreativeX.png" sizes="32x32" type="image/png">
+    <link rel="stylesheet" href="comunidade.css">
+    <link rel="stylesheet" href="conteudos.css">
+    <link rel="stylesheet" href="cubo.css">
+    <link rel="stylesheet" href="botoes.css">
+    <link rel="stylesheet" href="pesquisar.css">
+    <link rel="stylesheet" href="arrows.css">
+    <script src="comunidade.js" require></script>
+</head>
+
+<body onload="addComentario()">
+    <div class="parallax">
+    </div>
+    <nav>
+        <h2 onclick="window.location.href='../index.html'">Creativex</h2>
+        <div class="links">
+            <a href="../escolha/escolha.html">Menu</a>
+            <a href="comunidade.html">Ideas</a>
+            <a href="../comentario/comentario.html">Comentar</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="cubo">
+            <h1 class="marca">CREATIVE X</h1>
+            <div class="cube-container">
+                <div class="cube">
+                    <div class="face front"></div>
+                    <div class="face back"></div>
+                    <div class="face right"></div>
+                    <div class="face left"></div>
+                    <div class="face top"></div>
+                    <div class="face bottom"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="titulo">
+            <h1>Respostas da comunidade</h1>
+        </div>
+
+        <div class="conjuntoTodo">
+            
+            <div class="filtrar">
+                <div class="conjunto-botoes">
+                    <button class="boton-elegante"><h2>Melhor Avaliados</h2></button>
+                    <button class="boton-elegante"><h2>Enviados Recentemente</h2></button>
+                    <button class="boton-elegante"><h2>A-Z</h2></button>
+                    <button class="boton-elegante"><h2>Z-A</h2></button>
+                </div>
+    
+                <div class="container">
+                    <input checked="" class="checkbox" type="checkbox">
+                    <div class="mainbox">
+                        <div class="iconContainer">
+                            <svg viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="search_icon">
+                                <path
+                                    d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z">
+                                </path>
+                            </svg>
+                        </div>
+                        <input class="search_input" placeholder="search" type="text">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+
+</html>

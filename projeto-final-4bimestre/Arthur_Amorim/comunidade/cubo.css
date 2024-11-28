@@ -1,0 +1,265 @@
+.cube-container {
+  width: 200px;
+  height: 200px;
+  perspective: 800px;
+  transition: all 0.5s ease;
+}
+
+.cube {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  animation: rotate 15s infinite linear;
+}
+
+.face {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  color: rgb(21, 153, 214);
+  font-size: 18px;
+  text-align: center;
+  line-height: 200px;
+  background: transparent;
+  opacity: 0.9;
+  border: 2px solid;
+  border-image: linear-gradient(90deg,
+      rgba(14, 8, 110, 1) 0%,
+      rgba(15, 15, 167, 1) 26%,
+      rgba(20, 45, 255, 1) 85%);
+  box-shadow: 0 0 100px rgba(8, 178, 245, 0.61);
+  transition: all 0.5s ease;
+}
+
+.front {
+  transform: translateZ(100px);
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+}
+
+.back {
+  transform: rotateY(180deg) translateZ(100px);
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+}
+
+.right {
+  transform: rotateY(90deg) translateZ(100px);
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+}
+
+.left {
+  transform: rotateY(-90deg) translateZ(100px);
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+}
+
+.top {
+  transform: rotateX(90deg) translateZ(100px);
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+}
+
+.bottom {
+  transform: rotateX(-90deg) translateZ(100px);
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+}
+
+.cubo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 300px;
+}
+
+.cubo h1 {
+  position: absolute;
+  z-index: 1;
+  font-size: 70px;
+  font-family: arial;
+  font-weight: bold;
+  color: white;
+  transition: all 0.5s ease;
+}
+
+.cubo:hover .cube-container {
+  transform: scale(1.3);
+}
+
+.cubo:hover h1 {
+  transform: scale(0.5);
+}
+
+.cubo:hover .face {
+  box-shadow: 0 0 100px rgba(8, 178, 245, 0.61),
+    0 0 500px rgba(8, 178, 245, 0.61);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateX(0) rotateY(0) rotateZ(0);
+  }
+
+  100% {
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  }
+}
+
+@media (max-width: 960px) {
+  .cube-container {
+    width: 100px;
+    height: 100px;
+    perspective: 800px;
+    transition: all 0.5s ease;
+  }
+  
+  .cube {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate 15s infinite linear;
+  }
+  
+  .face {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    color: rgb(21, 153, 214);
+    font-size: 18px;
+    text-align: center;
+    line-height: 100px;
+    background: transparent;
+    opacity: 0.9;
+    border: 2px solid;
+    border-image: linear-gradient(90deg,
+        rgba(14, 8, 110, 1) 0%,
+        rgba(15, 15, 167, 1) 26%,
+        rgba(20, 45, 255, 1) 85%);
+    box-shadow: 0 0 100px rgba(8, 178, 245, 0.61);
+    transition: all 0.5s ease;
+  }
+  
+  .front {
+    transform: translateZ(50px);
+    background-color: #0093e9;
+    background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  }
+  
+  .back {
+    transform: rotateY(180deg) translateZ(50px);
+    background-color: #0093e9;
+    background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  }
+  
+  .right {
+    transform: rotateY(90deg) translateZ(50px);
+    background-color: #0093e9;
+    background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  }
+  
+  .left {
+    transform: rotateY(-90deg) translateZ(50px);
+    background-color: #0093e9;
+    background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  }
+  
+  .top {
+    transform: rotateX(90deg) translateZ(50px);
+    background-color: #0093e9;
+    background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  }
+  
+  .bottom {
+    transform: rotateX(-90deg) translateZ(50px);
+    background-color: #0093e9;
+    background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  }
+  .cubo:hover .face {
+    box-shadow:none;
+  }
+  .cubo h1 {
+    position: absolute;
+    z-index: 1;
+    font-size: 20px;
+    font-family: arial;
+    font-weight: bold;
+    color: white;
+    transition: all 0.5s ease;
+  }
+}
+
+@media (max-width: 450px) {
+  .cube-container {
+    width: 50px;
+    height: 50px;
+    perspective: 800px;
+    transition: all 0.5s ease;
+  }
+  
+  .cube {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate 15s infinite linear;
+  }
+  
+  .face {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    color: rgb(21, 153, 214);
+    font-size: 18px;
+    text-align: center;
+    line-height: 100px;
+    background: transparent;
+    opacity: 0.9;
+    border: 2px solid;
+    border-image: linear-gradient(90deg,
+        rgba(14, 8, 110, 1) 0%,
+        rgba(15, 15, 167, 1) 26%,
+        rgba(20, 45, 255, 1) 85%);
+    box-shadow: 0 0 100px rgba(8, 178, 245, 0.61);
+    transition: all 0.5s ease;
+  }
+  
+  .front {
+    transform: translateZ(25px);
+    background-color: #0093e9;
+    background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  }
+  
+  .back {
+    transform: rotateY(180deg) translateZ(25px);
+    background-color: #0093e9;
+    background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  }
+  
+  .right {
+    transform: rotateY(90deg) translateZ(25px);
+    background-color: #0093e9;
+    background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  }
+  
+  .left {
+    transform: rotateY(-90deg) translateZ(25px);
+    background-color: #0093e9;
+    background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  }
+  
+  .top {
+    transform: rotateX(90deg) translateZ(25px);
+    background-color: #0093e9;
+    background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  }
+  
+  .bottom {
+    transform: rotateX(-90deg) translateZ(25px);
+    background-color: #0093e9;
+    background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  }
+}

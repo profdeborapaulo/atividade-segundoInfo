@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreativeX</title>
+    <link rel="icon" href="../imgs/Logo CreativeX.png" sizes="32x32" type="image/png">
+    <link rel="stylesheet" href="comentario.css">
+    <link rel="stylesheet" href="inputDoComent.css">
+    <link rel="stylesheet" href="inputdescricao.css">
+    <link rel="stylesheet" href="button-enviar.css">
+    <script src="comentario.js"></script>
+</head>
+
+<body>
+    <nav>
+        <h2 onclick="window.location.href='../index.html'">Creativex</h2>
+        <div class="links">
+            <a href="../escolha/escolha.html">Menu</a>
+            <a href="../comunidade/comunidade.html">Ideas</a>
+            <a href="comentario.html">Comentar</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="texto1">
+            <h2>Escreva alguma ideia ou algo criativo para as pessoas que possa ser utilizado para futuros projetos ou
+                algo que possa ser relevante para o futuro de alguma profissão.</h2>
+        </div>
+        <form class="formulario">
+
+            <div class="nome">
+                <div class="group">
+                    <input required="" type="text" class="input" id="nome">
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Name</label>
+                </div>
+            </div>
+
+            <div class="descricao">
+                <label for="descricao">Deixe sua descrição:</label><br>
+                <textarea class="descricao" rows="10" cols="50" required="" id="descricao"></textarea>
+            </div>
+
+            <div class="tags">
+                <div class="group">
+                    <input required="" type="text" class="input" id="tags">
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Tags</label>
+                </div>
+            </div>
+
+            <button type="button" class="button" id="butao" onclick="formulario()">Enviar</button>
+        </form>
+        <div class="texto2">
+            <h2>Uma sugestão é: Escreva sobre algum aplicativo que não exista ainda, alguma ideia de TCC, um tema para
+                projeto, alguma função que possa ser usada pelas pessoas, deixe a criatividade fluir.</h2>
+        </div>
+    </main>
+</body>
+
+</html>

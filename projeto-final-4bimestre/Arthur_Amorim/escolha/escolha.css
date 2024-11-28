@@ -1,0 +1,272 @@
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: #0b0b0b;
+}
+
+.container {
+    position: fixed;
+    left: -50%;
+    top: -50%;
+    width: 170%;
+    height: 170%;
+    background-origin: center;
+    z-index: -1;
+    --color: rgba(114, 114, 114, 0.3);
+    background-color: #191a1a;
+    background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent),
+        linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent);
+    background-size: 55px 55px;
+}
+
+nav {
+    box-sizing: border-box;
+    height: 50px;
+    width: 100%;
+    padding-right: 20%;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 12, 19, 0.9);
+    font-family: arial;
+    font-weight: bold;
+    color: white;
+}
+
+nav input {
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    border: none;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: arial;
+    color: rgb(239, 252, 255);
+    z-index: -1;
+}
+
+.card1 {
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 400px;
+    height: 150px;
+    background-color: #1a1a1a;
+    border: solid rgb(4, 167, 255) 1px;
+    border-radius: 0;
+    padding: 30px;
+    font-size: 10px;
+    transition: all 0.2s;
+    box-shadow: 1px 1px 450px 1px rgba(114, 206, 255, 0.5);
+}
+
+.card1-backview {
+    position: relative;
+    width: 400px;
+    height: 150px;
+    padding: 30px;
+    background-image: linear-gradient(163deg, #c000da 0%, #dc5cff 100%);
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.card1:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+    border: transparent;
+    box-shadow: 1px 1px 50px 1px rgba(255, 14, 255, 0.5) inset;
+}
+
+.card1-backview:hover {
+    box-shadow: 1px 1px 1000px 1px rgba(255, 14, 255, 0.5),
+        1px 1px 1000px 1px rgba(255, 14, 255, 0.5),
+        1px 1px 1500px 1px rgba(255, 14, 255, 0.5);
+    transform: scale(1.2);
+}
+
+.card1 h2 {
+    font-weight: bold;
+}
+
+.card2 {
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 400px;
+    height: 150px;
+    background-color: #1a1a1a;
+    border: solid rgb(4, 167, 255) 1px;
+    border-radius: 0;
+    padding: 30px;
+    font-size: 10px;
+    transition: all 0.2s;
+    box-shadow: 1px 1px 450px 1px rgba(114, 206, 255, 0.5);
+}
+
+.card2-backview {
+    position: relative;
+    width: 400px;
+    height: 150px;
+    padding: 30px;
+    background-image: linear-gradient(163deg, #00bbff 0%, #c300ff 100%);
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.card2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+    border: transparent;
+    box-shadow: 1px 1px 50px 1px rgba(114, 206, 255, 0.3) inset;
+}
+
+.card2-backview:hover {
+    box-shadow: 1px 1px 1000px 1px rgba(17, 13, 255, 0.6),
+        1px 1px 1000px 1px rgba(17, 13, 255, 0.6),
+        1px 1px 1500px 1px rgba(17, 13, 255, 0.6);
+    transform: scale(1.2);
+}
+
+.card2 h2 {
+    font-weight: bold;
+}
+
+.text-area-top {
+    display: flex;
+    flex-direction: row;
+}
+
+.text-area-top h1 {
+    margin: 0;
+}
+
+.text-area-top input {
+    margin-right: 20px;
+}
+
+@media (max-width: 960px) {
+    main {
+        box-sizing: border-box;
+        min-height: 100vh;
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-family: arial;
+        color: rgb(239, 252, 255);
+        z-index: -1;
+    }
+    .card1 {
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 200px;
+        height: 100px;
+        background-color: #1a1a1a;
+        border: solid rgb(4, 167, 255) 1px;
+        border-radius: 0;
+        padding: 30px;
+        font-size: 50%;
+        transition: all 0.2s;
+        box-shadow: 1px 1px 450px 1px rgba(114, 206, 255, 0.5);
+    }
+    
+    .card1-backview {
+        position: relative;
+        width: 200px;
+        height: 100px;
+        padding: 30px;
+        margin-block: 50px;
+        background-image: linear-gradient(163deg, #c000da 0%, #dc5cff 100%);
+        border-radius: 20px;
+        transition: all 0.3s;
+    }
+    
+    .card1:hover {
+        transform: scale(0.98);
+        border-radius: 20px;
+        border: transparent;
+        box-shadow: 1px 1px 50px 1px rgba(255, 14, 255, 0.5) inset;
+    }
+    
+    .card1-backview:hover {
+        box-shadow: 1px 1px 1000px 1px rgba(255, 14, 255, 0.5),
+            1px 1px 1000px 1px rgba(255, 14, 255, 0.5),
+            1px 1px 1500px 1px rgba(255, 14, 255, 0.5);
+        transform: scale(1.2);
+    }
+    
+    .card1 h2 {
+        font-weight: bold;
+    }
+    
+    .card2 {
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 200px;
+        height: 100px;
+        background-color: #1a1a1a;
+        border: solid rgb(4, 167, 255) 1px;
+        border-radius: 0;
+        padding: 30px;
+        font-size: 35%;
+        transition: all 0.2s;
+        box-shadow: 1px 1px 450px 1px rgba(114, 206, 255, 0.5);
+    }
+    
+    .card2-backview {
+        position: relative;
+        width: 200px;
+        height: 100px;
+        padding: 30px;
+        margin-block: 50px;
+        background-image: linear-gradient(163deg, #00bbff 0%, #c300ff 100%);
+        border-radius: 20px;
+        transition: all 0.3s;
+    }
+    
+    .card2:hover {
+        transform: scale(0.98);
+        border-radius: 20px;
+        border: transparent;
+        box-shadow: 1px 1px 50px 1px rgba(114, 206, 255, 0.3) inset;
+    }
+    
+    .card2-backview:hover {
+        box-shadow: 1px 1px 1000px 1px rgba(17, 13, 255, 0.6),
+            1px 1px 1000px 1px rgba(17, 13, 255, 0.6),
+            1px 1px 1500px 1px rgba(17, 13, 255, 0.6);
+        transform: scale(1.2);
+    }
+    
+    .card2 h2 {
+        font-weight: bold;
+    }
+}
