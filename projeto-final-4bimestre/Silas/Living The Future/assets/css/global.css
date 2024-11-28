@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@font-face {
+    font-family: 'Breathing';
+    src: url('/assets/fonts/Breathing.ttf');
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+main {
+    padding: 50px 0;
+}
+
+header .logo {
+    font-family: 'Breathing';
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.title {
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: Ubuntu;
+}
+
+.car-cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.car-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80vw;
+    height: 25rem;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: black;
+}
+
+.car-card:hover {
+    transform: scale(1.025);
+    transition: transform 0.5s;
+    cursor: pointer;
+    & .car-card-title, & .car-card-price, & .car-card-description {
+        text-decoration: underline;
+    }
+}
+
+.car-card figcaption {
+    width: 50%;
+    height: 100%;
+}
+
+.car-card img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.car-card .car-card-image-container {
+    background-color: #b8b8b8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px 0 0 25px;
+}
+
+.car-card .car-card-info-container {
+    padding: 1rem;
+    background-color: white;
+    border-radius: 0 25px 25px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 30px;
+}
+
+.color-active {
+    border: 3px solid rgb(199, 136, 0) !important;
+}
+
+.car-card-color {
+    border-radius: 100%; 
+    width: 30px; 
+    height: 30px;
+    border: 1px solid black;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.car-card-info-container h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-family: 'Breathing';
+}
+
+.car-card-price {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.car-card-description {
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+.car-card-category {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.category-cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding: 2rem 4rem;
+}
+
+.category-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+    background-color: white;
+    padding: 2rem 4rem;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.car-card-buy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: none;
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    cursor: pointer;
+}
+
+.car-card-buy:hover {
+    background-color: darkblue;
+}
+
+.car-card-buy:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+.car-card-image-container {
+    border-radius: 25px 0 0 25px;
+}
+
+.car-card-info-container {
+    border-radius: 0 25px 25px 0;
+}

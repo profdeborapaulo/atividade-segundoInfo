@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Tempo</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>É seguro sair na rua hoje? (12/11/2050)</h1>
+        
+        <p>Por conta dos gases de efeito estufa, poluição e aquecimento global, precisamos descobrir se é seguro sair de nossas casas ou se é melhor ficarmos dentro mesmo. Preencha este formulário e veja qual é a melhor opção.</p>
+        
+        <form id="formulario">
+            <p>1. Tem problemas respiratórios?</p>
+            <label><input type="radio" name="respiratorio" value=0 checked> Não</label>
+            <label><input type="radio" name="respiratorio" value=1> Sim</label>
+            
+            <p>2. Qual sua idade?</p>
+            <input type="number" name="idade" min="1" max="99" value="20">
+            
+            <p>3. Pratica exercícios físicos?</p>
+            <label><input type="radio" name="exercicio" value=0 checked> Não</label>
+            <label><input type="radio" name="exercicio" value=1> Sim</label>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>

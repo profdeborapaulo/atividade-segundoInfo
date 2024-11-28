@@ -1,0 +1,142 @@
+body {
+    background-image: url(../img/Fundo1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+   
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+   
+}
+
+
+    
+    
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #000000;
+        padding-inline: 10px;
+        color: white;
+
+    }
+    
+    
+    .navbar-left {
+        display: flex;
+        align-items: center;
+        
+    }
+    
+    .logo {
+        height: 90px;
+        margin-right: 10px;
+    }
+    
+    .navbar-text {
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+    
+    }
+    
+    
+    .navbar-right {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+    
+    .navbar-right li {
+        position: relative;
+        
+    }
+    
+    
+    .navbar-right a {
+        color: white;
+        font-size: 20px;
+        padding: 5px 10px;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .navbar-right a:hover {
+        background-color: #333;
+    }
+    
+    
+    @media (max-width: 768px) {
+        .navbar {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        .navbar-right {
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+
+    .compra {
+        background-color: rgba(0, 0, 0, 0.7); 
+        color: white; 
+        padding: 30px;
+        border-radius: 8px;
+        width: 400px;
+        margin: 100px auto; 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); 
+    }
+    
+    .compra h1 {
+        text-align: center;
+        margin-bottom: 20px; 
+        font-size: 32px; 
+    }
+    
+    .produto-detalhes {
+        margin: 20px 0;
+        padding: 10px;
+        background-color: #333;
+        border: 1px solid #444; 
+        border-radius: 8px; 
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
+    }
+    
+    .produto-nome {
+        font-size: 24px; 
+        color: #fff; 
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+    .produto-preco {
+        font-size: 19px; 
+        color: #ccc; 
+        text-align: center;
+    }
+    
+    .finalizar-compra {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        color: white;
+        background-color: #feffff;
+        color: rgb(0, 0, 0);
+        border: none;
+        cursor: pointer;
+    }
+    
+    .finalizar-compra:hover {
+        background-color: #b1b2b3;
+    }

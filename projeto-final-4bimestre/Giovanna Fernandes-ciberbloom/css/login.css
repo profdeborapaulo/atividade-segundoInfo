@@ -1,0 +1,93 @@
+@font-face {
+    font-family: "Filia-Regular";
+    src: url(font/Filia-Regular.otf);
+}
+body {
+    font-family: "Livvic", sans-serif;
+  
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.telalogin{
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 20px;
+    color: #7b22e0; 
+    width: 400px;
+    height: 450px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+   
+    
+}
+.telalogin h1{
+    font-size: 40px;
+    font-family: 'Filia-Regular';
+    font-weight: 100;
+}
+.retangulo{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+form{
+    flex-direction: column;
+    display: flex;
+    width: 70%;
+    height: 50%;
+}
+.espaço-login {
+    height: 50%;
+}
+.espaço-registrar {
+    height: 50%;
+}
+
+label{
+    font-size: 25px;
+    border-radius: 5%;
+    margin-bottom: 10px;
+    
+}
+input {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    border: transparent;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+}
+button{
+    background-color: #7b22e0; 
+    padding: 5%;
+    border: none;
+    outline: none;
+    font-size: 100%;
+    width: 50%;
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+button:hover{
+    background-color: #2759ff;
+
+}
+#mensagem{
+    font-size: 150%;
+}
+.imgsenha{
+    width: auto;
+    height: 30px;
+}
+.imglogin {
+    width: auto;
+    height: 30px;
+}

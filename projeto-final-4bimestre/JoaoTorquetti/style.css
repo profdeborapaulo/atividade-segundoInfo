@@ -1,0 +1,155 @@
+.corpo{
+    background-color: #0b0e16;
+    background-image: url('img/fundo.jpg');
+}
+
+
+button{
+    width: 120px;
+    height: 40px;
+    margin: 5%;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.header{
+    background-color:#4b113f;
+    padding: 10px;
+    border-radius: 15px;
+    width: 100%;
+    height: 70px;
+    border-style: solid;
+    border-color: #ffd51c;
+    float: none;
+    position: fixed;
+    z-index: 999;
+}
+
+.fontLink{
+    color: #effaff;
+}
+
+.fontLink:hover{
+    color: #00638d;
+}
+
+
+.imagens{
+    background-color: #67285a;
+    opacity: 90%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 200px;
+    justify-content: center;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    float: left;
+    
+    
+}
+
+.imagens:hover{
+    background-color: #00638d;
+}
+
+.imagens img{
+    width: 80%;
+    margin-left: 30px;  
+}
+
+
+.Explicao{
+    background-color: #7d2b6e;
+    opacity: 90%;
+    border-radius: 5px;
+    display: block;
+    align-items: center;
+    width: 95%;
+    height: 100%;
+    margin: auto;
+    padding: 10px;
+    overflow: hidden;
+}
+
+ .ExplicaoImagem{
+    display: inline;
+    float: left;
+     width: 705px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #1a274b;
+    margin-right: 15px;
+}
+
+p{
+    color: #effaff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
+    opacity: 150%;
+    font-size: 150%;
+}
+
+.FontTitulo{
+    color: #effaff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-content: center;
+}
+
+.TituloDivisor{
+    background-color: #04344d;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: #00bbfa;
+    width: 75%;
+    margin: auto;
+}
+
+.sobreN{
+    background-color: #7d2b6e;
+    opacity: 90%;
+    border-radius: 5px;
+    display: block;
+    align-items: center;
+    width: 55%;
+    height: 50%;
+    margin-left: 250px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.ConjuntoIM{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario{
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0094d4;
+    opacity: 90%;
+    border-radius: 5px;
+    display: block;
+    align-items: center;
+    width: 55%;
+    height: 50%;
+    margin-left: 250px;
+    padding: 10px;
+    overflow: hidden;
+}
+ 
+.nomeF{
+    width: 100%;
+    border-radius: 15px;
+    border-color: #effaff;
+}
+
+
+.botaoC{
+    border-radius: 15px;
+    background-color: #effaff;
+}

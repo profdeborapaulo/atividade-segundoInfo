@@ -1,0 +1,145 @@
+body {
+    background-image: url(../img/Fundo7.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #000000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+   
+}
+    
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #000000;
+        padding: 10px 20px;
+        color: white;
+    }
+    
+    
+    .navbar-left {
+        display: flex;
+        align-items: center;
+        
+    }
+    
+    .logo {
+        height: 70px;
+        margin-right: 10px;
+    }
+    
+    .navbar-text {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: white;
+    
+    }
+    
+    
+    .navbar-right {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+    
+    .navbar-right li {
+        position: relative;
+        
+    }
+    
+    
+    .navbar-right a {
+        color: white;
+        font-size: 1rem;
+        padding: 5px 10px;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .navbar-right a:hover {
+        background-color: #333;
+    }
+    
+    
+    @media (max-width: 768px) {
+        .navbar {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        .navbar-right {
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+.mensagem{
+    justify-content: center;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+.mensagem h1 {
+    font-size: 50px;
+}
+.mensagem p {
+    font-size: 20px;
+}
+
+.imagem1 {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+margin-top: 2%;
+}
+
+.imagem1 img {
+    border: 5px solid white; 
+    border-radius: 30%; 
+    width: 400px; 
+    height: 350px; 
+    object-fit: cover; 
+}
+.preco {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-size: 30px;
+}
+
+.texto-botao {
+    text-align: center;        
+    margin-top:1.5%;
+}
+
+
+.texto-botao p {
+    font-size: 24px;         
+    font-weight: bold;          
+    color: #ffffff;                
+    font-family: Arial, sans-serif; 
+}
+
+
+.texto-botao button {
+    background-color: #f2f4f5; 
+    color: rgb(0, 0, 0);              
+    font-size: 16px;           
+    padding: 10px 20px;        
+    border: none;              
+    border-radius: 5px;        
+    cursor: pointer;          
+    transition: background-color 0.3s ease; 
+}
+
+
+.texto-botao button:hover {
+    background-color: #cfcece; 
+}
