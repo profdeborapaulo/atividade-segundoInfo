@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'ArgentumSans';
+    src: url(ArgentumSans-Regular.otf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #1d061a;
+    font-family: 'ArgentumSans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.daddy {
+    width: 100%;
+    max-width: 1500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.navbar {
+    background-color: #35082f;
+    padding: 10px 20px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-logo {
+    color: #413b91;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar-logo:hover {
+    color: #2a23aa;
+}
+
+.title-container {
+    margin-top: 50px;
+}
+
+.title {
+    font-size: 60px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.gallery {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.gallery-container {
+    align-items: center;
+    display: flex;
+    height: 400px;
+    margin: 0 auto;
+    max-width: 1000px;
+    position: relative;
+}
+
+.gallery-item {
+    height: 200px;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    width: 350px;
+    z-index: 0;
+    border-radius: 15px;
+    background-size: contain;
+}
+
+.gallery-item-1 {
+    left: 15%;
+    opacity: 1;
+    transform: translateX(-50%);
+}
+
+.gallery-item-2,
+.gallery-item-4 {
+    opacity: 0.8;
+    left: 30%;
+}
+
+.gallery-item-3 {
+    box-shadow: -2px 5px 33px 6px rgba(0, 0, 0, 0.35);
+    height: 300px;
+    opacity: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 430px;
+}
+
+.gallery-item-4 {
+    left: 70%;
+}
+
+.gallery-item-5 {
+    left: 85%;
+    opacity: 0.4;
+}
+
+.gallery-controls {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+    height: 100px;
+}
+
+.gallery-controls button {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    font-size: 30px;
+    margin: 0 30px;
+    text-transform: capitalize;
+    color: aliceblue;
+}
+
+.content {
+    color: #ccc;
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 900px;
+    margin-top: 50px;
+    text-align: justify;
+    padding: 0 20px;
+}
+
+.content p {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 40px;
+    }
+    .gallery-container {
+        flex-direction: column;
+        height: auto;
+    }
+    .gallery-item {
+        width: 100%;
+        height: auto;
+    }
+}
