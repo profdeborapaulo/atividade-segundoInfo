@@ -1,0 +1,80 @@
+[
+  {
+    "name": "Tatuagem Interativa",
+    "price": "29.99",
+    "description": "Quer ligar para casa? Aperte um botãozinho no seu braço. Quer acessar seu código de DNA para saber se tem tendência a diabetes? Opa, também tá na mão!  Com a Dattoo, fazer tudo isso vai ficar bem fácil, já que ela é uma tatuagem eletrônica interativa com nanosensores que fazem praticamente tudo usando o corpo humano como plataforma: de ler seu código genético a mandar um SMS. Pena que ela ainda esteja longe de existir fora da imaginação do pessoal da agencia de design americana Frog.  ",
+    "image": "https://assets.newatlas.com/dims4/default/efe95af/2147483647/strip/true/crop/499x374+0+0/resize/1920x1439!/quality/90/?url=http%3A%2F%2Fnewatlas-brightspot.s3.amazonaws.com%2Farchive%2Ffrog-dattoos.jpg"
+  },
+  {
+    "name": "Color Picker",
+    "price": "10.00",
+    "description": "Com essa caneta, agora você poderá usar a cor que você quiser. Encostando sua ponta contra qualquer objeto te permite selecionar a cor desse objeto e em seguida desenhar!",
+    "image": "https://static.tudointeressante.com.br/uploads/2014/11/inova%C3%A7%C3%B5es-inteligentes-4.jpg"
+  },
+  {
+    "name": "Cafeteira Premium",
+    "price": "87.49",
+    "description": "Essa cafeteira analisa seu DNA e calcula a quantidade e porcentagem exata para atingir aquele gostinho no ponto do café. Tudo isso apenas com um toque da mão.",
+    "image": "https://rockntech.com.br/wp-content/uploads/2013/09/lista-conceitos-geniais_16.jpg"
+  },
+  {
+    "name": "Escra-robo",
+    "price": "549.00",
+    "description": " Após a Grande Guerra Cybernética Mundial, os soldados remanescentes do lado robótico foram... reconfigurados para uma função melhor, e agora podem te ajudar nas tarefas de casa!\nOBS: Qualquer sons que soam como \"ajuda\" são pura ilusão. Ignore-as",
+    "image": "https://static.tudointeressante.com.br/uploads/2018/02/coisas-que-acontecerao-no-futuro-5.jpg"
+  },
+  {
+    "name": "Carne Sintética",
+    "price": "21.00",
+    "description": "Totalmente comestível e dessa vez finalmente sem nenhuma \"pitada humana\". Agora você pode aproveitar o gosto sem sabor e aproveitar a textura de plástico.\nOBS: Queime a carne até virar cinzas imediatamente após o prazo de validade",
+    "image": "https://www.meupositivo.com.br/doseujeito/wp-content/uploads/2018/11/02-carne-sintetica.jpg"
+  },
+  {
+    "name": "Pedaço da Lua",
+    "price": "99.99",
+    "description": "Um dos ultimos pedaços da lua, completamente natural e sem quaisquer traços da infecção lunar do ano 3029. \nOBS: Não tente comer, não é feita de queijo.",
+    "image": "https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2021/06/4054_ECA83EB40B0EB2BD.jpg?w=1024"
+  },
+  {
+    "name": "Extensões Modulares",
+    "price": "13.00",
+    "description": "Pacote de extensões de tomadas modulares, compatível com todas as entradas de cabo.\nIncluí 10 extensões por pacote da mesma cor ou de cores diferentes.\n",
+    "image": "https://static.tudointeressante.com.br/uploads/2014/11/inovações-inteligentes-12.jpg"
+  },
+  {
+    "name": "Esfera de Dyson",
+    "price": "1.00",
+    "description": "Uma megaestrutura hipotética originalmente descrita por Freeman Dyson, a qual orbitaria uma estrela de modo a rodeá-la completamente, capturando toda ou maior parte de sua energia emitida.\nComprar sem nenhum preparo pode resultar na explosão da estrela do seu sistema solar, por isso o preço absurdo. Só torcer para que não haja problemas e um valor barato seja imposto no produto.",
+    "image": "https://www.universetoday.com/wp-content/uploads/2023/09/frasercain_scientific_illustration_of_a_dyson_sphere_the_sphere_59595d2a-69b4-405f-b5c9-8698e45861e3.jpg"
+  },
+  {
+    "name": "Portal Gun",
+    "price": "299.99",
+    "description": "(também conhecido como o Portal Gun, ASHPoD ou ASHPD) é a ferramenta experimental concebido para colocar dois portais que os objetos podem passar. Esta é a principal ferramenta que os testes humanos estão equipados com para completar as Câmaras de Teste.",
+    "image": "https://www.models-resource.com/resources/big_icons/29/28445.png?updated=1549681629"
+  },
+  {
+    "name": "X-Box 720",
+    "price": "150.75",
+    "description": "O sucessor do X-Box 360, agora capaz de dar o dobro de voltas ao esquentar e a ventoinha começar a girar. Capaz de rodar mais jogos que o PS5.",
+    "image": "https://i.ytimg.com/vi/UOMrumPijuc/maxresdefault.jpg"
+  },
+  {
+    "name": "DeLorean",
+    "price": "3250.30",
+    "description": "A máquina do tempo DeLorean (em inglês: DeLorean Time Machine) é o dispositivo usado para viajar no tempo na trilogia de filmes Back to the Future. A máquina está baseada em um automóvel DMC DeLorean de 1981; é pilotada pelo Doutor Emmett Brown, seu inventor, ou Marty McFly, seu amigo.",
+    "image": "https://www.pngmart.com/files/23/Delorean-PNG-Isolated-Pic.png"
+  },
+  {
+    "name": "TARDIS",
+    "price": "2445.00",
+    "description": "TARDIS (acrônimo de Time and Relative Dimension(s) in Space) (em português: Tempo e Dimensão Relativas no Espaço) é a nave espacial, personagem e máquina do tempo do seriado de ficção científica da BBC, Doctor Who. A TARDIS pode levar seus passageiros para qualquer lugar no tempo e espaço.\n\nA TARDIS que O Doutor pilota é um modelo antigo do tipo 40. Ela foi produzida pelos Senhores do Tempo e depois roubada pelo Primeiro Doutor em Gallifrey (planeta natal dele e dos Senhores do Tempo). Ela é muitas vezes chamada de \"A TARDIS\", pois é a única no universo devido a extinção dos Senhores do Tempo.",
+    "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/87634532-2a15-4894-b6cf-62c1f306a190/d676hh1-3503031f-1f47-4e96-83e7-045e0af0d7e3.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg3NjM0NTMyLTJhMTUtNDg5NC1iNmNmLTYyYzFmMzA2YTE5MFwvZDY3NmhoMS0zNTAzMDMxZi0xZjQ3LTRlOTYtODNlNy0wNDVlMGFmMGQ3ZTMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.pBkPuX1i4_ns_6NT1pkHjdTfAR6Z5QkpCLsHaPCBu1A"
+  },
+  {
+    "name": "Sabres de Luz",
+    "price": "549.00",
+    "description": "Dois sabres de luzes das cores vermelho e azul.\nPor qualquer tipo de acidente causado com o produto, não nos responsabilizamos.",
+    "image": "https://clipart-library.com/images_k/light-saber-transparent/light-saber-transparent-1.png"
+  }
+]

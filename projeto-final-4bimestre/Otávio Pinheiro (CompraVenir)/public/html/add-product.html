@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="Adicionar produto">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar produto</title>
+
+    <script src="/javascript/add-product.js" defer></script>
+
+    <style>
+        * {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="return-btn" style="margin-bottom: 2%"><a href="/">< Voltar</a></h1>
+    <h1>Adicionar produto</h1>
+
+    <label for="name-product">Nome do Produto</label><br>
+    <input type="text" id="name-product" value="">
+    <br><br>
+    
+    <label for="price-product">Preço</label><br>
+    <input type="number" id="price-product" value="">
+    <br><br>
+
+    <label for="description-product">Descrição</label><br>
+    <textarea id="description-product" cols="30" rows="10"> </textarea>
+    <br><br>
+
+    <label for="image-product">Image (url)</label><br>
+    <input type="text" id="image-product" value="">
+    <br><br>
+
+    <button onclick="addProduto()">Enviar</button>
+    
+</body>
+</html>
