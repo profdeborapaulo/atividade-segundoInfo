@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="../imagens/favicon.ico">
+    <link rel="stylesheet" href="../css/new.css">
+    <script src="/js/create.js" defer></script>
+    <!-- <link rel="stylesheet" href="../css/headerAndFooter.css"> -->
+    
+    <title>Criando suas Cartas</title>
+</head>
+<body>
+    <header>
+            <img src="../imagens/letters.jpg" alt="logo">
+            <h2>Cartas para o Futuro</h2>
+
+
+        <script>
+            const header = document.querySelector('header');
+
+            const userId = sessionStorage.getItem('userId');
+            const username = sessionStorage.getItem('username');
+
+            header.innerHTML += `
+                <button onclick="sessionStorage.clear(); window.location.href = '/'">Logout</button> ` ;
+               
+        </script>
+
+    </header>
+    <main>
+        <h3>Adicionar nova Cápsula!</h3>
+    
+        <div class="data-caps">
+    
+            <div class="input-area">
+                <label for="name-caps">Nome da Cápsula: </label>
+                <input type="text" id="name-caps">
+            </div>
+            
+            <div class="input-area">
+                <label for="date-caps">Data: </label>
+                <input type="date" id="date-caps">
+            </div>
+    
+            <div class="input-area">
+                <label for="color-caps">Cor: </label>
+                <input type="color" name="color-caps" id="color-caps">
+            </div>
+    
+            <div class="txtBars">
+                <label for="text-caps">Texto: </label>
+                <textarea oninput="adjustHeight(this)" name="text-caps" id="text-caps"></textarea>
+            </div>
+    
+        </div>
+        
+        <div>
+            <button>Adicionar mais Texto</button>
+            <button>Excluir campo de texto</button>
+        </div>
+        <button>Adicionar Dados</button>
+        <p id="error-msg"></p>
+
+    </main>
+
+
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="../imagens/favicon.ico">
+    <link rel="stylesheet" href="../css/capsPage.css">
+    <title>Suas Cartas</title>
+</head>
+<body>
+    <header>
+        <img src="../imagens/letters.jpg" alt="logo">
+        <h2>Cartas para o Futuro</h2>
+        <div>
+            <a href="../views/create.html"><button>Criar Carta</button></a> 
+            <button onclick="sessionStorage.clear(); window.location.href = '/'">Logout</button>
+        </div>
+    </header>
+    
+    <main>
+        <div class="letters"></div>
+    </main>
+
+
+    <script>
+        const main = document.querySelector('.letters');
+        fetch('/dados')
+        .then(response => response.json())
+        .then(data => {
+            const url = new URL(window.location.href);
+            const params = new URLSearchParams(url.search);
+            const id = params.get('id'); 
+
+            
+            const atual = data[id];
+            const texts = atual.text
+            // console.log(atual.text);
+            // console.log(texts)
+
+            let t = `
+                <div class="info-letter"> 
+                    <div><strong>Título:</strong> ${atual.name}</div>
+                    <div><strong>Data de Abertura:</strong> ${atual.openDate}</div>
+                </div>
+            `;
+
+            texts.forEach(value => {
+
+                t += `
+                    <div class="letter">
+                        ${value}
+                        
+                    </div>
+                    
+                `;
+            });
+
+            main.innerHTML = t;
+        })
+        .catch(error => console.error('Erro ao carregar os dados:', error));
+    </script>
+</body>
+</html>

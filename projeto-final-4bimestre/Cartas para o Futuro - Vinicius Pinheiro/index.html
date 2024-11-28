@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="../imagens/favicon.ico">
+    <link rel="stylesheet" href="../css/initial.css">
+    <title>Cartas Para o Futuro</title>
+</head>
+<body>
+    <header>
+        <img src="../imagens/letters.jpg" alt="logo">
+        <!-- <h2>Cartas para o Futuro</h2> -->
+        
+        <script>
+            const header = document.querySelector('header');
+
+            const userId = sessionStorage.getItem('userId');
+            const username = sessionStorage.getItem('username');
+            
+
+            header.innerHTML += `
+            <h2>Cartas Para o Futuro</h2>
+                <button onclick="sessionStorage.clear(); window.location.href = '../views/login.html'">Fazer Login</button> ` ;
+
+        </script>
+
+    </header>
+
+    <main>
+        <div class="first-div">Cartas para o Futuro é um site onde você pode escrever mensagens para si mesmo, para abrir em um momento futuro. Registre seus pensamentos, sonhos e metas, e decida quando deseja lê-las novamente. O site oferece uma maneira única de refletir sobre o presente e acompanhar seu crescimento pessoal ao longo do tempo. Escreva, escolha a data de entrega e prepare-se para ser surpreendido com a pessoa que você se tornará.</div>
+
+        <div class="second-div">Para usar as fucionalidades do site, entre ou crie uma conta!
+            <a href="../views/login.html"><button>Fazer Login</button></a>
+        </div>
+    </main>
+    <footer></footer>
+
+     
+</body>
+</html>

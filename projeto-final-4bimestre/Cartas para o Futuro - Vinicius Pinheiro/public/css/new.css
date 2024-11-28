@@ -1,0 +1,177 @@
+/* Reset básico para evitar margens e espaçamentos inesperados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais para o body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Estilo do cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+}
+
+header img {
+    width: 50px;
+    height: auto;
+}
+
+header a button, header button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+header a button:hover, header button:hover {
+    background-color: #218838;
+}
+
+/* Estilizando links */
+header a {
+    text-decoration: none;
+}
+
+/* Estilo para os links de login e logout */
+header a button {
+    margin-left: 10px;
+}
+
+/* Estilo para a seção principal */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para os títulos */
+
+
+h3{
+    color: #007BFF; /* Cor verde mais escura */
+    margin-bottom: 15px;
+}
+
+/* Estilo para os links */
+a {
+    color: #007BFF; /* Cor azul mais forte para links */
+    text-decoration: none;
+    margin-bottom: 20px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.txtBars{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Estilo para o container dos campos de entrada */
+.data-caps {
+    margin-bottom: 20px;
+}
+
+/* Estilo dos campos de entrada */
+.input-area {
+    margin-bottom: 15px;
+}
+
+.input-area label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+    color: #2c6e49; /* Cor de texto mais escura */
+}
+
+.input-area input, .input-area textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #c8e6c9; /* Cor mais suave de borda */
+    border-radius: 4px;
+    font-size: 14px;
+    color: #2c6e49;
+}
+
+.input-area input[type="date"] {
+    cursor: pointer;
+}
+
+/* Aumentar o tamanho do input de cor para visualizar melhor a cor */
+.input-area input[type="color"] {
+    height: 40px; /* Aumentando a altura do campo de cor */
+    width: 80px; /* Definindo uma largura fixa para o campo de cor */
+    padding: 0;
+    border: none;
+}
+
+/* Estilo dos textareas */
+.input-area textarea {
+    min-height: 120px; /* Ajustando a altura do textarea */
+    margin-bottom: 10px; /* Garantir que os textareas fiquem um embaixo do outro */
+}
+
+/* Estilo dos botões */
+button {
+    background-color: #28a745; /* Cor de fundo verde para os botões */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #218838; /* Cor mais escura para hover */
+}
+
+button:disabled {
+    background-color: #c8e6c9;
+    cursor: not-allowed;
+}
+
+/* Estilo do container de botões adicionais */
+div {
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    max-width: 600px;
+    min-height: 50px;
+    resize: none; /* Travar o redimensionamento */
+    overflow: hidden; /* Evita a barra de rolagem */
+    padding: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }

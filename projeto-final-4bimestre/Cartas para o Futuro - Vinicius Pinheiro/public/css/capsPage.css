@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais para o body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Estilo do cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+}
+
+header img {
+    width: 50px;
+    height: auto;
+}
+
+header a button, header button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+header a button:hover, header button:hover {
+    background-color: #218838;
+}
+
+/* Estilizando links */
+header a {
+    text-decoration: none;
+}
+
+/* Estilo para os links de login e logout */
+header a button {
+    margin-left: 10px;
+}
+
+/* Estilo do main */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    /* gap: 10px; */
+}
+
+.letters {
+    margin-bottom: 20px;
+    /* padding: 10px; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.letter {
+    background-color: #f1f8e9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.info-letter{
+    /* background-color: #007BFF; */
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estilo do footer */
+footer {
+    background-color: #388e3c; /* Verde mais escuro */
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .footer-content p {
+    font-size: 14px;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer-content a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+footer .footer-content a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header img {
+        margin-bottom: 10px;
+    }
+
+    header div {
+        justify-content: center;
+    }
+
+    .letters {
+        padding: 0 15px;
+    }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="../imagens/favicon.ico">
+
+    <link rel="stylesheet" href="../css/homePage.css">
+    <link rel="stylesheet" href="../css/headerAndFooter.css">
+    <script src="../js/menu.js" defer></script>
+    <title>Cartas Para o Futuro</title>
+</head>
+<body>
+
+
+    <header>
+        <img src="../imagens/letters.jpg" alt="logo">
+        <h2>Cartas para o Futuro</h2>
+        <script>
+            const header = document.querySelector('header');
+            const userId = sessionStorage.getItem('userId');
+            const username = sessionStorage.getItem('username');
+
+            header.innerHTML += `<a href="../views/create.html"><button>Criar Carta</button></a><button onclick="sessionStorage.clear(); window.location.href = '/'">Logout</button>`;
+        </script>
+    </header>
+
+    <main id="caps">
+        <div class="types-area">
+            <div class="types" id="opened">
+                Aberto
+            </div>
+    
+            <div class="types" id="closed">
+                Fechado
+            </div>
+        </div>
+
+        <div class="itens">
+
+        </div>
+        
+
+    </main>
+
+</body>
+</html>
