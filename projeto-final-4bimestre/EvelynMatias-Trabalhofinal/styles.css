@@ -1,0 +1,135 @@
+/* Estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fbe4eb; /* Cor de fundo suave e feminina */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ff6f91; /* Rosa suave */
+    color: white;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.navbar nav ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.navbar nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+    color: #fdb1c3; /* Amarelo suave */
+}
+
+/* Hero Section */
+.hero {
+    background-color: #f3c0d7; /* Rosa pastel */
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.hero .cta-button {
+    background-color: #ff8a80; /* Rosa claro */
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.hero .cta-button:hover {
+    background-color: #ff6f91; /* Rosa vibrante */
+}
+
+/* Section Content */
+.content-section {
+    text-align: justify;
+    padding: 50px 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.content-section h2 {
+    font-size: 2.5rem;
+    color: #b39ddb; /* Lilás suave */
+    margin-bottom: 20px;
+}
+
+.content-section p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Footer */
+.footer {
+    background-color: #ff6f91; /* Rosa suave */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer p {
+    font-size: 1rem;
+}
+
+/* Button - Mini-jogos */
+button.cta-button {
+    background-color: #ff6f91; /* Verde menta */
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.cta-button:hover {
+    background-color: #fa9bb1; /* Verde suave mais intenso */
+}
