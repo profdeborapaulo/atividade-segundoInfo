@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background-image: linear-gradient(to bottom right, #000000, #010128);
+    grid-template-areas: "section1" "section2" "section3";
+    grid-template-rows: auto auto auto;
+    display: grid;
+}
+
+.section1 {
+    grid-area: section1;
+    width: 100%;
+    height: 100vh;
+    grid-template-areas: "nav" "intro";
+    grid-template-rows: 100px 1fr;
+    display: grid;
+}
+
+nav {
+    grid-area: nav;
+    width: 100%;
+    height: 100%;
+}
+
+.pages {
+    display: flex;
+    font-size: 20px;
+    height: 20px;
+    padding: 95px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 150px;
+}
+
+.pages a {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Alexandria", sans-serif;
+    color: white;
+    padding: 10px 20px;
+    border: 3px solid transparent;
+    border-image: linear-gradient(90deg, #3E2F8D 21%, #281E5A 54%, #063782 100%);
+    border-image-slice: 1;
+    border-radius: 25px;
+    z-index: 1;
+}
+
+.intro {
+    grid-area: intro;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    grid-template-areas: "desc img";
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+}
+
+.desc {
+    grid-area: desc;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 80px;
+    margin: 50px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.desc span {
+    color: transparent;
+    font-size: 80px;
+    font-weight: bolder;
+    filter: drop-shadow(10px 2px 5px #030335);
+    background: linear-gradient(90deg, #063782 20%, #0A5FE2 38%, #32349A 53%, #3E2F8D 88%);
+    background-clip: text;
+    font-family: "Alexandria", sans-serif;
+}
+
+.desc p {
+    font-family: "Alexandria", sans-serif;
+    color: #9DBAE5;
+    font-size: 22px;
+    width: 75%;
+    text-align: justify;
+}
+
+.img {
+    grid-area: img;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.img img {
+    position: relative;
+    bottom: 100px;
+    width: 95%;
+}
+
+.um {
+    position: relative;
+    display: flex;
+    left: 700px;
+    bottom: 980px;
+}
+
+.dois {
+    position: relative;
+    display: flex;
+    left: 700px;
+    bottom: 550px;
+}
+
+.tres {
+    position: relative;
+    display: flex;
+    left: 10px;
+    bottom: 750px;
+}
+
+.section2 {
+    grid-area: section2;
+    width: 100%;
+    height: 100%;
+    grid-template-areas: "tittle cards";
+    grid-template-rows: 250px 1fr;
+    display: grid;
+    display: flex;
+    flex-direction: column;
+    gap: 20%;
+}
+
+.tittle {
+    grid-area: tittle;
+    width: 100%;
+    height: 100%;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Alexandria", sans-serif;
+    color: white;
+    font-size: 55px;
+}
+
+.cards {
+    grid-area: cards;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    color: #dddcec;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding: 50px 30px;
+    text-align: justify;
+    font-family: "Alexandria", sans-serif;
+    background-color: rgba(255, 255, 255, .01);
+    box-shadow: inset 0 39px 56px -56px rgba(255, 255, 255, .25), inset 0 7px 21px rgba(255, 255, 255, .2), inset 0 -82px 68px rgba(96, 68, 144, .18), inset 0 -98px 100px -108px rgba(202, 172, 255, .1), inset 0 4px 18px rgba(154, 146, 210, .15), inset 0 1px 40px rgba(227, 222, 255, .15);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent 50%, rgba(255, 255, 255, 0.2) 100%);
+    transition: opacity 0.3s, transform 0.3s;
+    transform-origin: left;
+    opacity: 0;
+}
+
+.card:hover::before {
+    opacity: 1;
+    transform: scaleX(1.5);
+}
+
+.card:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 300px;
+    height: 230px;
+}
+
+.card a,
+.card a:hover {
+    color: white;
+    z-index: 1;
+}
+
+.section3 {
+    grid-area: section3;
+    width: 100%;
+    height: 100%;
+    grid-template-areas: "tittle container-cards";
+    grid-template-rows: 250px 1fr;
+    display: grid;
+    display: flex;
+    flex-direction: column;
+    margin-top: 130px;
+}
+
+.tittle {
+    grid-area: tittle;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Alexandria", sans-serif;
+    color: white;
+    text-shadow: 0px -15px #071428;
+    font-size: 55px;
+}
+
+.container-cards {
+    grid-area: container-cards;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin-bottom: 100px;
+}
+
+.item {
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.item img {
+    border-radius: 15px;
+    width: 400px;
+    height: 680px;
+    display: flex;
+}
+
+.item::before {
+    content: attr(data-text);
+    width: 400px;
+    height: 700px;
+    display: block;
+    background-color: #0008;
+    position: absolute;
+    font-family: "Alexandria", sans-serif;
+    display: grid;
+    place-content: center;
+    letter-spacing: 3px;
+    transform: translateY(140%);
+    transition: transform .5s;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.item:hover::before {
+    transform: translateY(0%);
+}

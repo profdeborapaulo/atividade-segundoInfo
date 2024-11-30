@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100vw;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom right, #000000, #010128);
+    grid-template-areas: "nav" "main";
+    grid-template-rows: 150px auto;
+    display: grid;
+}
+
+nav {
+    grid-area: nav;
+    width: 100%;
+    height: 100%;
+}
+
+.pages {
+    display: flex;
+    font-size: 20px;
+    height: 20px;
+    padding: 95px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 100px;
+}
+
+.pages a {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Alexandria", sans-serif;
+    color: white;
+    padding: 10px 20px;
+    border: 3px solid transparent;
+    border-image: linear-gradient(90deg, #3E2F8D 21%, #281E5A 54%, #063782 100%);
+    border-image-slice: 1;
+    border-radius: 25px;
+    z-index: 1;
+}
+
+.main {
+    grid-area: main;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    gap: 120px;
+    grid-template-areas: "tittle" "carrossel";
+    grid-template-rows: 150px auto;
+}
+
+.tittle {
+    grid-area: tittle;
+    width: 100%;
+    height: 100%;
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Alexandria", sans-serif;
+    font-weight: bolder;
+    background: linear-gradient(90deg, #063782 20%, #0A5FE2 38%, #32349A 53%, #3E2F8D 88%);
+    color: transparent;
+    background-clip: text;
+    font-size: 55px;
+}
+
+.carrossel {
+    grid-area: carrossel;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    transition: background .4s ease-in;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+.container-carrossel {
+    display: flex;
+    width: 100%;
+    height: 80%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-carrossel {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: .4s ease;
+    background-color: #3E2F8D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-carrossel img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+.cards {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#exo,
+#aerogel,
+#bci {
+    height: 105%;
+}
+
+
+#item-1:checked~.cards #bci,
+#item-2:checked~.cards #aerogel,
+#item-3:checked~.cards #exo {
+    transform: translateX(-40%) scale(.8);
+    opacity: .4;
+    z-index: 0;
+}
+
+#item-1:checked~.cards #exo,
+#item-2:checked~.cards #bci,
+#item-3:checked~.cards #aerogel {
+    transform: translateX(40%) scale(.8);
+    opacity: .4;
+    z-index: 0;
+}
+
+#item-1:checked~.cards #exo,
+#item-2:checked~.cards #bci,
+#item-3:checked~.cards #aerogel {
+    transform: translateX(40%) scale(.8);
+    opacity: .4;
+    z-index: 0;
+}
+
+#item-1:checked~.cards #aerogel,
+#item-2:checked~.cards #exo,
+#item-3:checked~.cards #bci {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+    z-index: 1;
+}
+
+.descricao {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+#titulo-descricao {
+    color: white;
+    font-family: "Alexandria", sans-serif;
+    font-size: 40px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#texto-descricao {
+    font-family: "Alexandria", sans-serif;
+    color: #DFDCFF;
+    font-size: 20px;
+    width: 70%;
+    text-align: justify;
+    margin-left: 200px;
+}
+
+.bolha-itens {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.bolha {
+    width: 80px;
+}
+
+.imagem-com-texto-bg {
+    background-image: url('../img/bolha.png');
+    background-size: cover;
+    background-position: center;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    font-family: "Alexandria", sans-serif;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-bottom: 100px;
+}

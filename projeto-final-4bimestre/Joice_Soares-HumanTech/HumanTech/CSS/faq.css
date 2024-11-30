@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100vw;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom right, #000000, #010128);
+    grid-template-areas: "nav" "main";
+    grid-template-rows: 150px auto;
+    display: grid;
+}
+
+nav {
+    grid-area: nav;
+    width: 100%;
+    height: 100%;
+}
+
+.pages {
+    display: flex;
+    font-size: 20px;
+    height: 20px;
+    padding: 95px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 100px;
+}
+
+.pages a {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Alexandria", sans-serif;
+    color: white;
+    padding: 10px 20px;
+    border: 3px solid transparent;
+    border-image: linear-gradient(90deg, #3E2F8D 21%, #281E5A 54%, #063782 100%);
+    border-image-slice: 1;
+    border-radius: 25px;
+    z-index: 1;
+}
+
+.main {
+    grid-area: main;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    gap: 120px;
+    grid-template-areas: "tittle" "container-cards";
+    grid-template-rows: 150px auto;
+}
+
+.tittle {
+    grid-area: tittle;
+    width: 100%;
+    height: 100%;
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Alexandria", sans-serif;
+    font-weight: bolder;
+    background: linear-gradient(90deg, #063782 20%, #0A5FE2 38%, #32349A 53%, #3E2F8D 88%);
+    color: transparent;
+    background-clip: text;
+    font-size: 55px;
+}
+
+.container-cards {
+    grid-area: container-cards;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 100px;
+}
+
+.accordion {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+    width: 100%;
+    border-bottom: 1px solid #333;
+}
+
+.accordion-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: left;
+    font-family: "Alexandria", sans-serif;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.accordion-header .arrow {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 15px;
+    font-family: "Alexandria", sans-serif;
+    background-color: transparent;
+    color: #ddd;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.accordion-content p {
+    margin: 10px 0;
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
