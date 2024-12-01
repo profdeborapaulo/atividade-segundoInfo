@@ -1,0 +1,455 @@
+@keyframes translacaoCompleta {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+  
+  .sistema-solar__alinhamento-vertical {
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+  }
+  
+  .sistema-solar__alinhamento-vertical .sol {
+    width: 50px;
+  }
+  
+  .alinhamento-vertical__eixo-circular {
+    animation: translacaoCompleta var(--tempo-translacao) linear infinite;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 50%;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .alinhamento-vertical__eixo-circular img {
+    animation: rotacao360 var(--tempo-rotacao) linear infinite;
+    position: absolute;
+    top: 10px;
+    z-index: 10;
+  }
+  
+  #eixo-mercurio {
+    --tempo-translacao: 40s;
+    border-color: #747373;
+    height: 90px;
+    width: 90px;
+    z-index: 8;
+  }
+  
+  #eixo-mercurio img {
+    --tempo-rotacao: 35s;
+    width: 15px;
+  }
+  
+  #eixo-venus {
+    --tempo-translacao: 50s;
+    border-color: #bd6b00;
+    height: 120px;
+    width: 120px;
+    z-index: 7;
+  }
+  
+  #eixo-venus img {
+    --tempo-rotacao: 45s;
+    top: 15px;
+    width: 20px;
+  }
+  
+  #eixo-terra {
+    --tempo-translacao: 25s;
+    border-color: #02722d;
+    height: 150px;
+    width: 150px;
+    z-index: 7;
+  }
+  
+  #eixo-terra img {
+    --tempo-rotacao: 28s;
+    top: 20px;
+    width: 23px;
+  }
+  
+  #eixo-lua {
+    --tempo-translacao: 8s;
+    animation: translacaoCompleta var(--tempo-translacao) linear infinite;
+    border-radius: 50%;
+    height: 80px;
+    left: 10px;
+    position: absolute;
+    top: 32px;
+    width: 80px;
+  }
+  
+  #eixo-lua #lua-cheia {
+    top: 20px;
+    width: 20px;
+  }
+  
+  #eixo-marte {
+    --tempo-translacao: 35s;
+    border-color: #8d4a2d;
+    height: 180px;
+    width: 180px;
+    z-index: 5;
+  }
+  
+  #eixo-marte img {
+    --tempo-rotacao: 30s;
+    top: 36px;
+    width: 18px;
+  }
+  
+  #eixo-jupiter {
+    --tempo-translacao: 12s;
+    border-color: #816c50;
+    height: 210px;
+    width: 210px;
+    z-index: 4;
+  }
+  
+  #eixo-jupiter img {
+    --tempo-rotacao: 18s;
+    top: 35px;
+    width: 28px;
+  }
+  
+  #eixo-saturno {
+    --tempo-translacao: 17s;
+    border-color: #9c8b75;
+    height: 240px;
+    width: 240px;
+    z-index: 3;
+  }
+  
+  #eixo-saturno img {
+    --tempo-rotacao: 20s;
+    top: 50px;
+    width: 25px;
+  }
+  
+  #eixo-urano {
+    --tempo-translacao: 25s;
+    border-color: #add8e6;
+    height: 270px;
+    width: 270px;
+    z-index: 2;
+  }
+  
+  #eixo-urano img {
+    --tempo-rotacao: 26s;
+    top: 75px;
+    width: 18px;
+  }
+  
+  #eixo-netuno {
+    --tempo-translacao: 22s;
+    border-color: #4b70dd;
+    height: 300px;
+    width: 300px;
+    z-index: 1;
+  }
+  
+  #eixo-netuno img {
+    --tempo-rotacao: 24s;
+    top: 82px;
+    width: 20px;
+  }
+  
+  @media (min-width: 768px), (min-height: 768px) {
+    .sistema-solar__alinhamento-vertical .sol {
+      width: 120px;
+    }
+  
+    .alinhamento-vertical__eixo-circular img {
+      top: 48px;
+    }
+  
+    #eixo-mercurio {
+      height: 200px;
+      width: 200px;
+    }
+  
+    #eixo-mercurio img {
+      top: 40px;
+      width: 20px;
+    }
+  
+    #eixo-venus {
+      height: 250px;
+      width: 250px;
+    }
+  
+    #eixo-venus img {
+      top: 60px;
+      width: 25px;
+    }
+  
+    #eixo-terra {
+      height: 300px;
+      width: 300px;
+    }
+  
+    #eixo-terra img {
+      top: 70px;
+      width: 28px;
+    }
+  
+    #eixo-lua {
+      height: 85px;
+      left: 15px;
+      top: 85px;
+      width: 85px;
+    }
+  
+    #eixo-marte {
+      height: 350px;
+      width: 350px;
+    }
+  
+    #eixo-marte img {
+      top: 95px;
+      width: 23px;
+    }
+  
+    #eixo-jupiter {
+      height: 400px;
+      width: 400px;
+    }
+  
+    #eixo-jupiter img {
+      top: 100px;
+      width: 32px;
+    }
+  
+    #eixo-saturno {
+      height: 450px;
+      width: 450px;
+    }
+  
+    #eixo-saturno img {
+      top: 110px;
+      width: 40px;
+    }
+  
+    #eixo-urano {
+      height: 500px;
+      width: 500px;
+    }
+  
+    #eixo-urano img {
+      top: 155px;
+      width: 25px;
+    }
+  
+    #eixo-netuno {
+      height: 550px;
+      width: 550px;
+    }
+  
+    #eixo-netuno img {
+      top: 170px;
+      width: 28px;
+    }
+  }
+  
+  @media (min-width: 1300px) and (min-height: 633px) {
+    .sistema-solar__alinhamento-vertical .sol {
+      width: 120px;
+    }
+  
+    .alinhamento-vertical__eixo-circular img {
+      top: 25px;
+    }
+  
+    #eixo-mercurio {
+      height: 180px;
+      width: 180px;
+    }
+  
+    #eixo-mercurio img {
+      top: 30px;
+      width: 25px;
+    }
+  
+    #eixo-venus {
+      height: 225px;
+      width: 225px;
+    }
+  
+    #eixo-venus img {
+      top: 40px;
+      width: 28px;
+    }
+  
+    #eixo-terra {
+      height: 270px;
+      width: 270px;
+    }
+  
+    #eixo-terra img {
+      top: 52px;
+      width: 29px;
+    }
+  
+    #eixo-lua {
+      height: 90px;
+      left: 15px;
+      top: 62px;
+      width: 90px;
+    }
+  
+    #eixo-marte {
+      height: 320px;
+      width: 320px;
+    }
+  
+    #eixo-marte img {
+      top: 65px;
+      width: 35px;
+    }
+  
+    #eixo-jupiter {
+      height: 380px;
+      width: 380px;
+    }
+  
+    #eixo-jupiter img {
+      top: 75px;
+      width: 45px;
+    }
+  
+    #eixo-saturno {
+      height: 460px;
+      width: 460px;
+    }
+  
+    #eixo-saturno img {
+      top: 95px;
+      width: 50px;
+    }
+  
+    #eixo-urano {
+      height: 520px;
+      width: 520px;
+    }
+  
+    #eixo-urano img {
+      top: 150px;
+      width: 30px;
+    }
+  
+    #eixo-netuno {
+      height: 600px;
+      width: 600px;
+    }
+  
+    #eixo-netuno img {
+      top: 197px;
+      width: 28px;
+    }
+  }
+  
+  @media (min-width: 1450px), (min-height: 1025px) {
+    .sistema-solar__alinhamento-vertical .sol {
+      width: 140px;
+    }
+  
+    #eixo-mercurio {
+      height: 220px;
+      width: 220px;
+    }
+  
+    #eixo-mercurio img {
+      top: 30px;
+      width: 35px;
+    }
+  
+    #eixo-venus {
+      height: 300px;
+      width: 300px;
+    }
+  
+    #eixo-venus img {
+      top: 30px;
+      width: 55px;
+    }
+  
+    #eixo-terra {
+      height: 400px;
+      width: 400px;
+    }
+  
+    #eixo-terra img {
+      top: 60px;
+      width: 60px;
+    }
+  
+    #eixo-lua {
+      height: 150px;
+      left: 30px;
+      top: 90px;
+      width: 150px;
+    }
+  
+    #eixo-lua #lua-cheia {
+      width: 35px;
+    }
+  
+    #eixo-marte {
+      height: 500px;
+      width: 500px;
+    }
+  
+    #eixo-marte img {
+      top: 115px;
+      width: 50px;
+    }
+  
+    #eixo-jupiter {
+      height: 600px;
+      width: 600px;
+    }
+  
+    #eixo-jupiter img {
+      top: 110px;
+      width: 75px;
+    }
+  
+    #eixo-saturno {
+      height: 700px;
+      width: 700px;
+    }
+  
+    #eixo-saturno img {
+      top: 130px;
+      width: 90px;
+    }
+  
+    #eixo-urano {
+      height: 800px;
+      width: 800px;
+    }
+  
+    #eixo-urano img {
+      top: 215px;
+      width: 60px;
+    }
+  
+    #eixo-netuno {
+      height: 900px;
+      width: 900px;
+    }
+  
+    #eixo-netuno img {
+      top: 230px;
+      width: 70px;
+    }
+  }
+  

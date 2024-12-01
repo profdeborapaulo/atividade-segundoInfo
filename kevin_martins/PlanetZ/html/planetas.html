@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/vertical.css"/>
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+    <title>Sistema Solar</title>
+  </head>
+  <body>
+
+    <header>
+        <nav>
+            <a class="logo"><img src="../img/logo.png" alt="Logo"></a>
+            <div class="menu">
+                <div class="linha1"></div>
+                <div class="linha2"></div>
+                <div class="linha3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="../html/index.html">Home</a></li>
+                <li><a href="#" data-planeta="mercurio">Mercúrio</a></li>
+                <li><a href="#" data-planeta="venus">Vênus</a></li>
+                <li><a href="#" data-planeta="terra">Terra</a></li>
+                <li><a href="#" data-planeta="marte">Marte</a></li>
+                <li><a href="#" data-planeta="jupiter">Júpiter</a></li>
+                <li><a href="#" data-planeta="saturno">Saturno</a></li>
+                <li><a href="#" data-planeta="urano">Urano</a></li>
+                <li><a href="#" data-planeta="netuno">Netuno</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="sistema-solar">
+        <!-- MERCURIO -->
+        <section class="sistema-solar__alinhamento-vertical">
+            <div class="alinhamento-vertical__eixo-circular" id="eixo-mercurio">
+                <img src="../img/mercurio.png" alt="Planeta Mercúrio" />
+            </div>
+            <!-- CARD MERCURIO -->
+            <div id="card-mercurio" class="planeta-card">
+                <div class="planeta-card__frente">
+                    <img src="../img/mercurio.png" alt="Planeta Mercúrio" class="img-planeta" />
+                    <div class="info-card">
+                        <h3>Mercúrio</h3>
+                        <p>Mercúrio é o planeta mais próximo do Sol. Com temperaturas extremas, vai de -180°C à noite a 430°C durante o dia.</p>
+                    </div>
+                </div>
+                <div class="planeta-card__verso">
+                    <div class="info-card">
+                        <h3>Futuro de Mercúrio</h3>
+                        <p>Mercúrio continuará sua órbita elíptica ao redor do Sol, sem grandes mudanças.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VÊNUS -->
+            <div class="alinhamento-vertical__eixo-circular" id="eixo-venus">
+                <img src="../img/venus.png" alt="Planeta Vênus" />
+            </div>
+            <!-- CARD VÊNUS -->
+            <div id="card-venus" class="planeta-card">
+                <div class="planeta-card__frente">
+                    <img src="../img/venus.png" alt="Planeta Vênus" class="img-planeta" />
+                    <div class="info-card">
+                        <h3>Vênus</h3>
+                        <p>Vênus é o "irmão gêmeo" da Terra, com temperaturas de 460°C, devido à sua densa atmosfera de dióxido de carbono.</p>
+                    </div>
+                </div>
+                <div class="planeta-card__verso">
+                    <div class="info-card">
+                        <h3>Futuro de Vênus</h3>
+                        <p>Vênus continuará sua órbita ao redor do Sol, com sua temperatura estável devido à atmosfera espessa.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TERRA -->
+            <div class="alinhamento-vertical__eixo-circular" id="eixo-terra">
+                <img src="../img/terra.png" alt="Planeta Terra" />
+            </div>
+            <!-- CARD TERRA -->
+            <div id="card-terra" class="planeta-card">
+                <div class="planeta-card__frente">
+                    <img src="../img/terra.png" alt="Planeta Terra" class="img-planeta" />
+                    <div class="info-card">
+                        <h3>Terra</h3>
+                        <p>A Terra é o único planeta conhecido a abrigar vida, com uma atmosfera rica em oxigênio e água líquida.</p>
+                    </div>
+                </div>
+                <div class="planeta-card__verso">
+                    <div class="info-card">
+                        <h3>Futuro da Terra</h3>
+                        <p>A Terra continuará a sustentar a vida, com sua órbita e clima estáveis.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MARTE -->
+            <div class="alinhamento-vertical__eixo-circular" id="eixo-marte">
+                <img src="../img/marte.png" alt="Planeta Marte" />
+            </div>
+            <!-- CARD MARTE -->
+            <div id="card-marte" class="planeta-card">
+                <div class="planeta-card__frente">
+                    <img src="../img/marte.png" alt="Planeta Marte" class="img-planeta" />
+                    <div class="info-card">
+                        <h3>Marte</h3>
+                        <p>Marte é o "planeta vermelho" e possui a maior montanha do Sistema Solar, o Monte Olimpo.</p>
+                    </div>
+                </div>
+                <div class="planeta-card__verso">
+                    <div class="info-card">
+                        <h3>Futuro de Marte</h3>
+                        <p>Marte pode ser um destino para futuras missões humanas, devido à sua similaridade com a Terra.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- JÚPITER -->
+            <div class="alinhamento-vertical__eixo-circular" id="eixo-jupiter">
+                <img src="../img/jupiter.png" alt="Planeta Júpiter" />
+            </div>
+            <!-- CARD JÚPITER -->
+            <div id="card-jupiter" class="planeta-card">
+                <div class="planeta-card__frente">
+                    <img src="../img/jupiter.png" alt="Planeta Júpiter" class="img-planeta" />
+                    <div class="info-card">
+                        <h3>Júpiter</h3>
+                        <p>Júpiter é o maior planeta do Sistema Solar, um gigante gasoso com uma tempestade famosa, a Grande Mancha Vermelha.</p>
+                    </div>
+                </div>
+                <div class="planeta-card__verso">
+                    <div class="info-card">
+                        <h3>Futuro de Júpiter</h3>
+                        <p>Júpiter continuará sua órbita estável como um dos planetas mais massivos do Sistema Solar.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SATURNO -->
+            <div class="alinhamento-vertical__eixo-circular" id="eixo-saturno">
+                <img src="../img/saturno.png" alt="Planeta Saturno" />
+            </div>
+            <!-- CARD SATURNO -->
+            <div id="card-saturno" class="planeta-card">
+                <div class="planeta-card__frente">
+                    <img src="../img/saturno.png" alt="Planeta Saturno" class="img-planeta" />
+                    <div class="info-card">
+                        <h3>Saturno</h3>
+                        <p>Saturno é famoso por seus anéis feitos de rochas e gelo, sendo o segundo maior planeta do Sistema Solar.</p>
+                    </div>
+                </div>
+                <div class="planeta-card__verso">
+                    <div class="info-card">
+                        <h3>Futuro de Saturno</h3>
+                        <p>Saturno continuará a orbitar o Sol, mantendo seus belos anéis.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- URANO -->
+            <div class="alinhamento-vertical__eixo-circular" id="eixo-urano">
+                <img src="../img/urano.png" alt="Planeta Urano" />
+            </div>
+            <!-- CARD URANO -->
+            <div id="card-urano" class="planeta-card">
+                <div class="planeta-card__frente">
+                    <img src="../img/urano.png" alt="Planeta Urano" class="img-planeta" />
+                    <div class="info-card">
+                        <h3>Urano</h3>
+                        <p>Urano é um gigante gasoso com um tom azul devido ao metano e um eixo de rotação muito inclinado.</p>
+                    </div>
+                </div>
+                <div class="planeta-card__verso">
+                    <div class="info-card">
+                        <h3>Futuro de Urano</h3>
+                        <p>Urano continuará sua órbita inclinada ao redor do Sol, sem grandes mudanças.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NETUNO -->
+            <div class="alinhamento-vertical__eixo-circular" id="eixo-netuno">
+                <img src="../img/netuno.png" alt="Planeta Netuno" />
+            </div>
+            <!-- CARD NETUNO -->
+            <div id="card-netuno" class="planeta-card">
+                <div class="planeta-card__frente">
+                    <img src="../img/netuno.png" alt="Planeta Netuno" class="img-planeta" />
+                    <div class="info-card">
+                        <h3>Netuno</h3>
+                        <p>Netuno é o planeta mais distante do Sistema Solar, com ventos mais rápidos que o som e uma cor azul devido ao metano.</p>
+                    </div>
+                </div>
+                <div class="planeta-card__verso">
+                    <div class="info-card">
+                        <h3>Futuro de Netuno</h3>
+                        <p>Netuno continuará a ser um dos planetas mais distantes, com ventos poderosos e uma atmosfera densa.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SOL -->
+            <img src="../img/sol.png" alt="Imagem do Sol" class="sol" />
+        </section>
+    </main>
+
+    <script src="../back/main.js" defer></script>
+    <script src="../back/cards.js" defer></script>
+  </body>
+</html>
