@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ff2e6d; 
+    color: rgb(51, 51, 51)818;
+    line-height: 1.6;
+}
+
+.navbar {
+    background-color: rgb(0, 0, 0), 111, 159; 
+    color: white;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.navbar nav ul {
+    list-style: none;
+    margin-top: 10px;
+}
+.navbar nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+.navbar nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+.navbar nav ul li a:hover {
+    color: #f03939; 
+}
+
+.hero {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+.hero .cta-button {
+    background-color: #ff2e6d; 
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.hero .cta-button:hover {
+    background-color: #fc1c50; 
+}
+
+.content-section {
+    text-align: justify;
+    padding: 50px 20px;
+    background-color: #000000;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.content-section h2 {
+    font-size: 2.5rem;
+    color: #fc1c50; 
+    margin-bottom: 20px;
+}
+.content-section p {
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+.footer {
+    background-color: #fc1c50; 
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+.footer p {
+    font-size: 1rem;
+}
+
+button.cta-button {
+    background-color: #fc1c50;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button.cta-button:hover {
+    background-color: #000000; 
+}
