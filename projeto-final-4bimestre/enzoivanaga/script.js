@@ -33,24 +33,26 @@ const mobileNavbar = new MobileNavbar(
 mobileNavbar.init();
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+//Função para criar um id baseado no tempo criado
 function geradorID() {
     return Date.now(); 
 }
-
+//Verifica a se a janela é a do formulário
 if (window.location.pathname.includes('adicionar.html')) {
     const addForm = document.getElementById('formularioadd');
+    //Verifica o envio do formulário, previne o comportamento padrão e chama a função addNoticia
     addForm.addEventListener('submit', function (e) {
         e.preventDefault(); 
         addNoticia();     
     });
 
-
+//Função de adicionar uma notícia
 function addNoticia() {
+    //Coleta de dados do formulário
     const tituloNoticia = document.getElementById('titulo').value;
     const textoNoticia = document.getElementById('texto').value;
     const imagemNoticia = document.getElementById('imagem').value;    
-             
+    //Adicinar os dados no local storage      
     let noticias = JSON.parse(localStorage.getItem('noticias')) || [];
     const novaNoticia = {
         id_noticia: geradorID(), 
@@ -62,17 +64,18 @@ function addNoticia() {
     noticias.push(novaNoticia);
 
     localStorage.setItem('noticias', JSON.stringify(noticias));
-
+    //Reset do formulário
     addForm.reset();
-
+    //Redirect para a página de notícias 
     window.location.href = "noticias.html";
 };
 }
-
+//Verifica se está na página de notíccias
 if (window.location.pathname.includes('noticias.html')) {
+    //Coleta as notíciasarmazenadas no localstorage 
     const noticias = JSON.parse(localStorage.getItem('noticias')) || [];
     const container = document.getElementById('noticiascontainer');
-      
+       //Cria novos elementos, insere as informações baseada nos dados da notícia e adiciona ao container
         noticias.forEach((noticia) => {
         const noticiaDiv = document.createElement('div');
         noticiaDiv.className = 'noticia';
@@ -96,14 +99,14 @@ if (window.location.pathname.includes('noticias.html')) {
     });
 }
 });
-
+//Verifica se o URL da página é de uma notícia
 if (window.location.pathname.includes('pagina.html')) {
-    
+//Verifica se a página carregou e chama a função de verificação
 window.addEventListener('load', () => {
-    processarPagina();
+    verificarPagina();
 });
-
-function processarPagina() {
+//Função
+function verificarPagina() {
     const noticias = JSON.parse(localStorage.getItem('noticias')) || [];
     const url = new URL(window.location.href);
     const parametros = new URLSearchParams(url.search);
