@@ -1,0 +1,171 @@
+body{
+    background-color: #020214;
+    width: 100vw;
+}
+
+.product-view{
+    height: 100vh;
+    width: 1300px;
+    padding-top: 5%;
+    background-color: #f8f8ff;
+    margin: auto;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 24px 3px rgba(0,0,0,0.75);
+}
+
+.container{
+    width: 100%;
+    height: 80%;
+    margin-top: 5%;
+    background-color: aqua;
+    border-top: 5px gray solid;
+    border-bottom: 5px gray solid;
+    display: flex;
+}
+    .left-area{
+        width: 55%;
+        height: 100%;
+        background-color: #222285;
+        box-shadow: inset 0px 0px 126px 3px rgba(0,0,0,0.75);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+        .image{
+           width: 100%;
+           box-shadow: 0px 0px 51px -4px rgba(0,0,0,0.56);
+        }
+    .right-area{
+        width: 45%;
+        height: 100%;
+        background: rgb(201,201,201);
+        background: linear-gradient(90deg, rgba(201,201,201,1) 0%, rgba(244,244,244,1) 33%, rgba(255,255,255,1) 50%, rgba(244,244,244,1) 66%, rgba(201,201,201,1) 100%);
+        word-wrap: break-word;
+        color: #020214;
+    }
+        .title{
+            width: 100%;
+            height: 20%;
+            font-size: 150%;
+            display: flex;
+            align-items: center;
+            padding-left: 5%;
+            padding-right: 5%;
+            border-bottom: 2px solid gray;
+        }
+        .description{
+            width: 100%;
+            height: 50%;
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-top: 2%;
+        }
+        .buy-area{
+            width: 100%;
+            height: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+            .price{
+                width: 50%;
+                height: 100%;
+                font-size: 200%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                padding-right: 3%;
+                color: #5151f8;
+            }
+            .buy{
+                width: 50%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-left: 8%;
+            }
+
+
+.black-screen{
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 1.6%;
+    background-color: rgba(0, 0, 0, 0.658);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+    .buy-window{
+        width: 800px;
+        height: 60%;
+        border: 4px white solid;
+        border-radius: 15px;
+        padding: 20px;
+        background: rgb(210,210,210);
+        background: radial-gradient(circle, rgb(173, 173, 173) 8%, rgba(238,238,238,1) 91%, rgba(238,238,238,1) 100%);
+        position: fixed;
+    }
+    .buy-window h1{
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 5%;
+    }
+
+    .radio-inputs{
+        display: block;
+        font-size: 35px;
+    }
+    .radio-inputs input{
+        width: 30px;
+        height: 30px;
+        margin-right: 2%;
+    }
+
+    .popup{
+        width: 100%;
+        text-align: center;
+        font-size: 35px;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        color: white;
+        -webkit-text-stroke: #24d141 1px;;
+    }
+
+
+
+    @keyframes success {
+        0% {
+            color: #020214;;
+            transform: scaleX(0);
+            -webkit-text-stroke: #020214 2px;
+        }
+
+        100% {
+            color: rgb(255, 255, 255);
+            transform: scaleX(1);
+            -webkit-text-stroke: #24d141 1px;
+        }
+    }
+
+
+    @keyframes fail {
+        0% {
+            color: #020214;;
+            transform: scaleX(0);
+            -webkit-text-stroke: #020214 2px;
+        }
+
+        100% {
+            color: rgb(255, 255, 255);
+            transform: scaleX(1);
+            -webkit-text-stroke: #d12424 1px;
+        }
+    }
