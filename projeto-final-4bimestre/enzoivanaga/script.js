@@ -105,20 +105,22 @@ if (window.location.pathname.includes('pagina.html')) {
 window.addEventListener('load', () => {
     verificarPagina();
 });
-//Função
+//Função de editar a página e verificar a notícia selecionada com base no ID
 function verificarPagina() {
+    //Coleta de dados
     const noticias = JSON.parse(localStorage.getItem('noticias')) || [];
     const url = new URL(window.location.href);
+    //Verificação do ID do URL
     const parametros = new URLSearchParams(url.search);
     const id = parametros.get('id');
-
+    //Pesquisa por meio do ID do URL
     const noticiaSelecionada = noticias.find(noticia => noticia.id_noticia == id);
 
     selecionarNoticia(noticiaSelecionada);
 }
-
+//Função para editar a página com base na notícia com o ID correspondente ao URL
 function selecionarNoticia(noticiaSelecionada) {
-
+    //Edição dos elementos adicionados no HTML
     const img = document.getElementById('img');
     img.src = noticiaSelecionada.img;
 
