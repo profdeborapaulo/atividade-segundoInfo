@@ -1,0 +1,29 @@
+Relatório sobre o Projeto: Cápsula do Tempo Virtual - Delorean
+Introdução
+Este projeto consiste em uma Cápsula do Tempo Virtual que permite aos usuários armazenarem mensagens e arquivos (como fotos, vídeos e outros tipos de documentos) para serem visualizados no futuro. O sistema utiliza o armazenamento local do navegador (localStorage) para salvar os dados dos usuários e suas cápsulas do tempo, garantindo que as informações sejam mantidas mesmo após o fechamento do navegador. O usuário pode criar uma cápsula, definir uma data futura para a sua abertura, e o sistema contará o tempo restante até esse momento, alertando o usuário quando a cápsula chegar ao destino.
+
+Funcionalidades Principais
+O projeto é composto por diversas funcionalidades interconectadas, que podem ser divididas em:
+
+Cadastro de Usuário:
+O sistema permite que novos usuários se cadastrem com um nome de usuário, e-mail e senha. Os dados são armazenados no localStorage para persistência.
+Caso o e-mail informado já tenha sido utilizado, o sistema alerta o usuário.
+
+Login de Usuário:
+Após o cadastro, o usuário pode realizar login utilizando o e-mail e a senha cadastrados.
+O sistema valida se as credenciais são corretas e, em caso positivo, o usuário é redirecionado para a criação da cápsula do tempo.
+
+Criação da Cápsula do Tempo:
+O usuário pode criar uma cápsula do tempo adicionando um texto e anexando arquivos (como imagens, vídeos e documentos).
+É possível definir uma data futura, após a qual a cápsula será "aberta" automaticamente.
+Os arquivos são processados utilizando a API FileReader para serem convertidos para URLs base64 e salvos no localStorage.
+
+Contagem Regressiva (Timer):
+Quando o usuário define a data de abertura da cápsula, o sistema cria uma contagem regressiva para a data futura.
+A contagem é exibida com precisão de anos, dias, horas, minutos e segundos, e é atualizada em tempo real.
+Quando a data de destino é alcançada, o sistema exibe uma mensagem de alerta e redireciona o usuário para a página de visualização da cápsula.
+
+Exibição da Cápsula do Tempo:
+Na data definida, o sistema apresenta a cápsula do tempo, com o texto e os arquivos enviados.
+Os arquivos podem ser visualizados diretamente, com suporte a imagens (exibidas como <img>), vídeos (exibidos como <video>) e links de download para outros arquivos.
+Os arquivos são exibidos em um carrossel que permite ao usuário navegar entre os itens utilizando botões de navegação.
