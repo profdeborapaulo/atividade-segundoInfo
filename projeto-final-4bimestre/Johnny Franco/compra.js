@@ -10,7 +10,7 @@ function compra(id) {
                 quantidade: 1
             };
             localStorage.setItem('estoque' + id, JSON.stringify(array));
-            alert("Item adcionado ao carrinho!")
+            alert("Item adicionado ao carrinho!")
         } if (id == 0) {
             array = {
                 id: 0,
@@ -20,7 +20,7 @@ function compra(id) {
                 quantidade: 1
             };
             localStorage.setItem('estoque' + id, JSON.stringify(array));
-            alert("Item adcionado ao carrinho!")
+            alert("Item adicionado ao carrinho!")
         } if (id == 2) {
             array = {
                 id: 2,
@@ -30,9 +30,9 @@ function compra(id) {
                 quantidade: 1
             };
             localStorage.setItem('estoque' + id, JSON.stringify(array));
-            alert("Item adcionado ao carrinho!")
+            alert("Item adicionado ao carrinho!")
         }
     } else {
-        alert("Esse item já está no carrinho, para adcionar mais, vá para o carrinho e modifique a quantidade de pedidos!")
+        alert("Esse item já está no carrinho, para adicionar mais, vá para o carrinho e modifique a quantidade de pedidos!")
     }
 }
