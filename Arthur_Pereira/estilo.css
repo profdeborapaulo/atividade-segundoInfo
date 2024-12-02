@@ -1,0 +1,166 @@
+/*Site de inicio*/
+.indefinido{
+    justify-items: center;
+    align-items: center;
+    background-color: white;
+    border:solid black 3px;
+    border-radius: 4px;
+}
+.logo{
+    margin-bottom: 0px;
+}
+.configlogin{
+    float: right;
+    margin-top: 2px;
+    margin-right: 2px;
+    box-sizing: border-box;
+}
+/*.logins{
+    background-color: white;
+    border: solid blue 2px;
+    border-radius: 7px;
+}*/
+.conteiner-rolagem{
+    display: flex;
+    overflow-x: auto; /*Permite a rolagem horizontal*/ 
+    white-space: nowrap;  /*Impede quebra de linha*/ 
+    gap: 10vh;  /*Espaçamento entre imagens*/ 
+    padding: 10px;
+    margin-bottom: 3%;
+}
+.biografia-site{
+    margin: 2px;
+    background-color: whitesmoke;
+    border: solid rgb(31, 83, 255) 2px;
+    border-radius: 2px;
+}
+
+/*Fim do site de inicio*/
+/*Site de cadastro*/
+.cabeçalho{
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    margin-top: 5%;
+}
+.entrada{
+    box-shadow: black;
+    /*
+    box-shadow: [offset-x] [offset-y] [blur-radius] [spread-radius] [color];
+    */
+    text-align: center;
+
+}
+.conf-formulario{
+    justify-items: center;
+}
+.formulario{
+    border: solid blue 4px;
+    border-radius: 2px;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.adiconar-form{
+    margin-top: 1vh;
+    padding: 0;
+    width: 50%;
+}
+.infor{
+    font-size: larger;
+    padding-left: 2px;
+}
+.receber{
+    width: 98%;
+    margin: 0;
+}
+.button{
+    margin-top: 3vh;
+    padding-right: 2vh;
+    padding-left: 2vh;
+    font-size: medium;
+    position:sticky;
+    left: 100%;
+}
+/*
+.corpocadastro{
+    justify-items: center;
+}
+.complemento-formulario{
+    width: 500px;
+    right: 500px;
+}
+.formulario{
+    text-align: center;
+    border: solid black 2px;
+    border-radius: 3px;
+    background-color: pink;
+}*/
+
+/*Fim do site de cadastro*/
+/*Site principal*/
+.imagem{
+    width: 20vw;
+    height: 40vh;
+}
+.foco{
+    padding: 20%;
+    padding-top: 12%;
+    padding-bottom: 1%;
+}
+.oferta{
+    color: red;
+    text-align: center;
+    font-size: x-large;
+}
+.login{
+    background-color: white;
+    border: solid blue 2px;
+    border-radius: 7px;
+/*    width: 30%;
+    height: 30%;
+    right: 100%;*/
+}
+/*.perfil-imagem{
+    background-color: rgba(129, 44, 22, 0.89);
+}
+/*Fim*/
+/*Site de Configuração de usuário*/
+.config-usuario{
+    box-sizing: border-box;
+    justify-items: center;
+    align-items: center;
+    padding-top: 10%;
+}
+.estilo-usuario{
+    width: 60%;
+    height: 80%;
+    border: solid black 3px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.usuario{
+    position: relative;
+}
+.usuario-add{
+    text-align: center;
+    padding: 0px;
+}
+.imagem-usuario{
+    width: 70% ;
+    height: auto;
+}
+.letra{
+    text-align: center;
+    font-size: larger;
+    padding-left: 2px;
+}
+.foguete{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 70% ;
+    height: auto;
+}
+.retorno{
+    width: auto;
+    height: auto;
+}
+/*Fim*/
