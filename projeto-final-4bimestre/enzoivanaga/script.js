@@ -121,8 +121,8 @@ function verificarPagina() {
 //Função para editar a página com base na notícia com o ID correspondente ao URL
 function selecionarNoticia(noticiaSelecionada) {
     //Edição dos elementos adicionados no HTML
-    const img = document.getElementById('img');
-    img.src = noticiaSelecionada.img;
+    const img = document.getElementById('imagem');
+    img.src = noticiaSelecionada.imagem;
 
     const titulo = document.getElementById("titulo");
     titulo.textContent = noticiaSelecionada.titulo;
