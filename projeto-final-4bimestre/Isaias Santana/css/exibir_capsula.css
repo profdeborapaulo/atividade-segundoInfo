@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('futuro.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(14, 14, 31, 0.968);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #f39141;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.mensagem {
+    font-size: 1.2em;
+    padding: 10px;
+    background-color: rgba(28, 28, 58, 0.95); 
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    color: #fadf8f;
+}
+
+.carrossel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carrossel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carrossel-content {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.arquivo-item {
+    min-width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.arquivo-item img,
+.arquivo-item video {
+    max-width: auto;
+    height: 500px;
+    max-height: 500px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.arquivo-item a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f39141;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.arquivo-item a:hover {
+    background-color: #efaa11;
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2em;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #f39141;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #efaa11;
+}
+
+@media (max-width: 768px) {
+    .carrossel {
+        flex-direction: column;
+    }
+}

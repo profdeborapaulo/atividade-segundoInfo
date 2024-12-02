@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeLorean - Criar cápsula</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/criar_capsula.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Criar Cápsula do Tempo</h1>
+        <p class="description">
+            Imortalize suas memórias, ideias ou desejos em nossa cápsula do tempo virtual. 
+            Aqui, você pode escrever mensagens para o futuro, anexar imagens ou vídeos marcantes, 
+            e definir uma data especial para abrir e reviver essas memórias.  
+            Deixe o tempo cuidar do resto e prepare-se para uma viagem emocionante ao passado, quando o futuro chegar.
+        </p>
+        <form id="capsuleForm">
+            <label for="texto">Mensagem para o Futuro</label>
+            <textarea id="texto" placeholder="Digite sua mensagem..." required></textarea>
+
+            <label for="arquivo">Anexar Arquivos (Imagens/Vídeos)</label>
+            <input type="file" id="arquivo" multiple>
+
+            <label for="dataFutura">Data para Abrir a Cápsula</label>
+            <input type="datetime-local" id="dataFutura" required>
+
+            <button type="submit">Criar Cápsula</button>
+        </form>
+    </div>
+    <script src="js/criar_capsula.js"></script>
+</body>
+</html>

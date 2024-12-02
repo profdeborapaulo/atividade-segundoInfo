@@ -1,0 +1,76 @@
+/* contador.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('viagem.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #b90000;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    padding: 40px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 700px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+h1 {
+    font-size: 50px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.253), 0 4px 6px rgba(243, 145, 65, 0.7);
+    transition: all 0.3s ease;
+}
+
+h1:hover {
+    color: #efaa11;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.6), 0 8px 12px rgba(255, 162, 62, 0.8);
+}
+
+
+#timer {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: baseline;
+}
+
+.timer__part {
+    font-size: 60px;
+    color: #f39141;
+    display: inline-block;
+    margin: 0 5px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.timer__part--years, .timer__part--days, .timer__part--hours, .timer__part--minutes, .timer__part--seconds {
+    font-size: 70px;
+    color: #f39141;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
