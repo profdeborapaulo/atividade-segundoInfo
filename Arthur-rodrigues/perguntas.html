@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Humano ou IA?</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background: linear-gradient(45deg, #1a1a1a, #00ff99);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
+            color: white;
+            text-align: center;
+            font-family: 'Courier New', monospace;
+            overflow: hidden;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        h1 {
+            font-size: 50px;
+            font-weight: 900;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #00ff99;
+            text-shadow: 0 0 15px rgba(0, 255, 255, 0.7), 0 0 30px rgba(0, 255, 255, 0.5);
+            animation: fadeInText 3s ease-in-out;
+        }
+
+        main {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 50px;
+            border-radius: 25px;
+            width: 100%;
+            max-width: 700px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            box-shadow: 0 0 30px rgba(0, 255, 255, 0.5);
+            backdrop-filter: blur(15px);
+            animation: fadeInText 3s ease-in-out;
+        }
+
+        .question {
+            font-size: 30px;
+            font-weight: 700;
+            color: #f0f0f0;
+            text-shadow: 0 0 30px rgba(0, 255, 255, 0.7);
+        }
+
+        .answers {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            width: 100%;
+        }
+
+        button {
+            padding: 20px;
+            border: 2px solid #00ff99;
+            border-radius: 15px;
+            cursor: pointer;
+            background-color: transparent;
+            color: #00ff99;
+            font-weight: 700;
+            font-size: 20px;
+            letter-spacing: 1px;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            text-transform: uppercase;
+        }
+
+        button:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300%;
+            height: 300%;
+            background: #00ff99;
+            transition: all 0.5s ease;
+            border-radius: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            z-index: 0;
+        }
+
+        button:hover {
+            color: #fff;
+            border-color: #00ff00;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+        }
+
+        button:hover:before {
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        button span {
+            position: relative;
+            z-index: 1;
+        }
+
+        .finish {
+            display: none;
+            flex-direction: column;
+            gap: 30px;
+            font-size: 20px;
+            color: #f0f0f0;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+        }
+
+        .finish span {
+            font-size: 30px;
+            font-weight: 900;
+            color: #00ff99;
+            text-transform: uppercase;
+        }
+
+        .finish button {
+            padding: 20px 40px;
+            border: 2px solid #00ff99;
+            border-radius: 15px;
+            cursor: pointer;
+            background-color: transparent;
+            color: #00ff99;
+            font-weight: 700;
+            font-size: 20px;
+            transition: all 0.4s ease;
+        }
+
+        .finish button:hover {
+            color: #fff;
+            border-color: #00ff00;
+        }
+
+        @keyframes fadeInText {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 40px;
+            }
+
+            main {
+                padding: 40px;
+                max-width: 90%;
+            }
+
+            .question {
+                font-size: 24px;
+            }
+
+            button {
+                padding: 18px;
+                font-size: 18px;
+            }
+
+            .finish button {
+                padding: 18px 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Você é humano ou IA?</h1>
+    <main>
+        <div class="content">
+            <span class="spnQtd"></span>
+            <span class="question"></span>
+            <div class="answers"></div>
+        </div>
+        <div class="finish">
+            <span></span>
+        </div>
+    </main>
+
+    <script>
+        const questions = [
+            {
+                question: "Você lembra de algo especial da sua infância ou prefere dizer que não tem memórias?", answers: [
+                    { option: "Sim, lembro.", correct: true },
+                    { option: "Não, não tenho memórias.", correct: false }
+                ]
+            },
+            {
+                question: "Se tivesse que escolher, você seria mais como uma cor vibrante ou uma cor neutra?", answers: [
+                    { option: "Vibrante.", correct: true },
+                    { option: "Neutra.", correct: false }
+                ]
+            },
+            {
+                question: "Se um amigo estivesse triste, você conversaria com ele ou esperaria ele procurar você?", answers: [
+                    { option: "Eu conversaria.", correct: true },
+                    { option: "Eu esperaria.", correct: false }
+                ]
+            },
+            {
+                question: "Você consegue dizer o que fez ontem ou acha difícil lembrar detalhes?", answers: [
+                    { option: "Consigo dizer.", correct: true },
+                    { option: "Acho difícil lembrar.", correct: false }
+                ]
+            },
+            {
+                question: "Você acha que a honestidade ou a gentileza é mais importante em uma amizade?", answers: [
+                    { option: "Honestidade.", correct: false },
+                    { option: "Gentileza.", correct: true }
+                ]
+            }
+        ];
+
+        const question = document.querySelector(".question");
+        const answers = document.querySelector(".answers");
+        const spnQtd = document.querySelector(".spnQtd");
+        const textFinish = document.querySelector(".finish span");
+        const content = document.querySelector(".content");
+        const contentFinish = document.querySelector(".finish");
+
+        let currentIndex = 0;
+        let humanScore = 0;
+
+        function nextQuestion(e) {
+            if (e.target.getAttribute("data-correct") === "true") {
+                humanScore++;
+            }
+
+            if (currentIndex < questions.length - 1) {
+                currentIndex++;
+                loadQuestion();
+            } else {
+                finish();
+            }
+        }
+
+        function finish() {
+            if (humanScore >= 3) {
+                // Redireciona para "inocente.html" se for humano
+                window.location.href = "inocente.html";
+            } else {
+                // Redireciona para "culpado.html" se for IA
+                window.location.href = "culpado.html";
+            }
+            content.style.display = "none";
+            contentFinish.style.display = "flex";
+        }
+
+        function loadQuestion() {
+            spnQtd.innerHTML = `${currentIndex + 1}/${questions.length}`;
+            const item = questions[currentIndex];
+            answers.innerHTML = "";
+            question.innerHTML = item.question;
+
+            item.answers.forEach((answer) => {
+                const div = document.createElement("div");
+
+                div.innerHTML = `
+                    <button class="answer" data-correct="${answer.correct}">
+                        ${answer.option}
+                    </button>
+                `;
+
+                answers.appendChild(div);
+            });
+
+            document.querySelectorAll(".answer").forEach((item) => {
+                item.addEventListener("click", nextQuestion);
+            });
+        }
+
+        loadQuestion();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA Detectada</title>
+    <link rel="stylesheet" href="style.css">
+    <style>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    background-color: black;
+    color: #00ff00;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+header {
+    font-size: 3.5em;
+    color: #00ff00;
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+    margin-bottom: 30px;
+    animation: flash 1.5s infinite alternate;
+}
+
+h1 {
+    letter-spacing: 4px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid #00ff00;
+    animation: typing 4s steps(30) 1s 1 normal both, blink 0.75s step-end infinite;
+}
+
+main {
+    font-size: 1.5em;
+    margin: 20px;
+    animation: glitch 2s infinite;
+}
+
+p {
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.6), 0 0 20px rgba(0, 255, 0, 0.5);
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid #00ff00;
+    animation: typing 5s steps(45) 1s 1 normal both, blink 0.75s step-end infinite;
+}
+
+footer {
+    font-size: 1.2em;
+    color: #00ff00;
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.8);
+    margin-top: 20px;
+}
+
+/* Animação de digitação */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Efeito de blink no cursor */
+@keyframes blink {
+    0%,
+    100% {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #00ff00;
+    }
+}
+
+/* Animação de glitch */
+@keyframes glitch {
+    0% {
+        text-shadow: 2px 0 red, -2px 0 blue;
+        transform: skew(0.5deg);
+    }
+    20% {
+        text-shadow: -2px 0 red, 2px 0 blue;
+        transform: skew(-0.5deg);
+    }
+    40% {
+        text-shadow: 2px 2px red, -2px -2px blue;
+        transform: skew(0deg);
+    }
+    60% {
+        text-shadow: -2px -2px red, 2px 2px blue;
+        transform: skew(0.5deg);
+    }
+    80% {
+        text-shadow: 2px -2px red, -2px 2px blue;
+        transform: skew(-0.5deg);
+    }
+    100% {
+        text-shadow: 2px 0 red, -2px 0 blue;
+        transform: skew(0deg);
+    }
+}
+
+/* Animação de flash no título */
+@keyframes flash {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Simulando fundo de "matriz" com texto aleatório */
+body::after {
+    content: "1010101000101101010110100010101010001010101010101010";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 0.5em;
+    color: #00ff00;
+    white-space: nowrap;
+    overflow: hidden;
+    z-index: -1;
+    animation: scrollText 5s linear infinite;
+}
+
+@keyframes scrollText {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-100%);
+    }
+}
+
+</style>
+</head>
+
+<body>
+    <header>
+        <h1>ALERTA: IA DETECTADA!</h1>
+    </header>
+    <main>
+        <p>Estamos contatando uma equipe especializada para investigar sua localização. Prepare-se!</p>
+    </main>
+    <footer>
+        <p>Segurança em primeiro lugar.</p>
+    </footer>
+</body>
+
+</html>

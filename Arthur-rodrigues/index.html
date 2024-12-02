@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IAHUNTER</title>
+    <link rel="stylesheet" href="style.css">
+    <style>/* Reseta margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais do body */
+body {
+    font-family: 'Courier New', monospace;
+    background-color: black;
+    color: #00ff00;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Navbar */
+nav {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    font-size: 1.5em;
+    color: #00ff00;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0;
+    animation: fadeInLogo 2s forwards;
+}
+
+.logo {
+    display: inline-block;
+}
+
+/* Animação de fade-in para o logo da navbar */
+@keyframes fadeInLogo {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Estilos do header */
+header {
+    margin-top: 100px;
+    text-shadow: 0 0 15px rgba(0, 255, 0, 0.8), 0 0 30px rgba(0, 255, 0, 0.7);
+}
+
+h1 {
+    font-size: 3em;
+    color: #00ff00;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    animation: fadeInText 3s ease-in-out;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #00ff00;
+    margin-top: 10px;
+    animation: fadeInText 3s ease-in-out;
+}
+
+/* Animação de fade-in para o texto */
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Estilos do footer */
+footer {
+    font-size: 1.2em;
+    color: #00ff00;
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.8);
+    margin-top: 30px;
+}
+
+/* Estilos para o botão */
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 30px;
+    font-size: 1.2em;
+    color: #00ff00;
+    background-color: black;
+    border: 2px solid #00ff00;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #00ff00;
+    color: black;
+}
+
+/* Efeito de fundo aleatório da "Matriz" */
+body::after {
+    content: "1010101000101101010110100010101010001010101010101010";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 0.5em;
+    color: #00ff00;
+    white-space: nowrap;
+    overflow: hidden;
+    z-index: -1;
+    animation: scrollText 5s linear infinite;
+}
+
+@keyframes scrollText {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-100%);
+    }
+}
+
+/* Animação de fade-in para o body */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+</style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">IAHUNTER</div>
+    </nav>
+
+    <header>
+        <h1>Não deixe fique com dúvida de sua humanidade</h1>
+        <h2>Faça o teste sobre sua personalidade e veracidade, não tenha dúvidas, com este testo iremos livrar nossa
+            humanidade do controle das máquinas.</h2>
+        <a href="perguntas.html" class="btn">Iniciar Teste</a>
+    </header>
+
+    <footer>
+        <p>Proteja sua humanidade!</p>
+    </footer>
+</body>
+
+</html>
