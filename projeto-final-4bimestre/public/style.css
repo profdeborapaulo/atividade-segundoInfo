@@ -1,0 +1,87 @@
+
+body{
+    font-family: "Poppins";
+    background: black;
+    color: white;
+}
+img{
+    width: 1000px;
+}
+h1{
+    font-size: 50px;
+}
+footer{
+    text-align: center;
+}
+#container{
+    display: flex;
+    align-items: center;
+    max-width: fit-content;
+}
+#container2{
+    text-align: center;
+}
+.fade-item{
+    opacity: 0;
+    animation: fadeIn 4.5s ease forwards;
+}
+
+.footer{
+    animation-delay: 3s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.typing {
+    font-size: 45px;
+    font-weight: 700;
+    display: inline-block;
+    overflow: hidden; /* Garante que o texto "vá surgindo" */
+    white-space: nowrap; /* Mantém o texto em uma linha */
+    position: relative; /* Para o cursor */
+    border-right: 5px solid #007bff; /* Cursor */
+    animation: typing 3s steps(46, end), blinking 1s step-end infinite; /* Combina digitação e piscagem */
+}
+
+/* Animação de escrita */
+@keyframes typing {
+    from {
+        width: 0; /* Começa sem texto visível */
+    }
+    to {
+        width: 100%; /* Mostra todo o texto */
+    }
+}
+
+/* Animação do cursor piscando */
+@keyframes blinking {
+    50% {
+        border-color: transparent; /* Desaparece no meio do ciclo */
+    }
+    100% {
+        border-color: #007bff; /* Reaparece */
+    }
+}
+
+.a{
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+.a:hover{
+    background: #004c9d;
+}

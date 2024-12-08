@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Poppins:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/img/favicon/favicon.ico" type="image/x-icon">
+    <script src="gemini.js"></script>
+    <link rel="stylesheet" href="choose.css">
+    <title>FutureLy</title>
+</head>
+<body>
+    <h2>Escolha com quem você quer conversar:</h2>
+
+    <div id="personas">
+        <div id="ethan" class="ethan">
+            <img src="ethan.png" width="100px" style="border-radius: 50%;" alt=""> <h1 id="nome">Ethan</h1>
+            <ul style="text-align: left;">
+                <li>23 anos</li>
+                <li>Arqueólogo cósmico </li>
+                <li>Relaxar 😌</li>
+            </ul>
+            <a href="chat?persona=ethan" id="setName" onclick="pessoa('ethan')">
+                <button>Conversar</button>
+            </a>
+        </div>
+        <div id="claire" class="claire">
+            <img src="claire.png" width="100px" style="border-radius: 50%;" alt=""> <h1 id="nome">Claire</h1>
+            <ul style="text-align: left;">
+                <li>26 anos</li>
+                <li>Ecoengenheira 🌱</li>
+                <li>Jardinagem 👩🏻‍🌾</li>
+            </ul>
+            <a href="chat?persona=claire" id="setName" onclick="pessoa('claire')">
+                <button>Conversar</button>
+            </a>
+        </div>
+        <div class="jack">
+            <img src="jack.png" width="100px" style="border-radius: 50%;" alt=""> <h1 id="nome">Jack</h1>
+            <ul style="text-align: left;">
+                <li>24 anos</li>
+                <li>Bioholografia 👾</li>
+                <li>Drones de corrida 🏁</li>
+            </ul>
+            <a href="chat?persona=jack" id="setName" onclick="pessoa('jack')">
+                <button>Conversar</button>
+            </a>
+        </div>
+        <div class="emma">
+            <img src="emma.png" width="100px" style="border-radius: 100%;" alt=""> <h1 id="nome">Emma</h1>
+            <ul style="text-align: left;">
+                <li>22 anos</li>
+                <li>Desenvolvedora de IAs 💻</li>
+                <li>Competitiva 👩🏻‍💻</li>
+            </ul>
+            <a href="chat?persona=emma" id="setName" onclick="pessoa('emma')">
+                <button>Conversar</button>
+            </a>
+        </div>
+    </div>    
+</body>
+</html>
