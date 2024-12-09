@@ -1,0 +1,56 @@
+body{
+    background: black;
+    color: white;
+    font-family: "Poppins";
+}
+#personas{
+    display: flex;
+    margin-top: 20px;
+}
+.ethan{
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 20vw;
+    box-shadow: 0 4px 14px dodgerblue;
+    text-align: center;
+    margin: 0 auto;
+}
+.claire{
+    padding: 20px;
+    border-radius: 10px;
+    width: fit-content;
+    box-shadow: 0 4px 14px dodgerblue;
+    text-align: center;
+    margin: 0 auto;
+}
+.jack{
+    padding: 20px;
+    border-radius: 10px;
+    width: fit-content;
+    box-shadow: 0 4px 14px dodgerblue;
+    text-align: center;
+    margin: 0 auto;
+}
+.emma{
+    padding: 20px;
+    border-radius: 10px;
+    width: fit-content;
+    box-shadow: 0 4px 14px dodgerblue;
+    text-align: center;
+    margin: 0 auto;
+}
+button{
+    padding: 10px 20px;
+    font-family: "Poppins";
+    color: #fff;
+    font-size: 1rem;
+    background: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    opacity: 1;
+}
+button:hover{
+    background: #004c9d;
+}

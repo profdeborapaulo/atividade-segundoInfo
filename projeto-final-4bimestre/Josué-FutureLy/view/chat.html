@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Poppins:wght@500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="chat.css">
+    <title>FutureLy - Chat</title>
+</head>
+
+<body>
+
+    <form id="form">
+        <div id="text"></div>
+
+        <div class="ajustar">
+            <div id="resposta"></div>
+        </div>
+
+        <div class="textbox">
+            <input type="text" name="msg" id="msg" placeholder="Mensagem:">
+            <button type="button" onclick="sendMessage()"><img src="enviar.png" width="80px" alt="enviar"></button>
+        </div>
+            <input type="hidden" class="botAnswer" id="model">
+            <input type="hidden" class="userResponse" id="user">
+    </form>
+</body>
+
+</html>
